@@ -5,7 +5,7 @@
  * @version 0.1
  * @date 2022-03-31
  *
- * @copyright Copyright (c) 2022 Licença GNU3
+ * @copyright Copyright (c) 2022
  *
  * Talvez te interesse:
  * - convenções de nomes em c   - https://stackoverflow.com/questions/1722112/what-are-the-most-common-naming-conventions-in-c
@@ -15,7 +15,6 @@
 #include <stdio.h>  //print, scan
 #include <stdlib.h> // alloc, free
 
-// o nosso nó
 struct No
 {
     int valor;
