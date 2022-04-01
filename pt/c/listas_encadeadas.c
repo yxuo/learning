@@ -86,6 +86,38 @@ void lista_print(No *no)
     printf("\n");
 }
 
+// O mais básico
+void lista_remover_ultimo(No **lista)
+{
+    // se lsita é nula, cancela
+    if (*lista == NULL)
+        return;
+
+    No *no = *lista;
+    No *ante = NULL;
+
+    // remove indice 0
+    if (no->Prox == NULL)
+    {
+        free(no);
+        *lista = NULL;
+        return;
+    }
+
+    // remove indice 1-n
+
+    // percorre até o último elemento
+    while (no->Prox != NULL)
+    {
+        ante = no;
+        no = no->Prox;
+    }
+
+    // remove
+    free(no);
+    ante->Prox = NULL;
+}
+
 void lista_remover_por_valor(No **lista, int valor)
 {
     // ele removerá o 1o elemento que contém este valor
@@ -130,37 +162,6 @@ void lista_remover_por_valor(No **lista, int valor)
     }
 }
 
-void lista_remover_ultimo(No **lista)
-{
-    // se lsita é nula, cancela
-    if (*lista == NULL)
-        return;
-
-    No *no = *lista;
-    No *ante = NULL;
-
-    // remove indice 0
-    if (no->Prox == NULL)
-    {
-        free(no);
-        *lista = NULL;
-        return;
-    }
-
-    // remove indice 1-n
-
-    // percorre até o último elemento
-    while (no->Prox != NULL)
-    {
-        ante = no;
-        no = no->Prox;
-    }
-
-    // remove
-    free(no);
-    ante->Prox = NULL;
-}
-
 void lista_remover_indice(No **lista, int indice)
 {
     // se lista nula, cancela
@@ -197,25 +198,32 @@ void lista_remover_indice(No **lista, int indice)
 
 int main()
 {
-    printf("ini\n");
     No *lista = NULL;
-    for (int i = 0; i < 2; i++)
+
+    printf("lista: adicionar no fim\n");
+    for (int i = 0; i < 5; i++)
         lista_adicionar_fim(&lista, i);
     lista_print(lista);
+    printf("\n\n");
 
-    // printf("lista: remover por valor\n");
-    // lista_remover_por_valor(&lista, 7);
-    // lista_print(lista);
+    printf("lista: adicionar no inicio\n");
+    for (int i = 5; i < 10; i++)
+        lista_adicionar_inicio(&lista, i);
+    lista_print(lista);
+    printf("\n\n");
 
-    // printf("lista: remover por indice\n");
-    // lista_remover_indice(&lista, 0);
-    // lista_print(lista);
+    printf("lista: remover por indice [4] = 5\n");
+    lista_remover_indice(&lista, 4);
+    lista_print(lista);
+    printf("\n\n");
+
+    printf("lista: remover por valor (7)\n");
+    lista_remover_por_valor(&lista, 7);
+    lista_print(lista);
+    printf("\n\n");
 
     printf("lista: remover o ultimo\n");
     lista_remover_ultimo(&lista);
-    lista_remover_ultimo(&lista);
-    lista_remover_ultimo(&lista);
     lista_print(lista);
-
-    printf("fim\n");
+    printf("\n\n");
 }
