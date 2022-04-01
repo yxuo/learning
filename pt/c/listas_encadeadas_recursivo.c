@@ -6,6 +6,7 @@
  * @date 2022-04-01
  *
  * @copyright Copyright (c) 2022
+ *
  */
 
 #include <stdio.h>  //print, scan
@@ -20,6 +21,7 @@ struct No
 // um macro pra não ter que digitar "struct" toda hora (OPCIONAL)
 typedef struct No No;
 
+
 // um macro para (o ritual de) criar um ponteiro
 No *lista_novo_no(int valor)
 {
@@ -32,6 +34,7 @@ No *lista_novo_no(int valor)
     return novo;
 }
 
+
 void lista_adicionar_fim(No **no, int valor)
 {
     // 1. se a lista tá vazia, adicionar o 1o elemento
@@ -43,15 +46,15 @@ void lista_adicionar_fim(No **no, int valor)
 
     // 2. percorrer até o último elemento, daí este último pode apontar para o novo elemento
 
-    // ao invés de usar while, chamamos a própria função em si mesma. Isto é recursividade.
-    if ((*no)->Prox != NULL)
+    if ((*no)->Prox != NULL) //                         chama função até o fim da lista
         lista_adicionar_fim(&(*no)->Prox, valor);
 
-    // 3. último nó! apontar para o novo nó
+    // 3. adicionar nó no fim
     else
         (*no)->Prox = lista_novo_no(valor);
-    // tome cuidado, todas as funções chamadas, uma dentro da outra, vão passar por aqui
+        
 }
+
 
 // nada de recursivo para fazer aqui...
 void lista_adicionar_inicio(No **no, int valor)
@@ -60,6 +63,7 @@ void lista_adicionar_inicio(No **no, int valor)
     novo->Prox = *no;
     *no = novo;
 }
+
 
 void lista_print(No *no)
 {
@@ -71,45 +75,64 @@ void lista_print(No *no)
     }
 }
 
+
 int lista_remover_por_valor(No **no, int valor)
 {
-    // ele removerá o 1o elemento que contém este valor
-
-    // 1. se não existe nó, cancela
+    // 1. se lista é nula, cancela
     if (*no == NULL)
         return 0;
 
-    // 2. remove índice 0       (se o nó tem o valor)
-    if ((*no)->valor == valor)
+    // há muitas maneiras de fazer esta função de forma recursiva;
+    // escolhi o seguinte: se indice = 0 pode deletar, senão, indice subtrai 1 e chama denovo.
+
+    // 2. remove se valor foi encontrado
+
+    // 2.1.a. caso seja o último nó
+    if ((*no)->Prox == NULL && (*no)->valor == valor)
     {
-        // libera endereço de memória
-        *no = (*no)->Prox;
-        // o ponteiro não apontará mais para este endereço
-        free(no);
+        free(*no);
+        *no = NULL;
+
+        // com este return a função chamada antes desta fará o papel do nó anterior.
+        return 1;
+    }
+
+    // 2.2. caso seja no meio da lista
+    else if ((*no)->Prox != NULL && (*no)->Prox->valor == valor)
+    {
+        // como o nó filho existe, considere este nó como o nó anterior
+        No *remover = (*no)->Prox;
+        (*no)->Prox = (*no)->Prox->Prox;
+        free(remover);
+
         return 0;
     }
-    // 3. remove índice 1-n    (se o nó tem o valor)
 
-    int removido = 0;
-    // substitui while por recursividade
-    // o nó que vamos passar será o nó anterior, para isso vemos se o nó possui 'Prox'
-    if ((*no)->Prox != NULL)
+    // 2.3. caso seja o primeiro nó
+    else if((*no)->valor == valor)
     {
-        // remove nó Prox       (se tem o valor)
-        if ((*no)->Prox->valor == valor)
-        {
-            // o nó anterior ignorará o elemento_removido, apontando para o elemento seguinte (ou NULO se for o último)
-            No *elemento_removido = (*no)->Prox;
-            (*no)->Prox = (*no)->Prox->Prox;
-            free(elemento_removido);
-            // como queremos remover apenas o 1o elemento, terminamos por aqui :)
-            return 1;
-        }
-        if (removido == 0) // congele caso queira remover todos que tenham o valor
-            removido += lista_remover_por_valor(&(*no)->Prox, valor);
+        // guarda o próximo nó
+        No *prox = (*no)->Prox;
+        // deleta este nó
+        free(*no);
+        // O primeiro nó da lista será o próximo nó
+        *no = prox;
+
+        return 0;
     }
-    return removido;
+
+    // 3. chama denovo enquanto não deletar
+    int removido = 0;
+    removido += lista_remover_por_valor(&(*no)->Prox, valor);
+
+    // 2.1.b. (continuação) você deletou o último nó, este aqui é o nó anterior ao deletado
+    if (removido == 1)
+        (*no)->Prox = NULL;
+
+    // Apenas o nó anterior ao removido recebe o 'removido = 1'
+    return 0;
 }
+
 
 void lista_remover_ultimo(No **no)
 {
@@ -117,7 +140,7 @@ void lista_remover_ultimo(No **no)
     if (*no == NULL)
         return;
 
-    // 2. remove indice 0
+    // 2. remove o último item
     if ((*no)->Prox == NULL)
     {
         free(*no);
@@ -125,17 +148,11 @@ void lista_remover_ultimo(No **no)
         return;
     }
 
-    // 3. remove indice 1-n
-
-    // substituir while por recursividade, enviaremos o anterior como parâmetro
-    //             ->    <- se este não existe, o nó atual é o penúltimo elemento,
-    // podemos deletar o último e limpar o Prox do penúltimo.
+    // 3. enquanto não está no fim da lista
     if ((*no)->Prox->Prox != NULL)
         lista_remover_ultimo(&(*no)->Prox);
 
-    // remover
-
-    // Lembre-se sempre, todas as funções chamadas vão passar por aqui!
+    // 4. remover último nó e limpar Prox
     else
     {
         free((*no)->Prox);
@@ -143,58 +160,98 @@ void lista_remover_ultimo(No **no)
     }
 }
 
-void lista_remover_indice(No **no, int indice)
+
+// mesma coisa, só muda o índice ao invés do valor
+int lista_remover_indice(No **no, int indice)
 {
     // 1. se lista é nula, cancela
     if (*no == NULL || indice < 0)
-        return;
+        return 0;
 
     // há muitas maneiras de fazer esta função de forma recursiva;
     // escolhi o seguinte: se indice = 0 pode deletar, senão, indice subtrai 1 e chama denovo.
 
-    // 2. remove se indice = 0
-    if (indice == 0)
+    int novo_indice = indice;
+
+    // 2. remove caso indice foi atingido
+
+    // 2.1.a. caso seja o último nó
+    if ((*no)->Prox == NULL && indice == 0)
     {
-        *no = (*no)->Prox;
-        free(no);
-        return;
+        free(*no);
+        *no = NULL;
+
+        // com este return a função chamada antes desta fará o papel do nó anterior.
+        return 1;
     }
 
-    // 3. indice subtrai 1 e chama denovo
+    // 2.2. caso seja do meio
+    else if ((*no)->Prox != NULL && indice == 1)
+    {
+        // como o nó filho existe, considere este nó como 'no_anterior'
+        No *remover = (*no)->Prox;
+        (*no)->Prox = (*no)->Prox->Prox;
+        free(remover);
 
-    // troca while por recursividade
-    if (*no != NULL)
-        lista_remover_indice(&(*no)->Prox, indice - 1);
+        return 0;
+    }
+
+    // 2.3. caso seja o primeiro nó
+    else if(indice == 0)
+    {
+        // guarda o próximo nó
+        No *prox = (*no)->Prox;
+        // deleta este nó
+        free(*no);
+        // O primeiro nó da lista será o próximo nó
+        *no = prox;
+
+        return 0;
+    }
+
+    // 3. chama denovo enquanto não deletar
+    int removido = 0;
+    removido += lista_remover_indice(&(*no)->Prox, indice - 1);
+
+    // 2.1.b. (continuação) você deletou o último nó, este aqui é o nó anterior ao deletado
+    if (removido == 1)
+        (*no)->Prox = NULL;
+
+    // Apenas o nó anterior ao removido recebe o 'removido = 1'
+    return 0;
 }
+
+
 
 int main()
 {
     No *lista = NULL;
+    No *lista_invertida = NULL;
 
-    printf("lista: adicionar no fim\n");
+    printf("1. adicionar itens no inicio da lista\n");
+    for (int i = 0; i < 5; i++)
+        lista_adicionar_inicio(&lista_invertida, i);
+    lista_print(lista_invertida);
+    printf("\n\n");
+
+    printf("2. adicionar itens no fim da lista\n");
     for (int i = 0; i < 5; i++)
         lista_adicionar_fim(&lista, i);
     lista_print(lista);
     printf("\n\n");
 
-    printf("lista: adicionar no inicio\n");
-    for (int i = 5; i < 10; i++)
-        lista_adicionar_inicio(&lista, i);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover por indice [4] = 5\n");
-    lista_remover_indice(&lista, 4);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover por valor (7)\n");
-    lista_remover_por_valor(&lista, 7);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover o ultimo\n");
+    printf("3. remover ultimo item\n");
     lista_remover_ultimo(&lista);
+    lista_print(lista);
+    printf("\n\n");
+
+    printf("4. remover item no indice [2] = 2\n");
+    lista_remover_indice(&lista, 2);
+    lista_print(lista);
+    printf("\n\n");
+
+    printf("5. remover item com valor (1)\n");
+    lista_remover_por_valor(&lista, 1);
     lista_print(lista);
     printf("\n\n");
 }

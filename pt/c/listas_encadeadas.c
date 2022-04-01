@@ -21,10 +21,9 @@ struct No
     int valor;
     struct No *Prox;
 };
-// um macro pra não ter que digitar "struct" toda hora (OPCIONAL)
-typedef struct No No;
+typedef struct No No;           // macro para facilitar
 
-// um macro para (o ritual de) criar um ponteiro
+// macro para criar novo nó
 No *lista_novo_no(int valor)
 {
     // novo ponteiro apontando para memória alocada
@@ -54,20 +53,17 @@ void lista_adicionar_fim(No **no, int valor)
     while (ultimo->Prox != NULL)
         ultimo = ultimo->Prox;
 
-    // último nó! apontar para o novo nó
+    // 3. último nó! apontar para o novo nó
     ultimo->Prox = lista_novo_no(valor);
 }
 
 void lista_adicionar_inicio(No **no, int valor)
 {
-    // novo nó vai destronar o atual 1o elemento, passando a ser o 2o elemento
+    // 1. novo no
     No *novo = lista_novo_no(valor);
-
-    //. *no é um ponteiro raiz, que contém o endereço do 1o elemento
-    //  O novo->prox agora também tem este endereço, ou seja, o próximo elemento de 'novo' é o antigo 1o elemento
+    // 2. Prox aponta para o endereço do (antigo) 1o elemento. (não confundir com o endereço do ponteiro *no)
     novo->Prox = *no;
-
-    // lembra que *no é apenas um ponteiro raiz? Ele agora aponta para o novo 1o elemento, o novo.
+    // 3. no aponta para o endereço do novo elemento.
     *no = novo;
 }
 
@@ -75,9 +71,7 @@ void lista_print(No *no)
 {
     // Como não quero mexer no 1o elemento, quero apenas imprimir, só preciso de um ponteiro uno
 
-    // se nó existe, posso imprimir e ir para o próximo nó
-
-    
+    // se o nó existe, imprimir e ir ao próximo nó
     while (no != NULL)
     {
         printf("%d ", no->valor);
@@ -86,17 +80,17 @@ void lista_print(No *no)
     printf("\n");
 }
 
-// O mais básico
+// a função mais simples
 void lista_remover_ultimo(No **lista)
 {
-    // se lsita é nula, cancela
+    // 1. se lsita é nula, cancela
     if (*lista == NULL)
         return;
 
     No *no = *lista;
     No *ante = NULL;
 
-    // remove indice 0
+    // 2. remove indice 0
     if (no->Prox == NULL)
     {
         free(no);
@@ -104,7 +98,7 @@ void lista_remover_ultimo(No **lista)
         return;
     }
 
-    // remove indice 1-n
+    // 3. remove indice 1-n
 
     // percorre até o último elemento
     while (no->Prox != NULL)
@@ -113,7 +107,7 @@ void lista_remover_ultimo(No **lista)
         no = no->Prox;
     }
 
-    // remove
+    // 3.1. removendo indice 1-n
     free(no);
     ante->Prox = NULL;
 }
@@ -122,14 +116,14 @@ void lista_remover_por_valor(No **lista, int valor)
 {
     // ele removerá o 1o elemento que contém este valor
 
-    // se não existe nó, cancela
+    // 1. se não existe nó, cancela
     if (*lista == NULL)
         return;
 
     No *no = *lista;
     No *ante = NULL;
 
-    // remove índice 0      (se o nó tem o valor)
+    // 2. remove índice 0      (se o nó tem o valor)
     if (no->valor == valor)
     {
         // libera endereço de memória
@@ -139,32 +133,27 @@ void lista_remover_por_valor(No **lista, int valor)
         return;
     }
 
-    // remove índice 1-n    (se o nó tem o valor)
+    // 3. remove índice 1-n    (se o nó tem o valor)
 
     // precisamos do nó anterior para ele deixar de apontar para o elemento removido
     while (no != NULL)
     {
-        // remove nó        (se tem o valor)
+        // 3.1. remove nó            (se o nó tem o valor)
         if (no->valor == valor)
         {
-            // ante ignorará o elemento removido, aponta o elemento seguinte
-            ante->Prox = no->Prox;
-            free(no);
-            // elemento removido, voltamos ao ante e continuamos a percorrer a lista
-            no = ante;
-
-            // como queremos remover apenas o 1o elemento, terminamos por aqui :)
-            return; // congele este return caso queira continuar e remover todos os nós que contém o valor.
+            ante->Prox = no->Prox;  // ante ignora o elemento removido, aponta o nó seguinte
+            free(no);               // apaga nó
+            return;
         }
         //
-        ante = no;
-        no = (no)->Prox;
+        ante = no;                  // atualiza ante
+        no = (no)->Prox;            // atualiza no
     }
 }
 
 void lista_remover_indice(No **lista, int indice)
 {
-    // se lista nula, cancela
+    // 1. se lista nula, cancela
     if (*lista == NULL)
         return;
 
@@ -173,7 +162,7 @@ void lista_remover_indice(No **lista, int indice)
     No *no = *lista;
     No *ante = NULL;
 
-    // remove indice 0
+    // 2. remove indice 0
     if (indice_atual == indice)
     {
         *lista = no->Prox;
@@ -181,7 +170,7 @@ void lista_remover_indice(No **lista, int indice)
         return;
     }
 
-    // remove indice 1-n
+    // 3. remove indice 1-n
     while (no != NULL)
     {
         if (indice_atual == indice)
@@ -199,31 +188,32 @@ void lista_remover_indice(No **lista, int indice)
 int main()
 {
     No *lista = NULL;
+    No *lista_invertida = NULL;
 
-    printf("lista: adicionar no fim\n");
+    printf("1. adicionar itens no inicio da lista\n");
+    for (int i = 0; i < 5; i++)
+        lista_adicionar_inicio(&lista_invertida, i);
+    lista_print(lista_invertida);
+    printf("\n\n");
+
+    printf("2. adicionar itens no fim da lista\n");
     for (int i = 0; i < 5; i++)
         lista_adicionar_fim(&lista, i);
     lista_print(lista);
     printf("\n\n");
 
-    printf("lista: adicionar no inicio\n");
-    for (int i = 5; i < 10; i++)
-        lista_adicionar_inicio(&lista, i);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover por indice [4] = 5\n");
-    lista_remover_indice(&lista, 4);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover por valor (7)\n");
-    lista_remover_por_valor(&lista, 7);
-    lista_print(lista);
-    printf("\n\n");
-
-    printf("lista: remover o ultimo\n");
+    printf("3. remover ultimo item\n");
     lista_remover_ultimo(&lista);
+    lista_print(lista);
+    printf("\n\n");
+
+    printf("4. remover item no indice [2] = 2\n");
+    lista_remover_indice(&lista, 2);
+    lista_print(lista);
+    printf("\n\n");
+
+    printf("5. remover item com valor (1)\n");
+    lista_remover_por_valor(&lista, 1);
     lista_print(lista);
     printf("\n\n");
 }
