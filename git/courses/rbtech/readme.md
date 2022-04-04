@@ -22,7 +22,7 @@
 
 #### Watch the course:
 
-[![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r)
+[![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
 
 ---
 
