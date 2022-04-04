@@ -1,13 +1,15 @@
 *Read this in other languages: [English](readme.md), [português](readme.pt.md)*
 
-# Curso de controle de versão - RBtech
+# Version control course - RBtech
 
-#### Objetivo:
+*Curso de Controle de Versão*
+
+## Goal:
 
 * Aprender o básico sobre sistemas de versionamento;
 * Aprender os comandos básicos de Git.
 
-#### Meu progresso:
+## My progress:
 
 | Lessons  | Notes                       | Concluída            |
 |:--------:|:---------------------------:|:--------------------:|
@@ -20,7 +22,7 @@
 | Lesson 7 |                             | :white_large_square: |
 | Lesson 8 |                             | :white_large_square: |
 
-#### Watch the course:
+## Watch the course:
 
 [![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
 

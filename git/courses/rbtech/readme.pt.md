@@ -2,12 +2,12 @@
 
 # Curso de controle de versão - RBtech
 
-#### Objetivo:
+## Objetivo:
 
 * Aprender o básico sobre sistemas de versionamento;
 * Aprender os comandos básicos de Git.
 
-#### Meu progresso:
+## Meu progresso:
 
 | Aulas  | Anotações                                    | Concluída            |
 |:------:|:--------------------------------------------:|:--------------------:|
@@ -20,7 +20,7 @@
 | Aula 7 |                                              | :white_large_square: |
 | Aula 8 |                                              | :white_large_square: |
 
-#### Assista ao curso:
+## Assista ao curso:
 
 [![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
 
