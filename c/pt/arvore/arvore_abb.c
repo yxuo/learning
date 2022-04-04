@@ -430,7 +430,7 @@ int arv_altura(Arv *arv)
         altura += altura_esq;
     else if (altura_dir > altura_esq)
         altura += altura_dir;
-    return altura;
+    return 1 + arv_altura(arv->Esq) + arv_altura(arv->Dir);
 }
 
 int arv_soma(Arv *arv)
