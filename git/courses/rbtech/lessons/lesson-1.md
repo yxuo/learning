@@ -182,19 +182,19 @@ If you are going to use GitHub or [GitLab](https://about.gitlab.com/) and you li
 
 ## Initial settings
 
-### Defina seu nome de usuário e email
+### Set your username and email
 
-Este será seu nome público em cada nova alteração feita em repositórios.
+This will be your public name in each new change made to repositories.
 
-Após instalar o Git, ele tentará usar o nome de usuário genérico, talvez ele use o nome de usuário do seu SO e um email modelo (`username@git.com` ou algo assim).
+After install Git, it will try to use a generic username. Maybe it use your OS username and a template email. (example: `username@git.com`)
 
-Para definir seu nome:
+To set your username:
 
 ```git
 git config --global user.name "Meu Nome"
 ```
 
-Para definir seu email:
+To set your email:
 
 ```git
 git config --global user.email "usuario@email.com"
@@ -202,16 +202,19 @@ git config --global user.email "usuario@email.com"
 
 > Susbtitua "meu nome" e "usuario@email.com" por seus usuário e email desejados.
 
-### Para ver as configurações atuais do Git
+### See current Git settings
 
 ```git
 git config --list
 ```
 
-Ele vai exibir o texto das configurações num editor de texto chamado VIM
-Use as setas ⬆️ ⬇️ para navegar. Para sair digite `:q` e confirme com `ENTER` :leftwards_arrow_w
+It will display the settings text in a text editor called **VIM**.
 
-## Fontes
+* To navigate use the arrow keys :arrow_up: :arrow_down:.
+
+* To exit type `:q` and PRESS `ENTER` :leftwards_arrow_with_hook:.
+
+## Source
 
 - [Recording Changes to the Repository - Git](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 - [Qual a diferença entre repositório, diretório e pasta? - Alura](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-repositorio-diretorio-e-pasta-117341)

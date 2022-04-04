@@ -184,7 +184,7 @@ Caso vá usar o GitHub ou [GitLab](https://about.gitlab.com/) e gosta de pratici
 
 Este será seu nome público em cada nova alteração feita em repositórios.
 
-Após instalar o Git, ele tentará usar o nome de usuário genérico, talvez ele use o nome de usuário do seu SO e um email modelo (`username@git.com` ou algo assim).
+Após instalar o Git, ele tentará usar o nome de usuário genérico, talvez ele use o nome de usuário do seu SO e um email modelo (exemplo: `username@git.com`).
 
 Para definir seu nome:
 
@@ -206,8 +206,11 @@ git config --global user.email "usuario@email.com"
 git config --list
 ```
 
-Ele vai exibir o texto das configurações num editor de texto chamado VIM
-Use as setas ⬆️ ⬇️ para navegar. Para sair digite `:q` e confirme com `ENTER` :leftwards_arrow_w
+Ele vai exibir o texto das configurações num editor de texto chamado **VIM**.
+
+- Para navegar use as setas :arrow_up: :arrow_down:.
+
+- Para sair digite `:q` e tecle `ENTER` :leftwards_arrow_with_hook:
 
 ## Fontes
 
