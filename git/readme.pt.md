@@ -6,10 +6,14 @@ Contém cursos de Git realizados até o momento.
 
 ## Cursos:
 
-Curso  de controle de versão - RBtech
+#### RBtech - Curso de Git para iniciantes
 
-[![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](courses/rbtech/readme.pt.md)
+[![](https://img.shields.io/static/v1.svg?label=cursando&labelColor=gray&message=12%&color=inactive)](courses/rbtech/readme.md)
+[![](https://img.shields.io/static/v1.svg?label=disponível&labelColor=gray&message=YouTube&color=dd3333)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
+![](https://img.shields.io/static/v1.svg?label=idioma&labelColor=gray&message=português&color=blue)
+
+[![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](courses/rbtech/readme.md)
 
 ---
 
-* Inspirado em: https://github.com/lfontinele/CursoDeGit
+* Inspired by: https://github.com/lfontinele/CursoDeGit

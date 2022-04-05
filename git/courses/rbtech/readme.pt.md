@@ -1,6 +1,6 @@
 *Read this in other languages: [English](readme.md), [português](readme.pt.md)*
 
-# Curso de controle de versão - RBtech
+# Curso de Git para iniciantes - RBtech
 
 ## Objetivo:
 
