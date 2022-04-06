@@ -2,12 +2,14 @@
 
 # Git course course for starters - RBtech
 
-*Curso de Controle de Versão*
+*Curso de Git para iniciantes*
 
 ## Goal:
 
-* Aprender o básico sobre sistemas de versionamento;
-* Aprender os comandos básicos de Git.
+* Learn the basics about versioning control systems;
+* Learn the basics of Git;
+* Be able to understand and manage a Git repository;
+* Whenever a doubt arises, ressearch the concepts and add to the notes.
 
 ## My progress:
 
