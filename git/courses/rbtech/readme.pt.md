@@ -14,7 +14,7 @@
 | Aulas  | Anotações                                    | Concluída            |
 |:------:|:--------------------------------------------:|:--------------------:|
 | Aula 1 | [Visualizar](lessons/lang/pt/lesson-1.pt.md) | :white_check_mark:   |
-| Aula 2 | [Visualizar](lessons/lang/pt/lesson-2.pt.md) | :white_large_square: |
+| Aula 2 | [Visualizar](lessons/lang/pt/lesson-2.pt.md) | :white_check_mark: |
 | Aula 3 |                                              | :white_large_square: |
 | Aula 4 |                                              | :white_large_square: |
 | Aula 5 |                                              | :white_large_square: |
