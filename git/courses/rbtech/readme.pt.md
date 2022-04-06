@@ -4,8 +4,10 @@
 
 ## Objetivo:
 
-* Aprender o básico sobre sistemas de versionamento;
-* Aprender os comandos básicos de Git.
+* Aprender o básico sobre sistemas de controle de versionameto;
+* Aprender os comandos básicos de Git;
+* Ser capaz de compreender e gerenciar um repositório Git;
+* Sempre que surgir uma dúvida, pesquisar os conceitos e adicionar às anotações.
 
 ## Meu progresso:
 
