@@ -462,6 +462,9 @@ Arv *arv_copiar(Arv *origem)
     if (!origem)
         return NULL;
 
+    // este (Arv *) antes do malloc chama-se type cast
+    // typecast significa conversão de tipo
+    // o malloc inicialmente retorna void, e nosso tipo é um struct Arv
     Arv *novo = (Arv *)malloc(sizeof(Arv));
     novo->valor = origem->valor;
     novo->Esq = arv_copiar(origem->Esq);
