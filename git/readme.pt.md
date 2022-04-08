@@ -8,7 +8,7 @@ Contém cursos de Git realizados até o momento.
 
 #### RBtech - Curso de Git para iniciantes
 
-[![](https://img.shields.io/static/v1.svg?label=cursando&labelColor=gray&message=25%&color=rosybrown)](courses/rbtech/readme.md)
+[![](https://img.shields.io/static/v1.svg?label=cursando&labelColor=gray&message=38%&color=rosybrown)](courses/rbtech/readme.md)
 [![](https://img.shields.io/static/v1.svg?label=disponível&labelColor=gray&message=YouTube&color=dd3333)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
 ![](https://img.shields.io/static/v1.svg?label=idioma&labelColor=gray&message=português&color=blue)
 
