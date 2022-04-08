@@ -30,7 +30,7 @@ Um conjunto de comandos de terminal que executam o sistema de controle de versã
 
 Git foi projetado para rodar em ambientes tipo-Unix (Linux, macOS, etc).
 
-Por este motivo, **o Git no Windows possui limitação ao usar comandos**, alguns podem não funcionar como deveriam **(como o comando de gerar chaves SSH)**.
+Por este motivo, **o Git cru, no Windows, possui má integração ao usar comandos**, alguns podem não funcionar como deveriam **(como o `git log -p`, gerar chaves SSH, entre outros)**.
 
 É por isso que no Windows há (e recomenda-se) o Git Bash.
 
@@ -337,7 +337,7 @@ Untracked files:
 
 Na pasta de trabalho (working directory):
 
-#### Preparar arquivo:
+#### Preparar arquivo (stage):
 
 > Adiciona arquivos novos ou alterados para a sala de espera (Staging area)
 
@@ -354,7 +354,7 @@ git add .
 
 Na sala de espera (staging area):
 
-#### Despreparar arquivo:
+#### Despreparar arquivo (unstage):
 
 > Remove arquivos da sala de espera (staging area) de volta para a pasta de trabalho (working directory).
 
@@ -370,15 +370,79 @@ git restore -A
 git restore .
 ```
 
-#### Confirmar arquivo:
+#### Confirmar arquivo (commit):
 
 ```bash
 git commit
 ```
 
+##### Mensagem de commit (VIM):
+
+Ao dar commit, uma tela do editor de texto VIM aparecerá:
+
+```vim
+|
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       new file:   teste.txt
+#
+~
+~
+~
+</Users/Rapha/git/project/.git/COMMIT_EDITMSG [unix] (23:26 07/04/2022)1,0-1 All
+"C:/Users/Rapha/git/project/.git/COMMIT_EDITMSG" [unix] 8L, 210B
+```
+
+> Você irá escrever uma mensagem de commit na primeira linha, então você irá salvar e sair.
+> 
+> Para editar o texto no VIM, primeiro entraremos no modo de inserção, pressionando `i`.
+
+Modo inserção:
+
+```vim
+i
+```
+
+> Agora digite sua mensagem de commit na primeira linha.
+> 
+> Quando terminar, tecle `Esc`.
+
+Sair do modo de inserção:
+
+```VIM
+Esc
+```
+
+> Para salvar, você irá sobrescrever o arquivo através do comando `:w`, e teclar `Enter`.
+
+Sobrescrever (salvar arquivo existente):
+
+```vim
+:w
+```
+
+> A mensagem de commit está feita, podemos sair.
+
+Sair:
+
+```vim
+:q
+```
+
+##### Não gosto do VIM, quero outro editor de texto!
+
+```git
+git config --global core.editor "notepad"
+```
+
+> Neste exemplo mudamos para o notepad, você pode mudar para o nano, VSCode ou qualquer outro. 
+
 No repositório local:
 
-#### Desconfirmar arquivo:
+#### Desconfirmar arquivo (uncommit):
 
 > Cria um novo commit que irá reverter as mudanças de outro commit.
 > 
@@ -420,13 +484,13 @@ Se deseja que o Git não avise nem te cobre sobre um certo arquivo, há duas man
 
 Ambos arquivos usam a mesma sintaxe. Veja este exemplo:
 
-#### Usando o arquivo exclude (recomendado):
+#### Exclude (recomendado):
 
 É recomendado para a maioria dos casos pois são requisitos que ficam salvos apenas no seu PC. Isto não irá para outros repositórios.
 
 Abra o arquivo `.git/info/exclude` para editar.
 
-#### Usando o arquivo .gitgnore:
+#### .gitgnore:
 
 Em alguns casos é interessante sincronizar as regras para excluir arquivos, para isso é usado o `.gitgnore`
 
@@ -468,20 +532,20 @@ flowchart
 
 ## Fontes
 
-* [How To Completely Reset a Git Repository – Cloud Savvy IT](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
+* [Cloud Savvy IT- How To Completely Reset a Git Repository ](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
 
-* [Why Git is Better than X - Z.GitHub.io](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
+* [Z.GitHub.io - Why Git is Better than X](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
 
-* [Working on Git for GUI - GeeksforGeeks](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
+* [GeeksforGeeks - Working on Git for GUI](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
 
-* [git commit - What is the Sign Off feature in Git for? - StackOverflow](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
+* [StackOverflow - git commit - What is the Sign Off feature in Git for?](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
 
-* [Git Bash: Getting Started with Git on Windows - Git Tower](https://www.git-tower.com/learn/git/faq/git-bash)
+* [Git Tower - Git Bash: Getting Started with Git on Windows](https://www.git-tower.com/learn/git/faq/git-bash)
 
-* [Como usar a integração do Git no Visual Studio Code - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
+* [DigitalOcean - Como usar a integração do Git no Visual Studio Code](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
 
-* [Most basic Git commands - RubiGarage](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
+* [RubiGarage - Most basic Git commands](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
 
-* [What is the `git restore` command and what is the difference between `git restore` and `git reset`? - Stack Overflow](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
+* [StackOverflow - What is the `git restore` command and what is the difference between `git restore` and `git reset`?](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
 
-* [Viewing the Commit History - Git](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+* [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
