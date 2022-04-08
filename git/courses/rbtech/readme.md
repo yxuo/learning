@@ -13,7 +13,7 @@
 
 ## My progress:
 
-| Lessons  | Notes                       | Concluída            |
+| Lessons  | Notes                       | Completed            |
 |:--------:|:---------------------------:|:--------------------:|
 | Lesson 1 | [View](lessons/lesson-1.md) | :white_check_mark:   |
 | Lesson 2 |                             | :white_check_mark:   |
