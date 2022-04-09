@@ -17,15 +17,16 @@ Ao instalar o Git você tem dois programas: Git Bash e Git GUI.
 
 Qual usar?
 
-1. Git Bash - Todos os comandos estão lá, qualquer problema você saberá usar os comandos.
+1. Git Bash - Todos os comandos estão lá, qualquer problema você usará os comandos para resolver.
 
-2. VSCode - No dia-a-dia, se você quer praticidade e agilidade, provavelmente preferirá usar dentro do VSCode. Na maioria das atividades é possível usar perfeitamente o Git no VSCode.
+2. VSCode - No dia-a-dia, se você quer praticidade e agilidade, provavelmente preferirá usar dentro do VSCode.  
+   Na maioria das atividades é possível usar perfeitamente o Git no VSCode.
    
    A Microsoft criou integração, por padrão, do VSCode com o Git (e GitHub). Ele já vem pronto para usar Git.
 
 ## Git (terminal)
 
-Este é o Git original, o Git cru!
+Este é o Git original, o Git cru!  
 Um conjunto de comandos de terminal que executam o sistema de controle de versão Git.
 
 Git foi projetado para rodar em ambientes tipo-Unix (Linux, macOS, etc).
