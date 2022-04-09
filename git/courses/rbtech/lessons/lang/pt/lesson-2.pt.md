@@ -211,7 +211,7 @@ Enviar alterações para o repositório remoto:
 
 ![Git VSCode, botão de iniciar repositório](../../img/git_vscode-push.png)
 
-Desfazer confirmações (commits) no repositório local (undo?):
+Desfazer confirmações (commits) no repositório local:
 
 ![Git VSCode, botão de iniciar repositório](../../img/git_vscode-revert.png)
 
@@ -532,20 +532,20 @@ flowchart
 
 ## Fontes
 
-* [Cloud Savvy IT- How To Completely Reset a Git Repository ](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
+* [How To Completely Reset a Git Repository - Cloud Savvy IT](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
 
-* [Z.GitHub.io - Why Git is Better than X](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
+* [Why Git is Better than X - Z.GitHub.io](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
 
-* [GeeksforGeeks - Working on Git for GUI](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
+* [Working on Git for GUI - GeeksforGeeks](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
 
-* [StackOverflow - git commit - What is the Sign Off feature in Git for?](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
+* [git commit - What is the Sign Off feature in Git for? - StackOverflow](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
 
-* [Git Tower - Git Bash: Getting Started with Git on Windows](https://www.git-tower.com/learn/git/faq/git-bash)
+* [Git Bash: Getting Started with Git on Windows - Git Tower](https://www.git-tower.com/learn/git/faq/git-bash)
 
-* [DigitalOcean - Como usar a integração do Git no Visual Studio Code](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
+* [Como usar a integração do Git no Visual Studio Code - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
 
-* [RubiGarage - Most basic Git commands](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
+* [Most basic Git commands - RubiGarage](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
 
-* [StackOverflow - What is the `git restore` command and what is the difference between `git restore` and `git reset`?](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
+* [What is the `git restore` command and what is the difference between `git restore` and `git reset`? - StackOverflow](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
 
-* [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+* [Viewing the Commit History - Git](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)

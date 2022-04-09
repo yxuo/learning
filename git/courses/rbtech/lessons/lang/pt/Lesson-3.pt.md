@@ -137,8 +137,8 @@ Ele exibe todos os commits. Em cada commit ele exibe todos os detalhes, inclusiv
 
 ## Fontes:
 
-* [Git - gitk Documentation](https://git-scm.com/docs/gitk/)
+* [gitk Documentation - Git](https://git-scm.com/docs/gitk/)
 
-* [Git - git-gui Documentation](https://git-scm.com/docs/git-gui/)
+* [git-gui Documentation - Git](https://git-scm.com/docs/git-gui/)
 
-* [Git - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+* [Tagging - Git](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
