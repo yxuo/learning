@@ -220,10 +220,12 @@ Ele vai exibir o texto das configurações num editor de texto chamado **VIM**.
 
 ## Fontes
 
-- [Recording Changes to the Repository - Git](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
-- [Qual a diferença entre repositório, diretório e pasta? - Alura](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-repositorio-diretorio-e-pasta-117341)
-- [What is the difference between working directory and repository - Medium](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
+* [**Recording Changes to the Repository** - Git](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
+* [**Qual a diferença entre repositório, diretório e pasta?** - Alura](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-repositorio-diretorio-e-pasta-117341)
+
+* [**What is the difference between working directory and repository** - Medium](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
 
 Referência para tradução de working directory, staging area e git directory:
 
-- [Documentação - Git](https://git-scm.com/docs/git/pt_BR)
+* [**Documentação** - Git](https://git-scm.com/docs/git/pt_BR)

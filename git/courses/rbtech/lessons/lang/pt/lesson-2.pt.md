@@ -171,15 +171,13 @@ Também há uma função útil **que não possui botão**, e vale a pena destaca
   
   > O oposto da função `Stage Changed`
   
-  Desprepara arquivo para alteração.
+  Despreparar arquivo da sala de espera.
   
   - **Atalho:** `Ctrl U`;
   
   - **Menu:** Commit > Unstage From Commit.
   
-  - **Comando equivalente**: `git restore --staged`.
-    
-    > Em versões anteriories a 2.24 usava-se o comando: `git reset`
+  - **Comando equivalente**: `git reset --staged`.
 
 ## Git VSCode
 
@@ -195,7 +193,7 @@ Preparar alterações (stage):
 
 Despreparar alterações:
 
-* Comando equivalente: `git restore`
+* Comando equivalente: `git reset`
 
 ![Git VSCode, botão de iniciar repositório](../../img/git_vscode-unstage.png)
 
@@ -359,26 +357,32 @@ Na sala de espera (staging area):
 > Remove arquivos da sala de espera (staging area) de volta para a pasta de trabalho (working directory).
 
 ```bash
-git restore arquivo.txt
-git restore arquivo.txt
+git reset arquivo.txt
+git reset arquivo.txt
 ```
 
 Despreparar todos os arquivos:
 
 ```bash
-git restore -A
-git restore .
+git reset -A
+git reset.
 ```
 
-#### Confirmar arquivo (commit):
+#### Despreparar e desfazer alterações no arquivo:
+
+```git
+git restore
+```
+
+#### Confirmar arquivo:
 
 ```bash
 git commit
 ```
 
-##### Mensagem de commit (VIM):
+Ao dar commit, uma tela do editor de texto `VIM` aparecerá:
 
-Ao dar commit, uma tela do editor de texto VIM aparecerá:
+##### Mensagem de commit (VIM):
 
 ```vim
 |
@@ -519,12 +523,12 @@ beta*
 ```mermaid
 flowchart
     subgraph Local [Local]
-        workdir["Pasta de Trabalho<br><sub>working directory<sub/>"]
-        stage["Sala de espera<br><sub>staging area<sub/>"]
-        Local_repo["Repositório Git<br><sub>Git directory<sub/>"]
+        workdir["Pasta de Trabalho<br><sub>working directory</sub>"]
+        stage["Sala de espera<br><sub>staging area</sub>"]
+        Local_repo["Repositório Git<br><sub>Git directory</sub>"]
 
         workdir --> |"git add"| stage
-        stage --> |"git restore"| workdir
+        stage --> |"git reset"| workdir
         stage --> |git commit| Local_repo
         Local_repo --> |git revert| stage
     end
@@ -532,20 +536,20 @@ flowchart
 
 ## Fontes
 
-* [How To Completely Reset a Git Repository - Cloud Savvy IT](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
+* [**How To Completely Reset a Git Repository** - Cloud Savvy IT](https://www.cloudsavvyit.com/14460/how-to-completely-reset-a-git-repository-including-untracked-files/)
 
-* [Why Git is Better than X - Z.GitHub.io](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
+* [**Why Git is Better than X** - Z.GitHub.io](Why Git is Better Than X](https://z.github.io/whygitisbetter/)
 
-* [Working on Git for GUI - GeeksforGeeks](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
+* [**Working on Git for GUI** - GeeksforGeeks](https://www.geeksforgeeks.org/working-on-git-for-gui/) 
 
-* [git commit - What is the Sign Off feature in Git for? - StackOverflow](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
+* [**git commit - What is the Sign Off feature in Git for?** - StackOverflow](https://stackoverflow.com/questions/1962094/what-is-the-sign-off-feature-in-git-for)
 
-* [Git Bash: Getting Started with Git on Windows - Git Tower](https://www.git-tower.com/learn/git/faq/git-bash)
+* [**Git Bash: Getting Started with Git on Windows** - Git Tower](https://www.git-tower.com/learn/git/faq/git-bash)
 
-* [Como usar a integração do Git no Visual Studio Code - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
+* [**Como usar a integração do Git no Visual Studio Code** - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code-pt)
 
-* [Most basic Git commands - RubiGarage](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
+* [**Most basic Git commands** - RubiGarage](https://rubygarage.org/blog/most-basic-git-commands-with-examples)
 
-* [What is the `git restore` command and what is the difference between `git restore` and `git reset`? - StackOverflow](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
+* [**What is the `git restore` command and what is the difference between `git restore` and `git reset`?** - StackOverflow](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor)
 
-* [Viewing the Commit History - Git](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+* [**Viewing the Commit History** - Git](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)

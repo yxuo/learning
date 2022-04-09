@@ -216,6 +216,8 @@ It will display the settings text in a text editor called **VIM**.
 
 ## Source
 
-- [Git - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
-- [Alura - Qual a diferença entre repositório, diretório e pasta?](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-repositorio-diretorio-e-pasta-117341)
-- [Medium - What is the difference between working directory and repository](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
+* [**Recording Changes to the Repository** - Git](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+
+* [**Qual a diferença entre repositório, diretório e pasta?** - Alura](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-repositorio-diretorio-e-pasta-117341)
+
+* [**What is the difference between working directory and repository** - Medium](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
