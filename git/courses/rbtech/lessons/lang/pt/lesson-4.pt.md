@@ -83,6 +83,15 @@ git reset "file.txt"
 git restore "file.txt"
 ```
 
+## Renomear arquivo entre maiúsculas:
+
+:information_source: Funciona apenas em sistemas que não diferenciam maiúsculas (Windows).
+
+```git
+git mv Hello.txt tello.txt
+git mv "pasta/pasta2/Arquivo.txt" "pasta/pasta2/arquivo.txt"
+```
+
 ## Resumindo os principais comandos:
 
 ```mermaid
