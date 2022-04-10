@@ -250,7 +250,19 @@ Neste caso subimos 3 pastas.
 cd /c/users/public
 ```
 
-Neste exemplo entramos na pasta de usuário público do Windows.
+> Neste exemplo entramos na pasta de usuário público do Windows.
+
+### Copiar seleção:
+
+Git Bash: `Ctrl`+`Shift`+`c`.
+
+Powershel ou Prompt de Comando: `Ctrl`+`c`.
+
+### Colar seleção:
+
+Git Bash: `Ctrl`+`Shift`+`v`.
+
+Powershel ou Prompt de Comando: `Ctrl`+`v`.
 
 ## Comandos Git
 
@@ -455,12 +467,27 @@ No repositório local:
 
 ```bash
 git revert 085bb3bcb608e1e8451d4b2432f8ecbe63
+git revert 085bb3b
 ```
+
+> :information_source: Você pode inserir o checksum inteiro ou parte do início.
+> 
+> O VSCode exibe apenas os 7 primeiros caracteres pois isso já dá quase 270 milhões de combinações.
+> 
+> ![parte do checksum do commit no vscode](../../img/git-checksum-part-vscode.png)
+> 
+> :warning: Mas, **na dúvida, sempre use a tag completa**, como uma boa prática a ser seguida.
 
 Ver commits e obter código:
 
 ```bash
 git log
+```
+
+retorno:
+
+```git
+commit a18672b8a8499139c9707719be4155e5df8740b2 (HEAD -> master)
 ```
 
 #### Publicar commit no servidor remoto
