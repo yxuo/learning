@@ -42,7 +42,7 @@ Retorno:
 
 ## Editar commit:
 
-:warning: **QUAISQUER arquivos preparados (`git add`) após o commit anterior, serão incluídos no novo commit editado.**
+:warning: QUAISQUER arquivos preparados (staged) após o commit anterior, serão incluídos no *novo* commit editado.
 
 Não é apenas o nome que é alterado. 
 
