@@ -91,7 +91,7 @@ O retorno é literalmente o `git log` + `git diff`.
 
 > :warning: (Windows) Caso use o comando `git log -p` fora do Git Bash,  ele abrirá o VIM para exibir o log, ao invés de imprimir e encerrar o comando automaticamente.
 > 
-> Para sair do VIM pressione `:q`.
+> Para sair do VIM digite `:q` + `Enter`.
 
 ## Visualizar commits com alterações, mas apenas alguns:
 
