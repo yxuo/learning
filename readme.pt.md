@@ -2,11 +2,17 @@
 
 # Repositório de aprendizagem
 
-![](5da0a696c4ad346d53ee7430be972961989ec78f.gif)
+![](amazing-selfish.gif)
 
 ## Objetivo:
 
 1. Estudar não muito rápido, mas muito consistente;
+   
+   * Atualizar o repositório todo dia;
+   
+   * Sempre postar o conteúdo no fim do dia, mesmo que incompleto;
+   
+   * Com o tempo o conteúdo será atualizado.
 
 2. Incentivar a criação de:
    
@@ -27,3 +33,27 @@
    * Tutoriais
    
    * Matérias
+
+### Objetivo da documentação
+
+1. Aprender sobre o assunto;
+
+2. Ser legível;
+
+3. Ser consultável;
+
+4. Ser didático pelo autor e leitores interessados;
+
+5. Sanar qualquer dúvida que surgir, além do que é ensinado;
+
+6. Ter profundidade não maior que o necessário e razoável;
+
+7. Como boa prática, evitar ao máximo conteúdo autoral.
+   
+   - E citar fontes de pesquisa.
+
+## Padrões
+
+* Preferência por conteúdo em inglês;
+  
+  * À medida que surge interesse ou necessidade o conteúdo é traduzido;
