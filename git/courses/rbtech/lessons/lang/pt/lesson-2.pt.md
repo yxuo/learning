@@ -389,11 +389,17 @@ git restore
 
 #### Confirmar arquivo:
 
+```git
+git commit -m "primeiro commit"
+```
+
+Confirmar sem mensagem:
+
 ```bash
 git commit
 ```
 
-Ao dar commit, uma tela do editor de texto `VIM` aparecerá:
+Ao dar commit desta maneira, uma tela do editor de texto `VIM` aparecerá:
 
 ##### Mensagem de commit (VIM):
 
