@@ -20,13 +20,15 @@ Servem como atalhos para algum commit que você considere importante, um marco d
 
 Normalmente é usado para marcar as novas versões de programas (e.g. `v1.0`, `v1.1`)
 
+> É possível adicionar várias tags para o mesmo commit.
+
 Há dois tipos de tags:
 
 * **Tag leve**  - um mero atalho que aponta para um commit específico;
 
 * **Tag anotada** - além de ser um atalho para um commit, ele contém o nome , email, data, hash e uma mensagem de tag (opcional, mas recomendado). 
 
-Qual devo usar?
+### Qual devo usar?
 
 * **Tag leve**: Caso queira criar uma tag temporária ou simplesmente não quer guardar informações, apenas apontar.
 
@@ -148,7 +150,7 @@ Cada commit tem um hash único.
 
 ### Evolução de uma árvore Git
 
-Imagine que criamos um repositório novo, adicionamos um arquivo `readme.md` e confirmamos no Git:
+Criar novo repositório, criar arquivo `readme.md`, enviar primeiro commit:
 
 ```git
 git init
@@ -161,7 +163,7 @@ flowchart LR
 subgraph L1[" "]
 a(("<u>master</u><br>576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("abe667b"))
 end
-N("Você está<br>aqui") -..-> a
+N("HEAD<br><sub>Você está aqui") -..-> a
 
 style L1 fill: transparent, stroke: transparent
 style N fill:#fef4ac, stroke:#d3d398
@@ -173,6 +175,18 @@ style d stroke-width: 0, fill: transparent,color: transparent
 linkStyle 0,1,2 stroke: transparent
 ```
 
+* O repositório foi criado, sem commits, sem nada.
+
+* Então criamos o readme.md, e confirmamos.
+
+* Como resultado, nossa árvore Git é uma única bolinha, um único commit
+
+* HEAD representa duas coisas:
+  
+  1. O commit em que você (usuário) está;
+  
+  2. A cabeça do seu ramo.
+
 Editamos o readme e confirmamos as alterações:
 
 ```mermaid
@@ -180,7 +194,7 @@ flowchart LR
 subgraph S[" "]
 a(("576ac7b"))---b(("<u>master</u><br>9a48e92"))---c(("f3661c8"))---d(("abe667b"))
 end
-N("Você está<br>aqui") -.-> b
+N("HEAD<br><sub>Você está aqui") -..-> a
 
 style S fill: transparent, stroke: transparent
 style N fill:#fef4ac, stroke:#d3d398
@@ -193,7 +207,7 @@ linkStyle 1,2 stroke: transparent
 linkStyle 0 stroke:darkblue,stroke-width:8px;
 ```
 
-* Note que o 
+* Perceba que você estava
 
 ## Branch (ramo)
 
@@ -354,11 +368,10 @@ style branch fill: white, stroke: gray, stroke-width: 2
 
 *Mapa resumido. Algumas estações e a linha 3 (cancelada) foram ocultados para fins didáticos.*
 
-
-
 ## Fontes:
 
 * [Criando Tags - Git](https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Criando-Tags)
+* [What is HEAD in Git? - Stack Overflow](https://stackoverflow.com/questions/2304087/what-is-head-in-git)
 
 ### Imagens:
 
