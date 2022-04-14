@@ -144,35 +144,117 @@ commit
 merge test
 ```
 
-Cada bolinha é um commit.
+A imagem acima é uma árvore Git.
 
-Cada commit tem um hash único.
+Cada *bolinha* é um commit, cada um contendo cada alteração publicada no repositório.  
+Como uma verdadeira máquina do tempo.
 
-### Evolução de uma árvore Git
+Nesta árvore temos dois ramos (branchs):
 
-Criar novo repositório, criar arquivo `readme.md`, enviar primeiro commit:
+* Azul - o ramo principal chamado `master` (nome automático)
+
+* Vermelho - o ramo extra, foi chamado chamado de `test`
+
+### HEAD (você)
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> c
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->a
+a(("abe667b"))---b(("f3661c8"))---c(("9a48e92"))---d(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+linkStyle 2,3,4 stroke:darkblue,stroke-width:8px;
+```
+
+HEAD é um ponteiro que aponta para o commit em que você está.
+
+#### Mover HEAD para qualquer commit:
 
 ```git
-git init
-git add readme.md
-git commit -m "primeiro commit"
+git checkout 9a48e92
 ```
+
+Resultado:
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> b
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->d
+d(("⠀<b>??⠀"))-.-c(("⠀<b>??⠀"))-.-b(("9a48e92"))---a(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+style d stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+linkStyle 4 stroke:darkblue,stroke-width:8px
+linkStyle 2,3 stroke:darkblue,stroke-width:8px
+```
+
+Como regra geral, você nunca consegue visualizar commits a sua frente, apenas atrás de você.  
+Por isso a imagem mostra duas icógnitas, estão a frente de você.
+
+#### Mover para a cabeça do branch:
+
+```git
+git checkout HEAD
+```
+
+#### V
+
+### Ramo (branch)
+
+> O branch é um ponteiro móvel para um commit.
+> 
+> A cada novo commit ele avança automaticamente.
+ 
+*Documentação no site do Git*.
+
+Você verá o branch através de seu nome (`master`, `test`, `meu ramo`, etc).
 
 ```mermaid
 flowchart LR
-subgraph L1[" "]
-a(("<u>master</u><br>576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("abe667b"))
+
+H["HEAD<br><sub>Você está aqui"] -.-> c
+T2>"v0.2<br><sub>Etiqueta"] -.-> d
+B1["master<br><sub>cabceça do ramo"] -.-> d
+
+subgraph S1[" "]
+a(("576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("abe667b"))
 end
-N("HEAD<br><sub>Você está aqui") -..-> a
 
-style L1 fill: transparent, stroke: transparent
-style N fill:#fef4ac, stroke:#d3d398
+%%subgraph S2[" "]
+b---2a(("79af9f5"))---2b(("c82f976"))
+%%end
+
+B2["test<br><sub>cabceça do ramo"] -.-> 2b
+T1>"v0.1<br><sub>Etiqueta"] -.-> a
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
 style a stroke:darkblue, stroke-width: 4px
-style b stroke-width: 0, fill: transparent,color: transparent
-style c stroke-width: 0, fill: transparent,color: transparent
-style d stroke-width: 0, fill: transparent,color: transparent
-
-linkStyle 0,1,2 stroke: transparent
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+style 2a stroke:darkred, stroke-width: 4px
+style 2b stroke:darkred, stroke-width: 4px
+linkStyle 3,4,5 stroke:darkblue,stroke-width:8px;
+linkStyle 6,7 stroke:darkred,stroke-width:8px;
 ```
 
 * O repositório foi criado, sem commits, sem nada.
@@ -228,18 +310,6 @@ style b2 stroke:darkred, stroke-width: 4px
 linkStyle 0,1,2 stroke:darkblue,stroke-width:8px;
 linkStyle 3,4 stroke:darkred,stroke-width:8px;
 ```
-
-Isto é uma árvore Git.
-
-Cada bolinha é um commit, neles você pode ver seus checksums.
-
-O primeiro commit da árvore foi marcado com a tag `v1.0`.
-
-Nesta árvre temos dois ramos:
-
-* Azul - o ramo principal `master`.
-
-* Vermelho - o ramo extra (`test`) que foi criado para testes.
 
 ## Navegando na árvore
 
