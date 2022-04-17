@@ -210,7 +210,7 @@ git config --list
 
 It will display the settings text in a text editor called **VIM**.
 
-* To navigate use the arrow keys :arrow_up: :arrow_down:.
+* To navigate in insert mode use the arrow keys :arrow_up: :arrow_down:.
 
 * To exit type `:q` and PRESS `ENTER` :leftwards_arrow_with_hook:.
 

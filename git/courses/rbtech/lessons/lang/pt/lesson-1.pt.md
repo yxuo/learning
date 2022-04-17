@@ -214,7 +214,7 @@ git config --list
 
 Ele vai exibir o texto das configurações num editor de texto chamado **VIM**.
 
-- Para navegar use as setas :arrow_up: :arrow_down:.
+- Para navegar no modo inserção use as setas :arrow_up: :arrow_down:.
 
 - Para sair digite `:q` e tecle `ENTER` :leftwards_arrow_with_hook:
 
