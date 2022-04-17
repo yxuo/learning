@@ -16,6 +16,325 @@
 
 * Ramo, ramificação, branch - divisões da árvore Git.
 
+## Árvore Git
+
+```mermaid
+gitGraph:
+options
+{
+    "nodeSpacing": 90,
+    "nodeRadius": 10
+}
+end
+commit
+commit
+branch test
+checkout test
+commit
+commit
+checkout master
+commit
+commit
+merge test
+```
+
+A imagem acima é uma representação da árvore Git.
+
+Nesta árvore, por exemplo, contém dois ramos (branches):
+
+* Azul - o ramo principal chamado `master`
+
+* Vermelho - o ramo extra, foi chamado chamado de `test`
+
+> Por padrão o primeiro branch criado é nomeado "`master`".
+
+#### Visualizar árvore inteira:
+:star: Todos os comandos do `git log` podem ser usados com branches, tags e commits.
+
+Este comando sempre exibe a árvore inteira do repositório, independente de onde o HEAD esteja.
+
+```git
+git log --all 
+```
+
+#### Visualizar apenas um ramo específico:
+
+```git
+git log master
+git log test
+```
+
+
+#### Visualizar apenas uma linha:
+
+*Recaptulação.*
+
+```git
+git log --pretty=oneline
+git log --oneline
+```
+
+#### Visualizar em forma de árvore
+
+:star: Todos os parâmetros podem ser combinados.
+
+```git
+git log --graph
+git log --graph --oneline
+git log --graph --oneline --all
+```
+
+Exemplo de saída:
+
+```git
+* 605e3ff (test) test file
+| * a18672b (master) teste del temp.txt
+| * 99f4c41 teste del 2
+| * 7f565c3 (tag: tague2, tag: tague1) teste del
+|/
+* 9bb1af9 (HEAD) outro commit (edit)
+* 1a3009c primeiro commit
+* 576ac7b commit 0
+```
+
+#### Visualizar HEAD (padrão)
+
+Navegando no VIM (modo visualização):
+
+* :arrow_up: `K` - Mover uma linha acima
+* :arrow_down: `J` - Mover uma linha abaixo
+* :arrow_double_up: `PgUp` - Mover várias linhas acima
+* :arrow_double_down: `PgDn` - Mover várias linhas acima
+* `q` - sair
+
+## Commit (confirmação)
+
+```mermaid
+gitGraph:
+options
+{
+    "nodeSpacing": 90,
+    "nodeRadius": 10
+}
+end
+commit
+commit
+commit
+```
+
+Cada *bolinha* da árvore é um commit do repositório.
+
+O commit é um objeto Git que contém todas as alterações feitas naquele período, como uma verdadeira máquina do tempo.
+
+Por padrão, o primeiro branch criado no Git é nomeado `master`.
+
+### Ver detalhes do commit:
+
+```git
+git show 576ac7b
+```
+
+## HEAD (você)
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> B1
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->a
+a(("abe667b"))---b(("f3661c8"))---c(("9a48e92"))---d(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+linkStyle 2,3,4 stroke:darkblue,stroke-width:8px;
+```
+
+HEAD é um ponteiro para o commit em que você está.
+
+Por padrão o HEAD aponta para o ramo `master` (que aponta para o último commit deste ramo)
+
+## Navegando pela árvore
+
+### Navegar para qualquer commit:
+
+```git
+git checkout 9a48e92
+```
+
+Resultado:
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> b
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->d
+d(("⠀<b>??⠀"))-.-c(("⠀<b>??⠀"))-.-b(("9a48e92"))---a(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+style d stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+linkStyle 4 stroke:darkblue,stroke-width:8px
+linkStyle 2,3 stroke:darkblue,stroke-width:8px
+```
+
+Por padrão, o `git log` exibe commits a partir do HEAD (onde você está).  
+Em outras palavras, `git log` é o mesmo que `git log HEAD`.
+
+Note também que `git log` só exibe commits anteriores, nunca commits a frente.
+
+> O máximo que daria para fazer, neste caso, é visualizar todos os commits do ramo ou da árvore inteira.
+> 
+> No VSCode também é possível visualizar de diversas maneiras:
+>
+> ![Visualizando árvores no VSCode](../../img/git-branch-vscode.png)
+
+### Navegar para o commit anterior:
+
+```git
+git checkout HEAD~
+git checkout HEAD~1
+```
+
+Resultado:
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> a
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->d
+d(("⠀<b>??⠀"))-.-c(("⠀<b>??⠀"))-.-b(("⠀<b>??⠀"))-.-a(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+style c stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+style d stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
+linkStyle 2,3,4 stroke:darkblue,stroke-width:8px
+```
+
+> Moveu-se um commit atrás do HEAD.
+
+### Navegar vários commits atrás:
+
+```git
+git checkout HEAD~3
+```
+
+> Moveu-se três commits atrás do HEAD.
+
+### Navegar para a cabeça do ramo:
+
+```git
+git checkout master
+```
+
+Resultado:
+
+```mermaid
+flowchart RL
+
+H["HEAD<br><sub>Você está aqui"] -.-> B1
+
+subgraph S1[" "]
+B1["master<br><sub>cabeça do ramo"]-.->d
+d(("abe667b"))---c(("f3661c8"))---b(("9a48e92"))---a(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+linkStyle 4 stroke:darkblue,stroke-width:8px
+linkStyle 2,3 stroke:darkblue,stroke-width:8px
+```
+
+### Outras formas de navegar:
+:star: Todos os comandos do `git checkout` podem ser usados no HEAD, em branches, commits e tags:
+
+```git
+git checkout master~3
+git checkout f3661c8~3
+git checkout v1.0~3
+```
+
+### Histórico de commits navegados:
+
+```git
+git reflog --pretty=newline
+```
+
+## Branch (ramo)
+
+```mermaid
+flowchart LR
+
+%%H["HEAD<br><sub>Você está aqui"] -.-> c
+%%T2>"v0.2<br><sub>Etiqueta"] -.-> d
+B1["master<br><sub>cabceça do ramo"] -.-> d
+
+subgraph S1[" "]
+a(("576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("abe667b"))
+end
+
+subgraph S2[" "]
+b---2a(("79af9f5"))---2b(("c82f976"))
+end
+
+B2["test<br><sub>cabceça do ramo"] -.-> 2b
+%%T1>"v0.1<br><sub>Etiqueta"] -.-> a
+
+%%style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style S2 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+style 2a stroke:darkred, stroke-width: 4px
+style 2b stroke:darkred, stroke-width: 4px
+linkStyle 1,2,3 stroke:darkblue,stroke-width:8px;
+linkStyle 4,5 stroke:darkred,stroke-width:8px;
+```
+
+O ramo (branch) é um ponteiro móvel para um commit.  
+A cada novo commit o ramo avança automaticamente.
+
+Deste modo, todo ramo aponta para o commit mais atual, tornando possível executar um `git log master`, por exemplo.
+
+Você visualiza os ramos através de seus nomes (`master`, `test`, `qualquer-nome`, etc).
+
+### Criar novo branch:
+
+```git
+git branch abcde
+```
+
+### Juntar um ramo em outro:
+
+Você tem um ramo `A` (origem) e outro ramo `B` (destino).
+
+Caso você queira mesclar o ramo `A` no ramo `B` você fará o seguinte:
+
+
+
 ## Tag (etiqueta)
 
 Servem como atalhos para algum commit que você considere importante, um marco do seu projeto.
@@ -35,6 +354,57 @@ Há dois tipos de tags:
 * **Tag leve**: Caso queira criar uma tag temporária ou simplesmente não quer guardar informações, apenas apontar.
 
 * **Tag anotada**: Na dúvida, sempre crie tags anotadas, eles terão registros para você consultar depois.
+
+### Criando uma tag
+
+Tags podem ser criadas em commits, HEADs e branches (que no fim apontam para um commit).
+
+Várias tags podem apontar para um mesmo commit.
+
+Por padrão as tags são criadas no commit onde você está atualmente (HEAD).  
+Em outras palavras, `git tag v0.1` é o mesmo que `git tag v0.1 HEAD`
+
+* `v0.1` é um exemplo de nome de tag
+
+### Remover tag:
+
+```git
+git tag --delete v0.1
+```
+
+### Criar tag leve:
+
+:warning: Não encorajado!
+
+```git
+git tag v1.0
+```
+
+### Criar tag anotada:
+
+```git
+git tag -a v1.0 -m "versao 1.0"
+```
+
+### Criar tag para um commit ou branch:
+
+```git
+git tag -a v0.0 -m "primeira versao" 7f565c3
+git tag -a v0.0 -m "primeira versao" master
+```
+
+### Criando tags em outros programas:
+
+VSCode:
+
+![git tag no VSCode](../../img/git-tag-vscode.png)
+
+Gitk:
+
+![git tag no gitk](../../img/git-tag-gitk.png)
+
+> É possível criar tags apenas no gitk, não no Git GUI.
+
 
 ### Listar tags:
 
@@ -70,156 +440,39 @@ index 95d09f2..83063e3 100644
 --- a/teste.txt
 ```
 
-### Ver detalhes do commit apenas:
-
-```git
-git show 7f565c37e45effb008ef146b5661eb40e302e2d3 
-```
-
-### Criar tag leve:
-
-> :warning: Não é encorajado usar tags leves, pois eles não contém informações
-
-Por padrão as tags são criadas apontando para o commit mais recente.
-
-```git
-git tag v1.0
-```
-
-### Criar tag anotada:
-
-```git
-git tag -a v1.0 -m "versao 1.0"
-```
-
-### Criar tag em qualquer commit:
-
-> Como boa prática, o exemplo criou uma tag anotada.
-
-```git
-git tag -a v0.0 -m "primeira versao" 7f565c37e45effb008ef146b5661eb40e302e2d3
-```
-
-Resumindo, o comando é: `git tag` + checksum do commit.
-
-Tags no VSCode:
-
-![git tag no VSCode](../../img/git-tag-vscode.png)
-
-Tags no gitk:
-
-![git tag no gitk](../../img/git-tag-gitk.png)
-
-> Note que é possível criar tags no Git GUI, apenas no gitk.
-
-### Remover tag:
-
-```git
-git tag --delete "primeira versao"
-```
-
-## Trocar de commit usando tag:
-
-## Ver detalhes do commit:
-
-```git
-git show 576ac7be6b79d4e260ac9be5291134e88761854f
-```
-
-## Árvore Git
-
-```mermaid
-gitGraph:
-options
-{
-    "nodeSpacing": 90,
-    "nodeRadius": 10
-}
-end
-commit
-commit
-branch test
-checkout test
-commit
-commit
-checkout master
-commit
-commit
-merge test
-```
-
-A imagem acima é uma representação da árvore Git.
-
-### Commit (confirmação)
-
-```mermaid
-flowchart LR
-a((" "))---b((" "))---c((" "))
-
-style a stroke:darkblue, stroke-width: 2px, fill:yellow
-style b stroke:darkblue, stroke-width: 2px, fill:yellow
-style c stroke:darkblue, stroke-width: 2px, fill:yellow
-%%style c1 fill: transparent, stroke: black ,stroke-dasharray: 5 5, stroke-width: 
-linkStyle 0,1 stroke:darkblue,stroke-width:4px;
-```
-
-```mermaid
-gitGraph:
-options
-{
-    "nodeSpacing": 90,
-    "nodeRadius": 10
-}
-end
-commit
-commit
-commit
-```
-
-Cada *bolinha* é um commit realizado no repositório.
-
-Cada commit é um objeto Git que contém todas as alterações feitas naquele período, como uma verdadeira máquina do tempo.
-
-Nesta árvore, por exemplo, contém dois ramos (branches):
-
-* Azul - o ramo principal chamado `master`
-
-* Vermelho - o ramo extra, foi chamado chamado de `test`
-
-Por padrão, o primeiro branch criado no Git é nomeado `master`.
-
-## Branch (ramo)
-
-```mermaid
-flowchart LR
-subgraph S[" "]
-a(("<u>v1.0</u><br>576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("master<br>abe667b"))
-end
-b---b1(("test<br>79af9f5"))---b2(("c82f976"))
-
-style S fill: transparent, stroke: transparent
-style a stroke:darkblue, stroke-width: 4px
-style b stroke:darkblue, stroke-width: 4px
-style c stroke:darkblue, stroke-width: 4px
-style d stroke:darkblue, stroke-width: 4px
-style b1 stroke:darkred, stroke-width: 4px
-style b2 stroke:darkred, stroke-width: 4px
-linkStyle 0,1,2 stroke:darkblue,stroke-width:8px;
-linkStyle 3,4 stroke:darkred,stroke-width:8px;
-```
-
-O branch é um ponteiro móvel para um commit.  
-A cada novo commit ele avança automaticamente.
-
-Você visualiza os ramos através de seus nomes (`master`, `test`, `outro-nome`, etc).  
-Por padrão o primeiro branch será nomeado "`master`".
-
-### HEAD (você)
+### Navegar para uma etiqueta (tag):
 
 ```mermaid
 flowchart RL
 
+T1>"v0.1<br><sub>Etiqueta"] -.-> c
 H["HEAD<br><sub>Você está aqui"] -.-> B1
+
+subgraph S1[" "]
+B1["master<br><sub>Ramo"]-.->a
+a(("abe667b"))---b(("f3661c8"))---c(("9a48e92"))---d(("576ac7b"))
+end
+
+style H fill:#fef4ac, stroke:black
+style S1 fill: transparent, stroke: transparent
+style a stroke:darkblue, stroke-width: 4px
+style b stroke:darkblue, stroke-width: 4px
+style c stroke:darkblue, stroke-width: 4px
+style d stroke:darkblue, stroke-width: 4px
+linkStyle 3,4,5 stroke:darkblue,stroke-width:8px;
+```
+
+```git
+git checkout v0.1
+```
+
+Resultado:
+
+```mermaid
+flowchart RL
+
+T1>"v0.1<br><sub>Etiqueta"] -.-> c
+H["HEAD<br><sub>Você está aqui"] -.-> T1
 
 subgraph S1[" "]
 B1["master<br><sub>cabeça do ramo"]-.->a
@@ -232,169 +485,12 @@ style a stroke:darkblue, stroke-width: 4px
 style b stroke:darkblue, stroke-width: 4px
 style c stroke:darkblue, stroke-width: 4px
 style d stroke:darkblue, stroke-width: 4px
-linkStyle 2,3,4 stroke:darkblue,stroke-width:8px;
-```
-
-HEAD é um ponteiro para o commit em que você está.
-
-Por padrão o HEAD aponta para o ramo `master` (que aponta para o último commit de sua ramificação)
-
-#### Mover HEAD para qualquer commit:
-
-```git
-git checkout 9a48e92
-```
-
-Resultado:
-
-```mermaid
-flowchart RL
-
-H["HEAD<br><sub>Você está aqui"] -.-> b
-
-subgraph S1[" "]
-B1["master<br><sub>cabeça do ramo"]-.->d
-d(("⠀<b>??⠀"))-.-c(("⠀<b>??⠀"))-.-b(("9a48e92"))---a(("576ac7b"))
-end
-
-style H fill:#fef4ac, stroke:black
-style S1 fill: transparent, stroke: transparent
-style a stroke:darkblue, stroke-width: 4px
-style b stroke:darkblue, stroke-width: 4px
-style c stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
-style d stroke:darkblue, stroke-width: 4px, stroke-dasharray: 11 11
-linkStyle 4 stroke:darkblue,stroke-width:8px
-linkStyle 2,3 stroke:darkblue,stroke-width:8px
-```
-
-:inform Como regra geral, você nunca consegue visualizar commits a sua frente, apenas atrás de você.  
-Por isso a imagem mostra duas icógnitas, estão a frente de você.
-
-#### Mover para a cabeça do branch:
-
-```git
-git checkout HEAD
-```
-
-xxxx
-
-```mermaid
-flowchart LR
-
-H["HEAD<br><sub>Você está aqui"] -.-> c
-T2>"v0.2<br><sub>Etiqueta"] -.-> d
-B1["master<br><sub>cabceça do ramo"] -.-> d
-
-subgraph S1[" "]
-a(("576ac7b"))---b(("9a48e92"))---c(("f3661c8"))---d(("abe667b"))
-end
-
-%%subgraph S2[" "]
-b---2a(("79af9f5"))---2b(("c82f976"))
-%%end
-
-B2["test<br><sub>cabceça do ramo"] -.-> 2b
-T1>"v0.1<br><sub>Etiqueta"] -.-> a
-
-style H fill:#fef4ac, stroke:black
-style S1 fill: transparent, stroke: transparent
-style a stroke:darkblue, stroke-width: 4px
-style b stroke:darkblue, stroke-width: 4px
-style c stroke:darkblue, stroke-width: 4px
-style d stroke:darkblue, stroke-width: 4px
-style 2a stroke:darkred, stroke-width: 4px
-style 2b stroke:darkred, stroke-width: 4px
 linkStyle 3,4,5 stroke:darkblue,stroke-width:8px;
-linkStyle 6,7 stroke:darkred,stroke-width:8px;
 ```
 
-* O repositório foi criado, sem commits, sem nada.
+## Curiosidades sobre árvore Git
 
-* Então criamos o readme.md, e confirmamos.
-
-* Como resultado, nossa árvore Git é uma única bolinha, um único commit
-
-* HEAD representa duas coisas:
-  
-  1. O commit em que você (usuário) está;
-  
-  2. A cabeça do seu ramo.
-
-Editamos o readme e confirmamos as alterações:
-
-```mermaid
-flowchart LR
-subgraph S[" "]
-a(("576ac7b"))---b(("<u>master</u><br>9a48e92"))---c(("f3661c8"))---d(("abe667b"))
-end
-N("HEAD<br><sub>Você está aqui") -..-> a
-
-style S fill: transparent, stroke: transparent
-style N fill:#fef4ac, stroke:#d3d398
-style a stroke:darkblue, stroke-width: 4px
-style b stroke:darkblue, stroke-width: 4px
-style c stroke-width: 0, fill: transparent,color: transparent
-style d stroke-width: 0, fill: transparent,color: transparent
-
-linkStyle 1,2 stroke: transparent
-linkStyle 0 stroke:darkblue,stroke-width:8px;
-```
-
-* Perceba que você estava
-
-## Navegando na árvore
-
-```mermaid
-flowchart LR
-subgraph S[" "]
-a(("<u>v1.0</u><br>576ac7b"))---b(("7098351"))---c(("0009400"))---d(("master<br>abe667b"))
-e("Você está<br>aqui") -..-> d
-end
-b---b1(("test<br>79af9f5"))---b2(("c82f976"))
-
-style S fill: transparent, stroke: transparent
-style a stroke:darkblue, stroke-width: 4px
-style b stroke:darkblue, stroke-width: 4px
-style c stroke:darkblue, stroke-width: 4px
-style d stroke:darkblue, stroke-width: 4px
-style b1 stroke:darkred, stroke-width: 4px
-style b2 stroke:darkred, stroke-width: 4px
-linkStyle 0,1,2 stroke:darkblue,stroke-width:8px;
-linkStyle 4,5 stroke:darkred,stroke-width:8px;
-style e fill:#fef4ac, stroke:#d3d398
-```
-
-### Mudar de commit:
-
-```git
-git checkout insira_hash_do_commit
-git checkout 
-```
-
-### Mudar de commit via tag:
-
-```git
-git checkout  nome_da_tag
-```
-
-## Recuperar commits que "sumiram":
-
-Visualizar últimos *hashes*:
-
-```git
-git reflog
-```
-
-Retornar ao commit anterior:
-
-```git
-git reset --hard <sha1>
-```
-
-### Curiosidades sobre árvore Git
-
-O sistema de metrô do Rio de Janeiro parece uma árvore Git.  
-Uma bem reta.
+O sistema de metrô do Rio de Janeiro parece uma árvore Git, pois trata-se de uma simples linha reta com uma ramificação.  
 
 ![linhas de metrô do Rio de Janeiro](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Diagrama_metro_rio.png/1280px-Diagrama_metro_rio.png)
 
