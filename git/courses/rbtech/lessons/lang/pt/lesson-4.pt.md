@@ -28,6 +28,7 @@ git commit -m "mensagem de commit"
 
 ## Visualizar commits, apenas código e mensagem:
 
+Mostrar o hash inteiro:
 ```git
 git log --pretty=oneline
 ```
@@ -39,6 +40,30 @@ Retorno:
 1a3009cf53aad6759a3708eb7b482886c10a9a41 primeiro commit
 576ac7be6b79d4e260ac9be5291134e88761854f commit 0
 ```
+
+Mostrar o hash resumido:
+
+```git
+git log --oneline
+```
+
+Retorno:
+
+```git
+4c593d5 (HEAD -> master) outro commit
+1a3009c primeiro commit
+576ac7b commit 0
+```
+
+> O hash resumido contém 7 caracteres hexadecimais, possibilitando ~270 mil combinações diferentes.
+>
+> > Se fôssemos fazer 1 commit por dia, demoraria ~740 anos para completar todas as possibilidades.
+>
+> O hash completo contém 40 caracteres hexadecimais, possibilitando 1,5 *quinzilhão* (pentadecalhão) de combinações (`1,5e40`).
+>
+> > Considerando que nosso Sol irá se extinguir em 5 bilhões de anos (`5e6`);
+> > 
+> > para atingir o limite máximo de commits teríamos que fazer 3 *onzilhões*  (unodecalhões) de commits (`3e11`) por ano, ou 1 nonalhão de commits por dia (`1e9`)!
 
 ## Editar commit:
 
