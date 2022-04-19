@@ -66,6 +66,8 @@
     
     * Idioma (en, pt)
       
+      * :book: Tutoriais
+      
       * :toolbox: O conteúdo
   
   * Documentação

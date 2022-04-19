@@ -65,6 +65,8 @@
    * Tutorials
 
       * Idiom (en, pt)
+      
+         * :book: Tutoriais
 
          * :toolbox: The content
    
