@@ -46,7 +46,7 @@
       
       * :book: Conteúdo no idioma principal
       
-      * Idiom (en, pt)
+      * Idioma (en, pt)
         
         * :book: Conteúdo no idioma secundário
   
