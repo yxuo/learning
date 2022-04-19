@@ -321,19 +321,48 @@ Deste modo, todo ramo aponta para o commit mais atual, tornando possível execut
 
 Você visualiza os ramos através de seus nomes (`master`, `test`, `qualquer-nome`, etc).
 
-### Criar novo branch:
+### Criar novo ramo:
 
 ```git
 git branch abcde
 ```
 
-### Juntar um ramo em outro:
+Criar e navegar no novo ramo:
 
-Você tem um ramo `A` (origem) e outro ramo `B` (destino).
+```git
+git checkout -b abcde
+```
 
-Caso você queira mesclar o ramo `A` no ramo `B` você fará o seguinte:
+### Mesclar ramos:
 
+Mesclar o ramo `test` dentro do ramo `master`:
 
+```git
+git checkout master
+git merge test
+```
+
+Uma outra forma de ver:
+```git
+git checkout destino
+git merge origem
+```
+
+> Mesmo que você já esteja no ramo `destino`, é sempre boa prática navegar antes de mesclar.
+>
+> Vai que você não está no local que pensava...
+
+:star: `git checkout` pode mesclar o ramo em qualquer outro commit.
+
+### Conflitos de mescla:
+
+Quando acontece um erro, você receberá uma mensagem como esta:
+
+```git
+Auto-merging teste.txt
+CONFLICT (content): Merge conflict in teste.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
 ## Tag (etiqueta)
 
