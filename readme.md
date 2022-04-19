@@ -34,37 +34,77 @@
    
    * Tutorials;
 
+   * Cases;
+
+## File structure
+
+* :books: Subject (python, c, web, req. analysis, etc)
+
+   * Courses
+
+      * Course name
+
+         * :book: First language content here
+
+         * Idiom (en, pt)
+
+            * :book: Secondary language content here
+
+   * Cases
+
+      *  Case N
+
+         * Idiom (en, pt)
+
+            * :book: Case readme in other languages
+
+         * :book: Case readme in first language
+
+         * :toolbox: The case content
+
+   * Tutorials
+
+      * Idiom (en, pt)
+
+         * :toolbox: The content
+   
+   * Documentation
+
+      * :book: Documentation in one file.
+
 ## Rules
 
 ### Learning notes
 
-1. Learn about the subject;
+1. Must be written in markdown;
 
-2. Be readable;
+2. Learn about the subject;
 
-3. Be consultable;
+3. Be readable;
 
-4. Be didactic;
+4. Be consultable;
 
-5. Solve any doubts arisen in that moment;
+5. Be didactic;
 
-6. Feel free to add content in addiction to what is taught;
+6. Solve any doubts arisen in that moment;
 
-7. Have depth no more than the necessary and rasonable;
+7. Feel free to add content in addiction to what is taught;
 
-8. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
+8. Have depth no more than the necessary and rasonable;
+
+9. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
 
    * Images used merely as reference can be used.
 
       * Prefer to add images via link, instead uploading in repository.
 
-9. Images used merely as reference can be used.
+10. Images used merely as reference can be used.
 
    * It is encouraged the use of screenshots made by you, and upload in repository.
 
    * Otherwise, prefer to add images via link instead upload a file in repository.
 
-10. Quote the source of ressearch.
+11. Quote the source of ressearch.
 
 ### Idiom:
 
