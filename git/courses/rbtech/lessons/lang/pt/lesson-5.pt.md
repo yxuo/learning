@@ -364,6 +364,47 @@ CONFLICT (content): Merge conflict in teste.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
+> Legal, o aviso te disse em qual arquivo está o conflito.
+
+Em geral conflitos ocorrem quando as mesmas linhas do mesmo arquivo possuem alterações diferentes.
+
+Por exemplo:
+
+```
+Hello world
+Esta linha será assim!
+Fim.
+```
+vs
+
+```
+Hello world
+Esta linha será assado!
+Fim.
+```
+
+O Git não tem como saber qual escolher. Você decide.
+
+### Resolvendo conflitos
+
+Veja os arquivos em conflito:
+
+```git
+git status
+```
+
+Retorno:
+
+```git
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   teste.txt
+```
+
+> Os arquivos onde diz `both modified` estão em conflito.
+
+
+
 ## Tag (etiqueta)
 
 Servem como atalhos para algum commit que você considere importante, um marco do seu projeto.
@@ -540,7 +581,7 @@ subgraph L2[" "]
 g---|branch Linha-2<br>checkout Linha-2<br>commit|2g(("⠀"))---|commit|2h(("⠀"))---|commit|2i(("⠀"))---|commit|2j(("⠀"))---|commit|2k(("⠀"))
 end
 subgraph L4[" "]
-4a(("⠀"))---|commit|4b(("⠀"))---|commit|4c(("⠀"))-.->|rebase Linha-4 master|a
+4a(("⠀"))---|commit|4b(("⠀"))---|commit|4c(("⠀"))-->|rebase Linha-4 master|a
 end
 
 style L1 fill: transparent, stroke: transparent
@@ -598,9 +639,17 @@ style branch fill: white, stroke: gray, stroke-width: 2
 * [What is HEAD in Git? - Stack Overflow](https://stackoverflow.com/questions/2304087/what-is-head-in-git)
 * [Branches em poucas palavras - Git](https://git-scm.com/book/pt-br/v2/Branches-no-Git-Branches-em-poucas-palavras)
 
+* [Resolve GitHub Merge Conflicts - YouTube](https://www.youtube.com/watch?v=mOJazBNrG-c&t=118s)
+
+* [How to resolve merge conflicts in Git - GitKraken](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git)
+
+* [What's the simplest way to list conflicted files in Git? - StackOverflow](https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-list-conflicted-files-in-git)
+
 Tradução de termos em português:
 
 * [Book - Git (espanhol)](https://git-scm.com/book/es/v2)
+
+* [O básico de ramificação e mesclagem - Git](https://git-scm.com/book/pt-br/v2/Branches-no-Git-O-b%C3%A1sico-de-Ramifica%C3%A7%C3%A3o-Branch-e-Mesclagem-Merge)
 
 ### Imagens:
 
