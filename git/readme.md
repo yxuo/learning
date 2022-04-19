@@ -2,7 +2,9 @@
 
 # Git
 
-Contains Git courses taken so far.
+Contains Git courses taken and a complete documentation.
+
+* [Documentation](doc/readme.md)
 
 ## Courses:
 

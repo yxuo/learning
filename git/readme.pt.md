@@ -2,7 +2,9 @@
 
 # Git
 
-Contém cursos de Git realizados até o momento.
+Contém cursos de Git realizados e documentação elaborada com o aprendizado.
+
+* [Documentação (em inglês, por enquanto)](doc/readme.md)
 
 ## Cursos:
 
