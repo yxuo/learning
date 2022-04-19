@@ -14,7 +14,9 @@
    
    - Over time the content will be updated.
 
-2. Encourage the creation of:
+2. Encourage study of any subject: programming, administration, idiom, drawing, etc. This repository is precisely for this!
+
+3. Encourage creation of:
    
    * Code;
    
@@ -24,17 +26,17 @@
    
    * Tutorials.
 
-3. Encourage the consumption, study and exercise of:
+4. Encourage the consumption, study and exercise of:
    
    * Couses;
    
    * Lessons;
    
    * Tutorials;
-   
-   * Subjects.
 
-### Purpose of documentation:
+## Rules
+
+### Learning notes
 
 1. Learn about the subject;
 
@@ -42,18 +44,42 @@
 
 3. Be consultable;
 
-4. Be didactic by the author and interested readers;
+4. Be didactic;
 
-5. Solve any doubts that arise, in addiction to what is taught;
+5. Solve any doubts arisen in that moment;
 
-6. Have depth no more than the necessary and rasonable;
+6. Feel free to add content in addiction to what is taught;
 
-7. As good practice, to avoid as much as possible to use copyrighted media.
-   
-   * And quote the source of ressearch.
+7. Have depth no more than the necessary and rasonable;
 
-## Defaults
+8. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
 
-- Preference for content in English;
-  
-  - As interests or needs arises, the content is translated.
+   * Images used merely as reference can be used.
+
+      * Prefer to add images via link, instead uploading in repository.
+
+9. Images used merely as reference can be used.
+
+   * It is encouraged the use of screenshots made by you, and upload in repository.
+
+   * Otherwise, prefer to add images via link instead upload a file in repository.
+
+10. Quote the source of ressearch.
+
+### Idiom:
+
+* Preference for content in English.
+
+  * But, if people of your idiom need content, type in your langage first. Lately translate to English;
+
+* Commits, tags, comments, etc, in English.
+
+* Content translation to any language is encouraged.
+
+* Translate the content as a way to practice other idioms.
+
+* I know that's boring, but translate the descriptions of images too. ^u^
+
+## Source
+
+* [Should I put a tutorial code on my GitHub? - Quora](https://www.quora.com/Should-I-put-a-tutorial-code-on-my-GitHub)
