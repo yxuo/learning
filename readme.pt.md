@@ -118,6 +118,10 @@
   
   * Sei que é chato, mas traduza as descrições das imagens também/ ^w^
 
+### Tutoriais
+
+* Cada tradução de código-tutorial deve ser feita do zero (sem ctrl-c), como uma maneira de treinar.
+
 ### Fontes
 
 * [Should I put a tutorial code on my GitHub? - Quora](https://www.quora.com/Should-I-put-a-tutorial-code-on-my-GitHub)

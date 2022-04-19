@@ -122,6 +122,10 @@
 
 * I know that's boring, but translate the descriptions of images too. ^u^
 
+### Tutorials
+
+* Each translation of tutorial-code must be done from scratch (no ctrl-c), as a way of training.
+
 ## Source
 
 * [Should I put a tutorial code on my GitHub? - Quora](https://www.quora.com/Should-I-put-a-tutorial-code-on-my-GitHub)
