@@ -195,10 +195,10 @@ Em outras palavras, `git log` é o mesmo que `git log HEAD`.
 Note também que `git log` só exibe commits anteriores, nunca commits a frente.
 
 > O máximo que daria para fazer, neste caso, é visualizar todos os commits do ramo ou da árvore inteira.
-> 
-> No VSCode também é possível visualizar de diversas maneiras:
->
-> ![Visualizando árvores no VSCode](../../img/git-branch-vscode.png)
+ 
+No VSCode é possível visualizar ramos, commits, tags, de diversas maneiras:
+
+![Visualizando árvores no VSCode](../../img/git-branch-vscode.png)
 
 ### Navegar para o commit anterior:
 
