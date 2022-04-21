@@ -76,6 +76,8 @@
 
 ## Regras
 
+* Readmes principais devem ser atualizados em todos os idiomas em cada comimt;
+
 ### Notas de aprendizado
 
 1. Deve ser escrito em markdown;

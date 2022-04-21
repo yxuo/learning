@@ -76,6 +76,8 @@
 
 ## Rules
 
+* Main readmes must be updated in all languages at each commit.
+
 ### Learning notes
 
 1. Must be written in markdown;
