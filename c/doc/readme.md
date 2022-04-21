@@ -1,6 +1,7 @@
 # C language
 
 Source:
+
  * [How do you allow spaces to be entered using scanf? - StackOverflow](https://stackoverflow.com/questions/1247989/how-do-you-allow-spaces-to-be-entered-using-scanf)
 
  * [What is the difference between "rb+" and "ab" in fopen()? - StackOverflow](https://stackoverflow.com/questions/43978465/what-is-the-difference-between-rb-and-ab-in-fopen)
