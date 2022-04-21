@@ -364,7 +364,7 @@ CONFLICT (content): Merge conflict in teste.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-> Legal, o aviso te disse em qual arquivo está o conflito.
+> O aviso te disse em qual arquivo está o conflito.
 
 Em geral conflitos ocorrem quando as mesmas linhas do mesmo arquivo possuem alterações diferentes.
 
