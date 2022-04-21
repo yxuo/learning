@@ -1,6 +1,6 @@
-# Computer Archtecture
+# Computer Architecture
 
-Everything about computer archtecture.
+Everything about computer architecture.
 
 For now it only contains a documentation and exercises.
 

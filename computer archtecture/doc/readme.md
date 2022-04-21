@@ -1,4 +1,0 @@
-# Computer Archtecture
-
-## Source:
-
