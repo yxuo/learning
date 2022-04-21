@@ -1,5 +1,9 @@
 # Aula 5
 
+## Todo
+
+* [ ] consertar conflito commit
+
 ## Termos utilizados:
 
 * Checksum, hash - um código aleatório como este:
@@ -370,12 +374,7 @@ Em geral conflitos ocorrem quando as mesmas linhas do mesmo arquivo possuem alte
 
 Por exemplo:
 
-```
-Hello world
-Esta linha será assim!
-Fim.
-```
-vs
+Branch `test` (origem):
 
 ```
 Hello world
@@ -383,11 +382,43 @@ Esta linha será assado!
 Fim.
 ```
 
+Branch `master` (destino):
+
+```
+Hello world
+Esta linha será assim!
+Fim.
+```
+
 O Git não tem como saber qual escolher. Você decide.
 
-### Resolvendo conflitos
+### Resolvendo conflitos de forma prática
 
-Veja os arquivos em conflito:
+1. Veja a diferença em cada arquivo:
+
+```git
+git diff
+```
+
+> :warning: No Git Bash do VSCode o VIM não suporta navegar com as setas :arrow_down: :arrow_up:, use `J` e `K`.
+> 
+> Para poder navegar com as setas no terminal do VSCode, use `git diff` dentro do Powershell ou Prompt.
+
+Retorno:
+
+```git
+Hello world
+<<<<<<< HEAD
+Esta linha será assado!
+=======
+Esta linha será assim!
+>>>>>>> master
+Fim.
+```
+
+### Resolvendo conflitos manualmente
+
+#### 1. Veja os arquivos em conflito:
 
 ```git
 git status
@@ -402,6 +433,71 @@ Unmerged paths:
 ```
 
 > Os arquivos onde diz `both modified` estão em conflito.
+
+#### 2. Abra os arquivos em conflito:
+
+`teste.txt`
+
+```git
+Hello world
+<<<<<<< HEAD
+Esta linha será assado!
+=======
+Esta linha será assim!
+>>>>>>> master
+Fim.
+```
+
+Como pode ver, o Git editou o arquivo `teste.txt`, colocou ambas escritas uma em cima da outra.
+
+#### 3. Edite o documento e escolha o que manter:
+
+Basta apagar o texto do git (`<<< HEAD`, `>>> master`, `===`) e você escolher como vai ficar.
+
+Aceitar a mudança atual:
+
+> *Accept Current Change*
+
+```git
+Hello world
+Esta linha será assado!
+Fim.
+```
+
+Manter alteração original:
+
+> *Accept Incoming Change*
+
+```git
+Hello world
+Esta linha será assim!
+Fim.
+```
+
+Aceitar ambas alterações:
+
+> *Accept Both Changes*
+
+```git
+Hello world
+Esta linha será assado!
+Esta linha será assim!
+Fim.
+```
+
+Recusar tudo e editar do seu jeito:
+
+```git
+Hello world
+Esta linha será assim e assado, e assim será!
+Fim.
+```
+
+#### 4. Tente mesclar após as correções:
+
+Erro `unmerged files`:
+
+
 
 
 
@@ -644,6 +740,8 @@ style branch fill: white, stroke: gray, stroke-width: 2
 * [How to resolve merge conflicts in Git - GitKraken](https://www.gitkraken.com/learn/git/tutorials/how-to-resolve-merge-conflict-in-git)
 
 * [What's the simplest way to list conflicted files in Git? - StackOverflow](https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-list-conflicted-files-in-git)
+
+* [Git merge is not possible because I have unmerged files - StackOverflow](https://stackoverflow.com/questions/36086202/git-merge-is-not-possible-because-i-have-unmerged-files)
 
 Tradução de termos em português:
 
