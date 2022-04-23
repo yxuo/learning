@@ -126,7 +126,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 * Preference for content in English.
 
-  * But, if people of your idiom need content, type in your langage first. Lately translate to English;
+  * But, if people of your idiom need content, type in your language first. Lately translate to English;
 
 * Commits, tags, comments, etc, in English.
 
