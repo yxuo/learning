@@ -20,6 +20,10 @@
    
    * Código
    
+   * Exercícios
+   
+   * Treinamentos
+   
    * Notas de aprendizado
    
    * Documentação
