@@ -14,6 +14,8 @@
    
    - Over time the content will be updated.
 
+   - Take your time! Don't run! Respect the time for each task.
+   
 2. Encourage study of any subject: programming, administration, idiom, drawing, etc. This repository is precisely for this!
 
 3. Encourage creation of:

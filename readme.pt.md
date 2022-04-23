@@ -14,6 +14,8 @@
    
    * Com o tempo o conteúdo será atualizado.
 
+   * Não tenha pressa! Não corra! Respeite o tempo de cada tarefa.
+
 2. Incentivar o estudo de qualquer assunto: programação, administração, idioma, desenho, etc. Este repositório é justamente para isso!
 
 3. Incentivar a criação de:
