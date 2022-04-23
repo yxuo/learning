@@ -120,7 +120,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
    * Otherwise, prefer to add images via link instead upload a file in repository.
 
-11. Quote the source of ressearch.
+11. Quote the source of research.
 
 ### Idiom:
 
