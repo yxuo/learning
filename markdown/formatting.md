@@ -11,3 +11,5 @@ Works in:
 * MarkText
 
 * VSCode
+
+* ~~GitHub~~
