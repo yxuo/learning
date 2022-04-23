@@ -20,6 +20,10 @@
    
    * Code;
    
+   * Exercises;
+   
+   * Trainings;
+   
    * Learning notes;
    
    * Documentation;
