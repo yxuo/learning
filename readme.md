@@ -28,7 +28,7 @@
 
 4. Encourage the consumption, study and exercise of:
    
-   * Couses;
+   * Courses;
    
    * Lessons;
    
