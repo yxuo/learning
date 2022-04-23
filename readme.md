@@ -10,7 +10,7 @@
    
    - Update the repository everyday;
    
-   - Always post the content at the end of the day, even if it's not completed;
+   - Always post the content until the end of the day, even if it's not completed;
    
    - Over time the content will be updated.
 

@@ -10,7 +10,7 @@
    
    * Atualizar o repositório todo dia;
    
-   * Sempre postar o conteúdo no fim do dia, mesmo que incompleto;
+   * Sempre postar o conteúdo até o fim do dia, mesmo que incompleto;
    
    * Com o tempo o conteúdo será atualizado.
 
