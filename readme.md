@@ -20,7 +20,7 @@
 
 3. Encourage creation of:
    
-   * Code;
+   * Code (files, libraries, projects);
    
    * Exercises;
    
@@ -30,7 +30,7 @@
    
    * Documentation;
    
-   * Tutorials.
+   * Tutorials (code, article or both).
 
 4. Encourage the consumption, study and exercise of:
    
