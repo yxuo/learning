@@ -6,7 +6,7 @@
 
 ## Objetivo:
 
-1. Estudar não muito rápido, mas muito consistente;
+1. Não focar em melhorar rápido, mas sempre constante;
    
    * Atualizar o repositório todo dia;
    

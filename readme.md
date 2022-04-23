@@ -6,7 +6,7 @@
 
 ## Goal:
 
-1. To study not very fast, but very constant;
+1. Not focus on improve quickly, but always constant;
    
    - Update the repository everyday;
    
@@ -18,11 +18,11 @@
 
 3. Encourage creation of:
    
-   * Code;
+   * Code (from *hello world* to projects)
    
    * Exercises;
    
-   * Trainings;
+   * Trainings (rewrite the same code from scratch);
    
    * Learning notes;
    
