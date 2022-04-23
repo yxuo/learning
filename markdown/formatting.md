@@ -9,3 +9,5 @@
 Works in:
 
 * MarkText
+
+* VSCode
