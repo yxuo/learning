@@ -20,7 +20,7 @@
 
 3. Encourage creation of:
    
-   * Code (from *hello world* to projects)
+   * Code;
    
    * Exercises;
    
