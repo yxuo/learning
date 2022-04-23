@@ -76,7 +76,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
       * Idiom (en, pt)
       
-         * :book: Tutoriais
+         * :book: Tutorials
 
          * :toolbox: The content
    
@@ -104,7 +104,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 7. Feel free to add content in addiction to what is taught;
 
-8. Have depth no more than the necessary and rasonable;
+8. Have depth no more than the necessary and reasonable;
 
 9. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
 
