@@ -36,6 +36,12 @@
    
    * Casos
 
+## Estrutura do repositório
+
+Na maioria dos casos terá apenas um único ramo: `master`.
+
+Sempre que este repositório precisar testar subprojetos, terá outros ramos para fins de teste, como seria em qualquer projeto.
+
 ## Ordem dos arquivos
 
 * :books: Assunto (python, c, web, análise req., etc)

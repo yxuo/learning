@@ -40,6 +40,12 @@
 
    * Cases;
 
+## Repository structure
+
+In most of cases it will only have one main branch: `master`.
+
+Whenever this repository needs test subprojects, it will have other branches for testing purposes, as it would be in any project.
+
 ## File structure
 
 * :books: Subject (python, c, web, req. analysis, etc)
