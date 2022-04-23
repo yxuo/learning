@@ -1,3 +1,5 @@
+*Read this in other languages: [English](readme.md), [português](readme.pt.md)*
+
 # C language
 
 Everything about C language.
