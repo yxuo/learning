@@ -22,13 +22,13 @@
    
    * Código
    
-   * Exercícios
+   * Exercícios;
    
    * Treinamentos
    
-   * Notas de aprendizado
+   * Notas de aprendizado;
    
-   * Documentação
+   * Documentação;
    
    * Tutoriais
 
