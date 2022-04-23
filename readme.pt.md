@@ -20,17 +20,17 @@
 
 3. Incentivar a criação de:
    
-   * Código
+   * Código (arquivos, bibliotecas, projetos);
    
    * Exercícios;
    
-   * Treinamentos
+   * Treinamentos (reescrever o mesmo  código do zero);
    
    * Notas de aprendizado;
    
    * Documentação;
    
-   * Tutoriais
+   * Tutoriais (código, artigo  ou ambos).
 
 4. Incentivar o consumo, estudo e exercício de:
    
