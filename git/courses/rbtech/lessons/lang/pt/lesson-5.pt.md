@@ -1,8 +1,8 @@
+<!-- 
+TODO consertar conflito commit
+ -->
+
 # Aula 5
-
-## Todo
-
-* [ ] consertar conflito commit
 
 ## Termos utilizados:
 
