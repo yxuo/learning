@@ -450,7 +450,7 @@ Fim.
 
 Como pode ver, o Git editou o arquivo `teste.txt`, colocou ambas escritas uma em cima da outra.
 
-#### 3. Edite o documento e escolha o que manter:
+#### 3. Edite o documento e escolha o que irá manter:
 
 Basta apagar o texto do git (`<<< HEAD`, `>>> master`, `===`) e você escolher como vai ficar.
 
