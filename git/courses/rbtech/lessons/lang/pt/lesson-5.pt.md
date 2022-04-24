@@ -487,6 +487,9 @@ Fim.
 
 Recusar tudo e editar do seu jeito:
 
+* **Isto é o mesmo que aceitar a mudança atual**.  
+  Você apenas está editando esta mudança.
+
 ```git
 Hello world
 Esta linha será assim e assado, e assim será!
