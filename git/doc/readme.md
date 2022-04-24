@@ -51,3 +51,5 @@ Naming conventions:
 * [Devising a Git repository  naming convention - GravityDepth](https://gravitydept.com/blog/devising-a-git-repository-naming-convention)
 
   * [Web file and folder naming - CSUDH](https://www.csudh.edu/web-services/web-standards/file-folder-naming/)
+
+* [Is it a good habit to write TODO to commit message? - StackOverflow](https://stackoverflow.com/questions/51260140/is-it-a-good-habit-to-write-todo-to-commit-message)
