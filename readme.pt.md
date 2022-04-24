@@ -90,6 +90,8 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 * Readmes principais devem ser atualizados em todos os idiomas em cada comimt;
 
+* TODΟs devem ser escritos em caixa alta.
+
 ### Notas de aprendizado
 
 1. Deve ser escrito em markdown;

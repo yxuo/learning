@@ -90,6 +90,8 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 * Main readmes must be updated in all languages at each commit.
 
+* TODΟs must be written in uppercase.
+
 ### Learning notes
 
 1. Must be written in markdown;
