@@ -17,7 +17,7 @@
 | Aula 2 | [Visualizar](lessons/lang/pt/lesson-2.pt.md) | :white_check_mark:   |
 | Aula 3 | [Visualizar](lessons/lang/pt/lesson-3.pt.md) | :white_check_mark:   |
 | Aula 4 | [Visualizar](lessons/lang/pt/lesson-4.pt.md) | :white_check_mark:   |
-| Aula 5 | [Visualizar](lessons/lang/pt/lesson-5.pt.md) | :white_large_square: |
+| Aula 5 | [Visualizar](lessons/lang/pt/lesson-5.pt.md) | :white_check_mark: |
 | Aula 6 |                                              | :white_large_square: |
 | Aula 7 |                                              | :white_large_square: |
 | Aula 8 |                                              | :white_large_square: |
