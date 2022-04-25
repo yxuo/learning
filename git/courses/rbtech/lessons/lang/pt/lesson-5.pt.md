@@ -1,7 +1,3 @@
-<!-- 
-TODO consertar conflito commit
- -->
-
 # Aula 5
 
 ## Termos utilizados:
@@ -199,7 +195,7 @@ Em outras palavras, `git log` é o mesmo que `git log HEAD`.
 Note também que `git log` só exibe commits anteriores, nunca commits a frente.
 
 > O máximo que daria para fazer, neste caso, é visualizar todos os commits do ramo ou da árvore inteira.
- 
+
 No VSCode é possível visualizar ramos, commits, tags, de diversas maneiras:
 
 ![Visualizando árvores no VSCode](../../img/git-branch-vscode.png)
@@ -328,13 +324,19 @@ Você visualiza os ramos através de seus nomes (`master`, `test`, `qualquer-nom
 ### Criar novo ramo:
 
 ```git
-git branch abcde
+git branch test
 ```
 
-Criar e navegar no novo ramo:
+Criar e entrar no novo ramo:
 
 ```git
-git checkout -b abcde
+git checkout -b test
+```
+
+### Remover ramo:
+
+```git
+git branch -d test
 ```
 
 ### Mesclar ramos:
@@ -356,7 +358,7 @@ git merge origem
 >
 > Vai que você não está no local que pensava...
 
-:star: `git checkout` pode mesclar o ramo em qualquer outro commit.
+:warning: `git checkout` pode mesclar o ramo em qualquer outro commit, mas pode causar conflitos.
 
 ### Conflitos de mescla:
 
@@ -392,17 +394,11 @@ Fim.
 
 O Git não tem como saber qual escolher. Você decide.
 
-### Resolvendo conflitos de forma prática
-
-1. Veja a diferença em cada arquivo:
+#### Ver a diferença em cada arquivo:
 
 ```git
 git diff
 ```
-
-> :warning: No Git Bash do VSCode o VIM não suporta navegar com as setas :arrow_down: :arrow_up:, use `J` e `K`.
-> 
-> Para poder navegar com as setas no terminal do VSCode, use `git diff` dentro do Powershell ou Prompt.
 
 Retorno:
 
@@ -415,6 +411,10 @@ Esta linha será assim!
 >>>>>>> master
 Fim.
 ```
+
+> :warning: No Git Bash do VSCode o VIM não suporta navegar com as setas :arrow_down: :arrow_up:, use `J` e `K`.
+> 
+> Para poder navegar com as setas no terminal do VSCode, use `git diff` dentro do Powershell ou Prompt.
 
 ### Resolvendo conflitos manualmente
 
@@ -496,13 +496,28 @@ Esta linha será assim e assado, e assim será!
 Fim.
 ```
 
-#### 4. Tente mesclar após as correções:
+#### 4. Dê commit na alteração:
 
-Erro `unmerged files`:
+```git
+git commit teste.txt -m "conflito corrigido"
+```
+
+Pronto!
+
+Com todos os conflitos resolvidos e confirmados a branch foi mesclada automaticamente.
+
+
+### Resolvendo conflitos automaticamente
+
+#### Ours, theirs
 
 
 
+Aceitar a mudança atual:
 
+```git
+git merge test --ours
+```
 
 ## Tag (etiqueta)
 
@@ -657,7 +672,7 @@ style d stroke:darkblue, stroke-width: 4px
 linkStyle 3,4,5 stroke:darkblue,stroke-width:8px;
 ```
 
-## Curiosidades sobre árvore Git
+## Uma analogia sobre árvore Git
 
 O sistema de metrô do Rio de Janeiro parece uma árvore Git, pois trata-se de uma simples linha reta com uma ramificação.  
 
@@ -757,5 +772,4 @@ Tradução de termos em português:
 Usado como base para o mapa metroviário de Rio e Niterói:
 
 * [**Sobre o Metrô, Rio** - Rio Cidade Maravilhosa](http://www.riocidademaravilhosa.com.br/riodejaneiro/mobilidade/metro/)
-
 * [**Metrô desfigurado - As recentes intervenções no modal estrangulam a capacidade do metrô** - Diário do Rio de Janeiro](https://diariodorio.com/metro-desfigurado/)
