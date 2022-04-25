@@ -161,3 +161,5 @@ Division
 ## Source:
 
 * [Binary calculator - AtoZmath](https://atozmath.com/NumberOperation.aspx?q=2&op=4&q1=1110`100`4`3`2`2&do=1#PrevPart)
+
+* [Memory paging - Wikipedia](https://en.wikipedia.org/wiki/Memory_paging)
