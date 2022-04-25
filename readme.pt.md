@@ -92,6 +92,8 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 * `TODΟ`s devem ser escritos em caixa alta.
 
+* Não acumule commits prontos, para usar em outros dias. Envie-os até o fim do dia.
+
 ### Notas de aprendizado
 
 1. Deve ser escrito em markdown;

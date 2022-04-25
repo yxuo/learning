@@ -92,6 +92,8 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 * `TODΟs` must be written in uppercase.
 
+* Don't accumulate ready commits, for using in other days. Send them by the end of the day.
+
 ### Learning notes
 
 1. Must be written in markdown;
