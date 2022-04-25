@@ -1,5 +1,66 @@
 # Computer Architecture
 
+## General topics
+
+- Paging - In OS, it is a memory scheme by which a computer stores and retrieves data form a secondary storage for use in main memory. 
+
+### Curiosities
+
+Why binary conversion is right to left?
+
+- In practical terms, the numbers on the left represent a greater value.
+
+## Von Neumann Architecture
+
+```mermaid
+flowchart LR
+subgraph PC[Computer]
+   subgraph CPU["Central Processing Unit"]
+      CU[Control Unit]
+      AU[Arithmetic Unit]
+   end
+   MU["Primary memory<br>RAM, ROM"] -->CPU --> MU
+   MU1[Secondary Memrory<br>HD, SSD, etc] -.->CPU -.-> MU1
+end
+input --> PC --> output
+```
+
+*Image: Von Newmann Archtecture. Based on Wikipedia*
+
+## Number representations
+
+- Binary(0-1)
+
+- - Ex. (0101)2
+
+- Octal (0-7)
+
+- - Ex. (174640)8
+
+- Decimal (0-9)
+
+- - 1303 = 1e1+3e2+0e3+3e4
+  - Ex. (189370)10
+
+- Hexadecimal (0-9,A-F) m.q. 0-15
+
+- - Ex. (f0f0f0)16
+
+### Ways to calc
+
+- Base 10
+
+  - <pre>... 111111 = ... * 32 * 16 * 8 * 4 * 2 * 1</pre>
+
+- Base 8 - split by 3
+
+  - <pre>(10.101)2 = (25)8</pre>
+
+- Base 16 - split by 4
+
+  - <pre>(1.0101)2 = (51)16</pre>
+
+
 ## Binary arithmetic
 
 Number types:
