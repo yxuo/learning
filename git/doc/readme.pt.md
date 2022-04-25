@@ -2,6 +2,8 @@
 TODO: traduzir conteúdo do readme inglês
  -->
 
+*Read this in other languages: [English](readme.md), [português](readme.pt.md)*
+
 ## Uma analogia sobre árvore Git
 
 O sistema de metrô do Rio de Janeiro parece uma árvore Git, pois trata-se de uma simples linha reta com uma ramificação.  
