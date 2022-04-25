@@ -4,7 +4,7 @@
 
 Contém cursos de Git realizados e documentação elaborada com o aprendizado.
 
-* [Documentação (em inglês, por enquanto)](doc/readme.md)
+* [Documentação (esboço)](doc/readme.pt.md)
 
 ## Cursos:
 
