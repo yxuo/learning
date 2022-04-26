@@ -19,8 +19,8 @@ subgraph PC[Computer]
       CU[Control Unit]
       AU[Arithmetic Unit]
    end
-   MU["Primary memory<br>RAM, ROM"] -->CPU --> MU
-   MU1[Secondary Memrory<br>HD, SSD, etc] -.->CPU -.-> MU1
+   MEM["Primary memory<br>RAM, ROM"] -->CPU --> MEM
+   MEM1[Secondary Memrory<br>HD, SSD, etc] -.-> CPU -.-> MEM1
 end
 input --> PC --> output
 ```
