@@ -2,8 +2,8 @@
 
 **Tema: Git em servidores.**
 
-Será usado um computador local (o seu PC), ao invés de ensinar configurar um servidor Linux remoto (ideal).
+Para fins didáticos, será usado uma máquina virtual Windows ao invés de um servidor Linux configurado (recomendado).
 
-Será assim para não aprofundar demais, focando apenas no Git para iniciantes, que é o foco do curso.
+Afinal a proposta do curso é focar no básico do Git.
 
 ## Criando uma servidor local
