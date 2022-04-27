@@ -34,6 +34,8 @@
 
 4. Encourage the consumption, study and exercise of:
    
+   * Git e GitHub, by habit.
+   
    * Courses;
    
    * Lessons;

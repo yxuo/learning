@@ -33,6 +33,8 @@
    * Tutoriais (código, artigo  ou ambos).
 
 4. Incentivar o consumo, estudo e exercício de:
+
+   * Git e GitHub, por hábito.
    
    * Cursos
    
