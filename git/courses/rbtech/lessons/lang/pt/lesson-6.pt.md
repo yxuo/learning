@@ -46,3 +46,10 @@ Seu perfil GitHub contém:
   * Organizações (tipo perfis de empresa) que você entrou;
   * Pull requests, comentários, etc...
   * E no final da lista: quando você criou sua conta GitHub.
+
+### Liberar acesso do seu PC ao seu GitHub
+
+Para seu PC poder clonar, baixar e alterar repositórios no GitHub, é preciso:
+
+1. Criar uma chave de acesso no PC;
+2. 
