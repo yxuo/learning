@@ -51,5 +51,38 @@ Seu perfil GitHub contém:
 
 Para seu PC poder clonar, baixar e alterar repositórios no GitHub, é preciso:
 
+1. Criar uma chave de acesso SSH no PC:
+
+Git Bash:
+
+```git
+ssh-keygen
+```
+
+Confirme o nome do arquivo:
+
+> Prefira não editar o nome de arquivo sugerido.
+
+* Aperte `Enter` para confirmar
+
+```git
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/users/Rapha/.ssh/id_rsa)
+```
+
+Defina a senha para acessar a chave SSH:
+
+> Prefira não usar senha!
+> 
+> Toda vez que sincronizar terá que digitar esta senha.
+>
+> Senhas em chaves SSH apenas valem a pena em ambientes que precisam de muita segurança.
+
+* Aperte `Enter` para não criar senha.
+
+:warning: Execute este comando sempre dentro do Git Bash, nunca no Powershell ou Prompt. Caso contrário a chave estará mal configurada e não será reconhecida corretamente.
+
+1. Adicionar a chave na lista de chaves SSH do seu GitHub:
+
 1. Criar uma chave de acesso no PC;
 2. 
