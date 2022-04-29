@@ -84,5 +84,6 @@ Defina a senha para acessar a chave SSH:
 
 1. Adicionar a chave na lista de chaves SSH do seu GitHub:
 
-1. Criar uma chave de acesso no PC;
-2. 
+Fonte:
+
+* [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
