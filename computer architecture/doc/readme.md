@@ -1,3 +1,9 @@
+<!-- 
+TODO: Von Newmann para computadores: https://commons.wikimedia.org/wiki/File:Computer_Systems_-_Von_Neumann_Architecture_Large_poster_anchor_chart.svg
+
+TODO: Pegar o mermaid do Von Newmann e transformar em clássico denovo.
+ -->
+
 # Computer Architecture
 
 ## General topics
