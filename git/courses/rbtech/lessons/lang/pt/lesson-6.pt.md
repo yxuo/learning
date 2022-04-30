@@ -49,7 +49,7 @@ Seu perfil GitHub contém:
 
 ### Liberar acesso do seu PC ao seu GitHub
 
-Para seu PC poder clonar, baixar e alterar repositórios no GitHub, é preciso:
+Para seu PC poder gerenciar seus repositórios no GitHub, é preciso:
 
 1. Criar uma chave de acesso SSH no PC:
 
