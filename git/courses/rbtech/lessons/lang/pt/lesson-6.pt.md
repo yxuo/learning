@@ -161,6 +161,16 @@ Depois:
 
 Sua pasta de projeto no PC será "Projetos".
 
+### Enviar commits para o GitHub:
+
+```git
+git push origin master
+```
+
+`origin` representa o repositório remoto.
+
+Neste caso, do GitHub.
+
 ## Recaptulando gráfico de comandos Git:
 
 ```mermaid
