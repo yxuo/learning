@@ -118,6 +118,32 @@ Baixe o repositório usando este endereço:
 git clone git@github.com:yxuo/learning.git
 ```
 
+### Clonar repositório sem criar pasta:
+
+```git
+git clone git@github.com:yxuo/learning.git .
+```
+
+Em outras palavras:
+
+```git
+git clone _endereço_ .
+```
+
+Onde o ponto `.` representa a pasta onde você está.
+
+Antes:
+
+> * 📂 Projetos
+
+Depois:
+
+> * 📂 **Projetos**
+>   * 📂 .git
+>   * readme.md
+
+Sua pasta de projeto no PC será "Projetos".
+
 ## Fonte:
 
 * [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
