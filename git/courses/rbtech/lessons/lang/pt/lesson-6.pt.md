@@ -165,13 +165,13 @@ Sua pasta de projeto no PC será "Projetos".
 
 ```mermaid
 flowchart LR
-    subgraph Remote [Remote]
-        Remote_repo["Git directory"]
+    subgraph Remote ["Remoto (origin)"]
+        Remote_repo["Repositório Git<br><sub>Git directory<sub/>"]
     end
     subgraph Local [Local]
-        workdir["working directory"]
-        stage["staging area"]
-        Local_repo["Git directory"]
+        workdir["Pasta de Trabalho<br><sub>working directory<sub/>"]
+        stage["Sala de preparação<br><sub>staging area<sub/>"]
+        Local_repo["Repositório Git<br><sub>Git directory<sub/>"]
 
         workdir --> |"git add"| stage --> |git commit| Local_repo
         Local_repo -.->  |git push| Remote_repo
