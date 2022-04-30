@@ -118,6 +118,23 @@ Baixe o repositório usando este endereço:
 git clone git@github.com:yxuo/learning.git
 ```
 
+Resultado:
+
+Se você estava numa pasta chamada `projetos`, ele criou, dentro, uma pasta chamda `learning`.
+
+Antes:
+
+> * 📂 Projetos
+
+Depois:
+
+> * 📂 Projetos
+>   * 📂 **Learning**
+>     * 📂 .git
+>     * readme.md
+
+Sua pasta de projeto no PC será "Learning".
+
 ### Clonar repositório sem criar pasta:
 
 ```git
