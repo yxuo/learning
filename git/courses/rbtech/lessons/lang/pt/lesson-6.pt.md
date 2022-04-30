@@ -108,7 +108,15 @@ Para seu PC poder gerenciar seus repositórios no GitHub, é preciso:
 
 ### Clonar repositório:
 
+Copie o endereço SSH do GitHub:
+
 ![Página para clonar repositório](../../img/github-clone-ssh.png)
+
+Baixe o repositório usando este endereço:
+
+```git
+git clone git@github.com:yxuo/learning.git
+```
 
 ## Fonte:
 
