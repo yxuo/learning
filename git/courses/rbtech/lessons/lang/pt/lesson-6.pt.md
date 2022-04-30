@@ -195,3 +195,5 @@ flowchart LR
 ## Fonte:
 
 * [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
+
+* [What is the `origin` in Git? - GitTower](https://www.git-tower.com/learn/git/glossary/origin)
