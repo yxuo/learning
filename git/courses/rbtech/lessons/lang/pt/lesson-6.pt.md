@@ -161,6 +161,27 @@ Depois:
 
 Sua pasta de projeto no PC será "Projetos".
 
+## Recaptulando gráfico de comandos Git:
+
+```mermaid
+flowchart LR
+    subgraph Remote [Remote]
+        Remote_repo["Git directory"]
+    end
+    subgraph Local [Local]
+        workdir["working directory"]
+        stage["staging area"]
+        Local_repo["Git directory"]
+
+        workdir --> |"git add"| stage --> |git commit| Local_repo
+        Local_repo -.->  |git push| Remote_repo
+        Remote_repo -.->  |git pull| Local_repo
+        stage --> |"git reset"| workdir
+        Local_repo --> |git revert| stage
+
+    end
+```
+
 ## Fonte:
 
 * [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
