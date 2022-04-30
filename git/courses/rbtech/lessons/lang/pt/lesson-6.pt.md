@@ -84,6 +84,24 @@ Para seu PC poder clonar, baixar e alterar repositórios no GitHub, é preciso:
 
 2. Adicionar a chave na lista de chaves SSH do seu GitHub:
 
+    Vá em `settings` > `SSH and PGP keys`
+
+    ![Adicionar chaves no GitHub](../../img/github-menu-settings.png)
+
+    ![Adicionar chaves no GitHub](../../img/github-keys.png)
+
+    ![Adicionar chaves no GitHub](../../img/github-keys-add.png)
+
+    Exemplo de chave ssh:
+    ```git
+    ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
+    GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
+    Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA
+    t3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En
+    mZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx
+    NrRFi9wrf+M7Q== schacon@mylaptop.local
+    ```
+
 Fonte:
 
 * [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
