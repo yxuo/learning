@@ -102,6 +102,13 @@ Para seu PC poder gerenciar seus repositórios no GitHub, é preciso:
     NrRFi9wrf+M7Q== schacon@mylaptop.local
     ```
 
-Fonte:
+### Criar repositório:
+
+![Página para criar repositório no GitHub](../../img/github-repository-create.png)
+
+### Clonar repositório:
+
+![Página para clonar repositório](../../img/github-clone-ssh.png)
+
 
 * [How to use ssh-keygen to generate a new SSH key - SSH](https://www.ssh.com/academy/ssh/keygen)
