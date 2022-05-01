@@ -1,4 +1,6 @@
-# aula 1
+### aula 1
+
+## comentários
 
 # comentário de 1 linha
 
@@ -10,7 +12,7 @@ linhas
 
 print("hello world")
 
-# realiza operações matemáticas
+## realiza operações matemáticas
 
 print(1+1) # 2      (soma)
 
@@ -26,7 +28,7 @@ print(2//3) # 0     (divisão arredondado pra baixo)
 
 print(10%2) # 0      (resto)
 
-# juntar texto com número
+## juntar texto com número
 
 print("texto", 10) # texto 10                       (vírgula, espaço automático)
 
@@ -36,17 +38,17 @@ print("texto %d e %d"%(10, 34)) # texto 10 e 34     (mais de uma variável)
 
 print("texto {}".format(10)) # texto 10             (format)
 
-# aspas simples é o mesmo que aspas duplas
+## aspas simples é o mesmo que aspas duplas
 
 print('hello world')
 print("hello world")
 
-# declarar várias variáveis na mesma linha
+## declarar várias variáveis na mesma linha
 
 a, b, c, d, e = 1, 2, 3, 4, 5
 # a=1, b=2, c=3, d=4, e=5
 
-# operadores lógicos
+## operadores lógicos
 
 print(1 == 2) # False
 
@@ -60,6 +62,7 @@ print(1 <= 2) # True
 
 print(not 1 < 2) # False
 
-# oepradores relacionais
+## oepradores relacionais
 
 print(not 1 == 1) # False
+
