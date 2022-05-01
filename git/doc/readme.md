@@ -87,10 +87,74 @@ Useful VIM commands:
 * `:cq` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cancel and quit
 * `h`, `j`, `k`, `l` &nbsp; :arrow_left:, :arrow_down:, :arrow_up: :arrow_right:
 
+### Stage chunks of lines:
+
+```git
+git add -p
+```
+
+Options:
+
+* `y` - stage this chunk
+* `n` - ignore this hunk
+* `q` - quit
+* `a` - stage this chunk and all later ones
+* `d` - ignore this and the later ones
+* `s` - split the current hunk into smaller hunks
+* `e` - manually edit the current hunk: `git add -e`
+
+Just like in VSCode:
+
+![VSCode chunks of lines](img/git-vscode-chunk-lines.png)
+
+![VSCode chunks of lines](img/git-vscode-chunk-lines-options.png)
+
+### See staged lines of files:
+
+```git
+git diff --staged
+```
+
 ### Commit:
 
 ```git
 git commit -m "title" -m "second line"
+```
+
+## See status, and files to stage:
+
+```git
+git status
+```
+
+Sometimes, most of new files will be hidden under a folder:
+
+```git
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        python/trainings/
+```
+
+### See status of all new files
+
+```git
+git status -u
+```
+
+return:
+
+```git
+Untracked files:
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+  (use "git add <file>..." to include in what will be committed)
+        python/trainings/logic/gabarito.py
+        python/trainings/logic/readme.md
+        python/trainings/logic/treino-1.py
 ```
 
 # Source
