@@ -114,7 +114,7 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 8. Como boa prática, evitar ao máximo conteúdo autoral.
 
-9. Se quiser usar images explicativas, tabelas, etc, faça você mesmo em markdown, mermaid, em último caso, num editor de imagem.
+9. Se quiser usar imagens explicativas, tabelas, etc, faça você mesmo em markdown, mermaid, em último caso, num editor de imagem.
 
 10. Imagens usadas meramente como referência podem ser usadas.
     
