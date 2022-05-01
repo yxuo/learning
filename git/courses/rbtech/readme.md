@@ -13,12 +13,12 @@
 
 ## My progress:
 
-| Lessons  | Notes                       | Completed            |
-|:--------:|:---------------------------:|:--------------------:|
-| Lesson 1 | [View](lessons/lesson-1.md) | :white_check_mark:   |
-| Lesson 2 |                             | :white_check_mark:   |
-| Lesson 3 |                             | :white_check_mark:   |
-| Lesson 4 |                             | :white_check_mark:   |
+| Lessons  | Notes                       | Completed             |
+|:--------:|:---------------------------:|:---------------------:|
+| Lesson 1 | [View](lessons/lesson-1.md) | :white_check_mark: |
+| Lesson 2 |                             | :white_check_mark: |
+| Lesson 3 |                             | :white_check_mark: |
+| Lesson 4 |                             | :white_check_mark: |
 | Lesson 5 |                             | :white_check_mark: |
 | Lesson 6 |                             | :white_check_mark: |
 | Lesson 7 |                             | :white_check_mark: |
