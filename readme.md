@@ -108,7 +108,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 5. Be didactic;
 
-6. Solve any doubts arisen in that moment;
+6. Add small doubts only;
 
 7. Feel free to add content in addiction to what is taught;
 

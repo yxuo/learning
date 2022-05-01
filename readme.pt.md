@@ -108,7 +108,7 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 5. Ser didático;
 
-6. Sinta-se livre para adicionar conteúdo além do que é ensinado;
+6. Adicione apenas pequenas dúvidas;
 
 7. Ter profundidade não maior que o necessário e razoável;
 
