@@ -63,6 +63,30 @@ git add *readme*
 
 > Be vigilant for which files have been added.
 
+#### Stage lines of file:
+
+```git
+git add -e
+```
+
+VIM text editor (default) shall appear:
+
+```git
+first line
+- old line
++ new line
+```
+
+Useful VIM commands:
+
+* `i` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;insert mode
+* `v`  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; selection mode
+* `Esq` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;exit
+* `dd` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;delete line
+* `:wq` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;save and quit
+* `:cq` &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cancel and quit
+* `h`, `j`, `k`, `l` &nbsp; :arrow_left:, :arrow_down:, :arrow_up: :arrow_right:
+
 ### Commit:
 
 ```git
