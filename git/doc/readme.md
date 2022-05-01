@@ -88,3 +88,5 @@ Naming conventions:
 * [Is it a good habit to write TODO to commit message? - StackOverflow](https://stackoverflow.com/questions/51260140/is-it-a-good-habit-to-write-todo-to-commit-message)
 
 * [Git add specific lines not interactively - StackOverflow](https://stackoverflow.com/questions/50627024/git-add-specific-lines-not-interactively)
+
+* [Add Specific Lines With Git Patch. Codementor](https://www.codementor.io/@maksimivanov/add-specific-lines-with-git-patch-eais7k69j)
