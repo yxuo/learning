@@ -46,6 +46,12 @@ Firstly, be aware that you can name all folders the any way you want, if that is
 git add doc/lang/pt/readme-4.pt
 ```
 
+#### add all:
+
+```git
+git add .
+```
+
 #### Add all files based on part of directory:
 
 ```git
