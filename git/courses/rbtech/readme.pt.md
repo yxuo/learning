@@ -25,7 +25,3 @@
 ## Assista ao curso:
 
 [![Imagem ilustrativa do curso de Git, de RBtech, no YouTube](https://img.youtube.com/vi/-GhA2JPImgU/mqdefault.jpg)](https://www.youtube.com/playlist?list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0)
-
----
-
-* Inspirado por @lucfontenelle
