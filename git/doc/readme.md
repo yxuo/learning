@@ -157,6 +157,35 @@ Your branch is ahead of 'origin/master' by 5 commits.
         python/trainings/logic/treino-1.py
 ```
 
+## Fast tips
+
+### Main Git commands:
+
+```mermaid
+flowchart
+    subgraph Local [Local]
+        Local_repo[Git directory]
+        stage[Staging area]
+        workdir[Working directory]
+        unchanged[Unchanged]
+
+        workdir --> |git add| stage
+        stage --> |git reset| workdir
+        stage --> |git commit| Local_repo
+        Local_repo --> |git revert| stage
+        %%stage -.-x |git restore --staged| unchanged
+        workdir -.-x |git restore| unchanged
+    end
+
+    subgraph Remote [Remote]
+        Remote_repo["Git directory"]
+    end
+    Local_repo -.->  |git push| Remote_repo
+    Remote_repo -.->  |git pull| Local_repo
+
+    style unchanged fill:transparent, stroke-dasharray: 5 5, stroke:grey
+```
+
 # Source
 
 * [How to write a good commit message - freeCodeCamp](https://www.freecodecamp.org/news/a-beginners-guide-to-git-how-to-write-a-good-commit-message/)
