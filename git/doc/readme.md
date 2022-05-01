@@ -84,3 +84,5 @@ Naming conventions:
   * [Web file and folder naming - CSUDH](https://www.csudh.edu/web-services/web-standards/file-folder-naming/)
 
 * [Is it a good habit to write TODO to commit message? - StackOverflow](https://stackoverflow.com/questions/51260140/is-it-a-good-habit-to-write-todo-to-commit-message)
+
+* [Git add specific lines not interactively - StackOverflow](https://stackoverflow.com/questions/50627024/git-add-specific-lines-not-interactively)
