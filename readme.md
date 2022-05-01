@@ -110,7 +110,7 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 6. Add small doubts only;
 
-7. Feel free to add content in addiction to what is taught;
+7. Distant or in-deep content must be added in the documentation, not here;
 
 8. Have depth no more than the necessary and reasonable;
 

@@ -110,7 +110,7 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 6. Adicione apenas pequenas dúvidas;
 
-7. Ter profundidade não maior que o necessário e razoável;
+7. Conteúdos distantes ou aprodundados devem ser adicionados na documentação, não aqui;
 
 8. Como boa prática, evitar ao máximo conteúdo autoral.
 
