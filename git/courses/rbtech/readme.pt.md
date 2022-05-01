@@ -28,4 +28,4 @@
 
 ---
 
-* Inspirado em: https://github.com/lfontinele/CursoDeGit
+* Inspirado por @lucfontenelle

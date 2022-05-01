@@ -30,4 +30,4 @@
 
 ---
 
-* Inspired by: https://github.com/lfontinele/CursoDeGit
+* Inspired by @lucfontenelle

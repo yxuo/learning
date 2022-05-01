@@ -18,4 +18,4 @@ Contém cursos de Git realizados e documentação elaborada com o aprendizado.
 
 ---
 
-* Inspired by: https://github.com/lfontinele/CursoDeGit
+* Inspired by @lucfontenelle
