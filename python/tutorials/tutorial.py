@@ -1,3 +1,9 @@
+'''
+Fontes:
+
+* https://stackoverflow.com/questions/5844672/delete-an-element-from-a-dictionary
+'''
+
 ### aula 1
 
 ## comentários
@@ -73,3 +79,21 @@ print(not num == 10) # False
 
 for i in range(10):
     print(i) # 0 1 2 3 4 5 6 7 8 9
+
+## dicionário
+
+# criar
+
+dicionario = dict()
+dicionario = {}
+dicionario = {"chave1":123, 2:"valor2"}
+
+# adicionar
+
+dicionario ["chave1"] = "valor1"
+dicionario ["chave2"] = "valor2"
+
+# remover
+
+valor = dicionario.pop("chave1")
+del dicionario["chave2"]
