@@ -38,6 +38,29 @@ Firstly, be aware that you can name all folders the any way you want, if that is
 
 > Obviously some system folders like `.git` can't be even renamed.
 
+## Git commands:
+
+### Add file:
+
+```git
+git add doc/lang/pt/readme-4.pt
+```
+
+#### Add all files based on part of directory:
+
+```git
+git add *readme-4.pt
+git add *readme*
+```
+
+> Be vigilant for which files have been added.
+
+### Commit:
+
+```git
+git commit -m "title" -m "second line"
+```
+
 # Source
 
 * [How to write a good commit message - freeCodeCamp](https://www.freecodecamp.org/news/a-beginners-guide-to-git-how-to-write-a-good-commit-message/)
