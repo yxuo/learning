@@ -20,8 +20,8 @@
 | Lesson 3 |                             | :white_check_mark:   |
 | Lesson 4 |                             | :white_check_mark:   |
 | Lesson 5 |                             | :white_check_mark: |
-| Lesson 6 |                             | :white_large_square: |
-| Lesson 7 |                             | :white_large_square: |
+| Lesson 6 |                             | :white_check_mark: |
+| Lesson 7 |                             | :white_check_mark: |
 | Lesson 8 |                             | :white_large_square: |
 
 ## Watch the course:

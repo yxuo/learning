@@ -18,8 +18,8 @@
 | Aula 3 | [Visualizar](lessons/lang/pt/lesson-3.pt.md) | :white_check_mark:   |
 | Aula 4 | [Visualizar](lessons/lang/pt/lesson-4.pt.md) | :white_check_mark:   |
 | Aula 5 | [Visualizar](lessons/lang/pt/lesson-5.pt.md) | :white_check_mark: |
-| Aula 6 | [Visualizar](lessons/lang/pt/lesson-6.pt.md) | :white_large_square: |
-| Aula 7 |                                              | :white_large_square: |
+| Aula 6 | [Visualizar](lessons/lang/pt/lesson-6.pt.md) | :white_check_mark: |
+| Aula 7 | [Visualizar](lessons/lang/pt/lesson-7.pt.md) | :white_check_mark: |
 | Aula 8 |                                              | :white_large_square: |
 
 ## Assista ao curso:
