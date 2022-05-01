@@ -40,6 +40,8 @@ Firstly, be aware that you can name all folders the any way you want, if that is
 
 ## Git commands:
 
+Note that "add" and "stage" are synonymous.
+
 ### Add file:
 
 ```git
