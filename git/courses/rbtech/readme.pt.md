@@ -11,16 +11,16 @@
 
 ## Meu progresso:
 
-| Aulas  | Anotações                                    | Concluída            |
-|:------:|:--------------------------------------------:|:--------------------:|
-| Aula 1 | [Visualizar](lessons/lang/pt/lesson-1.pt.md) | :white_check_mark:   |
-| Aula 2 | [Visualizar](lessons/lang/pt/lesson-2.pt.md) | :white_check_mark:   |
-| Aula 3 | [Visualizar](lessons/lang/pt/lesson-3.pt.md) | :white_check_mark:   |
-| Aula 4 | [Visualizar](lessons/lang/pt/lesson-4.pt.md) | :white_check_mark:   |
+| Aulas  | Anotações                                    | Concluída             |
+|:------:|:--------------------------------------------:|:---------------------:|
+| Aula 1 | [Visualizar](lessons/lang/pt/lesson-1.pt.md) | :white_check_mark: |
+| Aula 2 | [Visualizar](lessons/lang/pt/lesson-2.pt.md) | :white_check_mark: |
+| Aula 3 | [Visualizar](lessons/lang/pt/lesson-3.pt.md) | :white_check_mark: |
+| Aula 4 | [Visualizar](lessons/lang/pt/lesson-4.pt.md) | :white_check_mark: |
 | Aula 5 | [Visualizar](lessons/lang/pt/lesson-5.pt.md) | :white_check_mark: |
 | Aula 6 | [Visualizar](lessons/lang/pt/lesson-6.pt.md) | :white_check_mark: |
 | Aula 7 | [Visualizar](lessons/lang/pt/lesson-7.pt.md) | :white_check_mark: |
-| Aula 8 |                                              | :white_large_square: |
+| Aula 8 | [Visualizar](lessons/lang/pt/lesson-8.pt.md) | :white_check_mark: |
 
 ## Assista ao curso:
 

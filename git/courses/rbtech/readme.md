@@ -22,7 +22,7 @@
 | Lesson 5 |                             | :white_check_mark: |
 | Lesson 6 |                             | :white_check_mark: |
 | Lesson 7 |                             | :white_check_mark: |
-| Lesson 8 |                             | :white_large_square: |
+| Lesson 8 |                             | :white_check_mark: |
 
 ## Watch the course:
 
