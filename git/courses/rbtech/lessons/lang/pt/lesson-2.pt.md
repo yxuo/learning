@@ -387,15 +387,32 @@ git reset.
 git restore
 ```
 
-#### Confirmar arquivo:
+#### Confirmar arquivo (com mensagem):
 
 ```git
-git commit -m "primeiro commit"
+git commit -m "título"
 ```
 
-Confirmar sem mensagem:
+Com título e descrição:
 
-```bash
+```git
+git commit -m "título" -m "descrição"
+```
+
+Com múltiplas linhas:
+
+```git
+git commit -m "commit title" -m "second line" -m "third line"
+```
+
+A primeira linha (título) vai até 50 caracteres.  
+As demais linhas vão até 72 caracteres cada.
+
+#### Confirmar arquivo sem mensagem:
+
+:warning: Isto não recomendado!
+
+```git
 git commit
 ```
 
