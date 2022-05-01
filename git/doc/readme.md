@@ -43,7 +43,7 @@ Firstly, be aware that you can name all folders the any way you want, if that is
 ### Add file:
 
 ```git
-git add doc/lang/pt/readme-4.pt
+git add readme.md
 ```
 
 #### Add all:
