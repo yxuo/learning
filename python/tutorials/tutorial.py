@@ -12,6 +12,9 @@ linhas
 
 print("hello world")
 
+print("hello",end=' ')
+print("world")
+
 ## realiza operações matemáticas
 
 print(1+1) # 2      (soma)
@@ -64,5 +67,6 @@ print(not 1 < 2) # False
 
 ## oepradores relacionais
 
-print(not 1 == 1) # False
-
+num = 10
+print(not num == 10) # False
+# mesmo que num != 10
