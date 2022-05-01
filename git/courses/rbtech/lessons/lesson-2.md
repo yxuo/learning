@@ -374,25 +374,33 @@ git reset.
 git restore
 ```
 
-#### Confirmar arquivo com mensagem de commit:
+#### Commit file (with message):
+
+With message
 
 ```git
-git commit -m "primeiro commit"
+git commit -m "commit title"
 ```
 
-#### Confirmar arquivo:
+Recommended:
 
 ```git
-git commit -m "primeiro commit"
+git commit -m "commit title" -m "second line"
 ```
 
-Confirmar sem mensagem:
+With more lines:
 
-```bash
-git commit
+```git
+git commit -m "commit title" -m "second line" -m "third line"
 ```
 
-Ao dar commit desta maneira, uma tela do editor de texto `VIM` aparecerá:
+#### Commit file without message:
+
+```git
+git commit -m
+```
+
+When you commit without message, a screen with `VIM` will appear:
 
 ##### Mensagem de commit (VIM):
 
