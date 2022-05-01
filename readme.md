@@ -90,6 +90,8 @@ Whenever this repository needs test subprojects, it will have other branches for
 
 ## Rules
 
+* Use Git only via terminal, whenever as possible.
+
 * Main readmes must be updated in all languages at each commit.
 
 * `TODΟs` must be written in uppercase.

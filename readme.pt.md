@@ -90,6 +90,8 @@ Sempre que este repositório precisar testar subprojetos, terá outros ramos par
 
 ## Regras
 
+* Apenas use o Git via terminal, sempre que possível.
+
 * Readmes principais devem ser atualizados em todos os idiomas em cada comimt;
 
 * `TODΟ`s devem ser escritos em caixa alta.
