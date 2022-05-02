@@ -194,6 +194,10 @@ flowchart
 
 * [How to change a Git commit message - Linuxize](https://linuxize.com/post/change-git-commit-message/)
 
+* [Git add specific lines not interactively - StackOverflow](https://stackoverflow.com/questions/50627024/git-add-specific-lines-not-interactively)
+
+* [Add Specific Lines With Git Patch. Codementor](https://www.codementor.io/@maksimivanov/add-specific-lines-with-git-patch-eais7k69j)
+
 Naming conventions:
 
 * [Is there a naming convention for git repositories? - StackOverflow](https://stackoverflow.com/questions/11947587/is-there-a-naming-convention-for-git-repositories)
@@ -203,7 +207,3 @@ Naming conventions:
   * [Web file and folder naming - CSUDH](https://www.csudh.edu/web-services/web-standards/file-folder-naming/)
 
 * [Is it a good habit to write TODO to commit message? - StackOverflow](https://stackoverflow.com/questions/51260140/is-it-a-good-habit-to-write-todo-to-commit-message)
-
-* [Git add specific lines not interactively - StackOverflow](https://stackoverflow.com/questions/50627024/git-add-specific-lines-not-interactively)
-
-* [Add Specific Lines With Git Patch. Codementor](https://www.codementor.io/@maksimivanov/add-specific-lines-with-git-patch-eais7k69j)
