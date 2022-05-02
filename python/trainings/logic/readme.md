@@ -150,7 +150,7 @@
    
    Por exemplo, aprovados(D) deverá imprimir Denise.  D={'Alano':(7.5,8.0,6.5),'Denise':(9.0,8.5,9.5),'Ana Paula':(3.5,1.0,6.5)}
 
-# Lista 7 - revisão
+# Lista 7
 
 1. Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento de uma pessoa retornando um valor literal indicando se uma pessoa tem voto Negado, Opcional ou Obrigatório nas eleições.
 
