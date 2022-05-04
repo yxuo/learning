@@ -32,29 +32,6 @@ Also, simple projects to practice.
 3. :green_square: [**HTML 5 (10/24)**](3-html5/readme.md)
 4. :white_large_square: etc
 
-<table>
-    <tr>
-        <th>Sections</th>
-        <th>Notes</th>
-        <th>Completed</th>
-    </tr>
-    <tr>
-        <td>1. Welcome</td>
-        <td><a  href="">View</a></td>
-        <td>Completed</td>
-    </tr>
-    <tr>
-        <td>2. Setup</td>
-        <td>Notes</td>
-        <td>Completed</td>
-    </tr>
-    <tr>
-        <td>2. Setup</td>
-        <td>Notes</td>
-        <td>Completed</td>
-    </tr>
-</table>
-
 ## Watch the course:
 
 [![Imagem de prévia do curso](https://img-c.udemycdn.com/course/240x135/1341268_c20e_3.jpg)](https://www.udemy.com/course/web-completo/)
