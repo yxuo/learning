@@ -4,6 +4,11 @@
 
 **Jorge Sant Ana, Jamilton Damasceno.**
 
+## Goals
+
+* Just go fast, learn the essential;
+* Mainly: code and learn.
+
 ## Course content:
 
 * HTML5
