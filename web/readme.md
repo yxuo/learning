@@ -13,6 +13,3 @@ A general approach about all web technologies.
 ![](https://img.shields.io/static/v1.svg?label=idiom&labelColor=gray&message=Portuguese&color=blue)
 
 [![Imagem de prévia do curso](https://img-c.udemycdn.com/course/240x135/1341268_c20e_3.jpg)](courses/web_complete-ana-damasceno/readme.md)
-
----
-
