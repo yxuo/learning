@@ -41,3 +41,5 @@ Also, simple projects to practice.
 This time I wanted to blend the files of lessons together in course folder. :3
 
 Also, I simplified the progress list, more intuitive and fast to do.
+
+> *Who never try different, never get different results - Albert Einstein*
