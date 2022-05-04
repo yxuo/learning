@@ -8,7 +8,7 @@ A general approach about all web technologies.
 
 #### Ana, Damanesco - Web dev complete 2022
 
-[![](https://img.shields.io/static/v1.svg?label=completed&labelColor=gray&message=0%&color=inactive)](courses/rbtech/readme.md)
+[![](https://img.shields.io/static/v1.svg?label=completed&labelColor=gray&message=3.2%&color=inactive)](courses/rbtech/readme.md)
 [![](https://img.shields.io/static/v1.svg?label=available&labelColor=gray&message=Udemy&color=darkviolet)](https://www.udemy.com/course/web-completo/)
 ![](https://img.shields.io/static/v1.svg?label=idiom&labelColor=gray&message=Portuguese&color=blue)
 
