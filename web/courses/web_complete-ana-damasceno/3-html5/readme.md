@@ -159,7 +159,7 @@ Recommended now:
 Text with <em>bold</em> word.
 ```
 
-* `em` from **emphasis**
+* `em` from **embeleze**
 
 
 ### Underline:
