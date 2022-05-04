@@ -74,3 +74,164 @@ Is the file format, normally `utf-8`.
   </body>
 </html>
 ```
+
+## 11. Headers
+
+### Solo tags
+
+Earlier versions:
+
+```html
+<meta charset="utf8" />
+<br/>
+```
+
+HTML5:
+
+```html
+<meta charset="utf8">
+<br>
+```
+
+* Slash `/` is optional
+
+Paired tags:
+
+```html
+<h1>Header</h1>
+<div>division</div>
+```
+
+### Header types:
+
+```html
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+etc...
+```
+
+## 12. Paragraph
+
+Break line by grouping text:
+
+```
+<p>Line 1</p>
+<p>Line 2</p>
+<p>Line 3</p>
+```
+
+Simple line break:
+
+```
+Line 1<br>
+Line 2
+<br>
+Line 3
+```
+
+* It doesn't matter if `<br>` is inside the line or above.
+
+## 13. Bold
+
+Not recommended anymore:
+
+```html
+Text with <bold>bold</bold> word.
+```
+
+Recommended now:
+
+```html
+Text with <strong>bold</strong> word.
+```
+
+### Italic
+
+Not recommended anymore:
+
+```html
+Text with <i>bold</i> word.
+```
+
+Recommended now:
+
+```html
+Text with <em>bold</em> word.
+```
+
+* `em` from **emphasis**
+
+
+### Underline:
+
+```html
+<u>Underline</u> text.
+```
+
+### Strike:
+
+```html
+<strike>Strike</strike> text.
+```
+
+## 14. Unordered list
+
+```html
+<!-- unordered list -->
+<ul>
+  <!-- list item -->
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+Preview:
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+### List types
+
+Circle: 
+
+```html
+<ul type="circle">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+```
+
+<ul type="circle">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+Square: 
+
+```html
+<ul type="square">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+```
+
+<ul type="square">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+### Comment:
+
+```html
+<!-- unordered list -->
+```
+
+* Not seen by browser and markdown reader.
+
+## 15. Ordered list - Test
+
+Do a site like this:
