@@ -16,6 +16,15 @@ várias
 linhas
 '''
 
+# ler comentário
+
+def ler_comentario():
+    '''
+    Imprimir comentário multi linha,
+    usando help()!
+    '''
+help(ler_comentario)
+
 print("hello world")
 
 print("hello",end=' ')
