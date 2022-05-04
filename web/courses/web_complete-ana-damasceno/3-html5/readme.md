@@ -240,3 +240,19 @@ Make a site like this:
 
 * [**Answer file**](test-15.html)
 
+### Line separator:
+
+```html
+<hr>
+```
+
+ * `hr` from horizontal rule
+
+### Ordered list:
+
+```html
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+```
