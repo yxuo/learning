@@ -256,3 +256,219 @@ Make a site like this:
   <li>item</li>
 </ol>
 ```
+
+## 16. Images
+
+```html
+<!-- from link -->
+<img src="https://picsum.photos/200">
+
+<!-- local image -->
+<img src="sample.png" alt="image description">
+```
+
+Preview:
+
+<img src="https://picsum.photos/200">
+<img src="sample.png">
+
+* *Is recommended to use local images.
+
+### Custom width in tags:
+
+#### Automatic propotion:
+
+```html
+<!-- height is automatically proportional -->
+<img src="sample.png" width=150px>
+<br>
+<img src="sample.png" width=100px>
+```
+
+Preview:
+
+<img src="sample.png" width=150px>
+<br>
+<img src="sample.png" width=100px>
+
+#### Custom proportion:
+
+```html
+<img src="sample.png" width=100px height=100>
+```
+
+Preview:
+
+<img src="sample.png" width=100px height=100>
+
+## 17. Link
+
+```html
+  <a href="https://www.udemy.com/course/web-completo">Site of this course</a>
+  <br>
+  <a href="test-15.html">Local html file</a>
+```
+
+Preview:
+
+<a href="https://www.udemy.com/course/web-completo">Site of this course</a>
+<br>
+<a href="test-15.html">Local html file - test 15</a>
+
+  > Link to local html didn't work on VSCode's markdown preview.
+
+## 18. Table
+
+```html
+<table border="2px">
+  <!-- table row (first) -->
+  <tr>
+    <!-- table header -->
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <!-- table data-->
+    <td>1</td>
+    <td>A1</td>
+    <td>B1</td>
+    <td>C1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>A2</td>
+    <td>B2</td>
+    <td>C2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>A3</td>
+    <td>B3</td>
+    <td>C3</td>
+  </tr>
+</table>
+```
+
+Preview (markdown):
+
+<table border="2px">
+  <!-- table row (first) -->
+  <tr>
+    <!-- table header -->
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <!-- table data-->
+    <td>1</td>
+    <td>A1</td>
+    <td>B1</td>
+    <td>C1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>A2</td>
+    <td>B2</td>
+    <td>C2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>A3</td>
+    <td>B3</td>
+    <td>C3</td>
+  </tr>
+</table>
+
+## 19. More about table
+
+### Custom width (for any tag)
+
+#### 100% browser width:
+
+```html
+<table width="100%">
+  ...
+</table>
+```
+
+#### defined width:
+
+```html
+<table width="300px">
+  ...
+</table>
+```
+
+#### Empty space:
+
+```html
+<table border="2px">
+  <tr>
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>A1</td>
+    <td>B1</td>
+    <td>C1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>A2</td>
+    <td>B2</td>
+    <td>C2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>A3</td>
+    <td>B3</td>
+    <!-- empty cell here -->
+  </tr>
+</table>
+```
+
+#### Cell occupying 2 columns:
+
+```html
+<table border="2px">
+  ...
+  <tr>
+    <td>3</td>
+    <td>A3</td>
+    <td colspan=2>B3 and C3</td>
+  </tr>
+</table>
+```
+
+
+#### Cell occupying 2 lines:
+
+```html
+<table border="2px">
+  ...
+  <tr>
+    <td rowspan=2>2 and 3</td>
+    <td>A2</td>
+    <td>B2</td>
+    <td>C2</td>
+  </tr>
+  <tr>
+    <!-- 2 and 3 here -->
+    <td>A3</td>
+    <td>B3</td>
+    <td>C3</td>
+  </tr>
+</table>
+```
+
+> Note that `rowspan=2` and `rowspan="2"` are the same.
+
+<!-- TODO: 20. Form -->
