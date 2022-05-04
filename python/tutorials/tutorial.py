@@ -25,6 +25,8 @@ def ler_comentario():
     '''
 help(ler_comentario)
 
+# print
+
 print("hello world")
 
 print("hello",end=' ')
