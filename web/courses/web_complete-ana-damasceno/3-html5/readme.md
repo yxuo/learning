@@ -1,6 +1,6 @@
 # Section 3 - HTML 5
 
-## 8 What will be taught
+## 8. What will be taught
 
 * links
 
@@ -13,7 +13,7 @@
 
 * In final project I shall be capable to create a simple site.
   
-## 9 - Web page structure, part 1
+## 9. Web page structure, part 1
 
 ```html
 <!doctype html>
@@ -30,7 +30,7 @@
 </html>
 ```
     
-## 10 - Web page structure, part 2
+## 10. Web page structure, part 2
 
 ### Identation
 
