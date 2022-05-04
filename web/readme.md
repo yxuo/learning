@@ -2,8 +2,6 @@
 
 A general approach about all web technologies.
 
-* [Documentation](doc/readme.md)
-
 ## Courses:
 
 #### Ana, Damanesco - Web dev complete 2022
