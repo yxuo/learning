@@ -106,3 +106,25 @@ dicionario ["chave2"] = "valor2"
 
 valor = dicionario.pop("chave1")
 del dicionario["chave2"]
+
+## lista
+
+# criar
+
+lista = list()
+lista = []
+lista = [1,2,3]
+
+# adicionar
+
+lista.append(4)             # valor
+lista.insert(len(lista), 5) # índice, valor
+
+lista2 = [6,7,8]
+lista.extend(lista2)        # lista = [1,2,3,4,5,6,7,8]
+
+# remover
+
+print(lista.index(2))
+lista.pop()
+lista.remove()
