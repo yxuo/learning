@@ -238,6 +238,5 @@ Make a site like this:
 
 ![Test 15: simple site](img/test-15.png)
 
-Answer:
+* [**Answer file**](test-15.html)
 
-<iframe src="test-15.html">
