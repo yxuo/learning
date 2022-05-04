@@ -240,8 +240,4 @@ Make a site like this:
 
 Answer:
 
-<iframe src="15-test.html">
-
-asdas
-aSD
-SAD
+<iframe src="test-15.html">
