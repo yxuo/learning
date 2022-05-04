@@ -34,7 +34,7 @@ Also, simple projects to practice.
 
 1. :white_check_mark: [Welcome](1-welcome/readme.md)
 2. :white_check_mark: [Setup](2-setup/readme.md)
-3. :green_square: [**HTML 5 (10/24)**](3-html5/readme.md)
+3. :green_square: [**HTML 5 (19/24)**](3-html5/readme.md)
 4. :white_large_square: CSS 3 - Basic
 5. :white_large_square: CSS 3 - Medium, advanced
 6. :white_large_square: HTML 5, CSS 3 - Special features
