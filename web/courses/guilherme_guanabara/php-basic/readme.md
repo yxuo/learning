@@ -34,11 +34,15 @@
 
 ## Watch the course:
 
-[![Imagem de prévia do curso](https://img-c.udemycdn.com/course/240x135/1341268_c20e_3.jpg)](https://www.udemy.com/course/web-completo/)
+### Curso em vídeo:
+
+<a href="courses/web_complete-ana-damasceno/readme.md"><img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" style="width:250px; height:auto;"></a>
+
+### YouTube:
+
+[![Imagem de prévia do curso](https://img.youtube.com/vi/F7KzJ7e6EAc/mqdefault.jpg)](https://www.youtube.com/watch?v=F7KzJ7e6EAc&list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k)
 
 ---
-
-This time I wanted to blend the files of lessons together in course folder. :3
 
 Also, I simplified the progress list, more intuitive and fast to do.
 
