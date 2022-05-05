@@ -44,6 +44,6 @@
 
 ---
 
-Also, I simplified the progress list, more intuitive and fast to do.
+lessons got merged to priorize productivity.
 
-> *Who never try different, never get different results - Albert Einstein*
+Seeing if this will get good results...
