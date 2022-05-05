@@ -3,7 +3,6 @@
 After internet in 1997 the WWW was born.
 
 Along with it, came HTTP, HTML and PHP.
-
 HTTP and HTML work together for communication between servers and clients;
 
 ## 1990:
