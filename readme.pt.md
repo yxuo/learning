@@ -56,15 +56,17 @@ A ordem dos arquivos pode ser alterada dependendo das conscunstâncias, nada ser
 
 * :books: Assunto (python, c, web, análise req., etc)
   
-  * Cursos
-    
-    * Nome do curso
+  * Autor do curso (opcional)
+  
+    * Cursos
       
-      * :book: Conteúdo no idioma principal
-      
-      * Idioma (en, pt)
+      * Nome do curso
         
-        * :book: Conteúdo no idioma secundário
+        * :book: Conteúdo no idioma principal
+        
+        * Idioma (en, pt)
+          
+          * :book: Conteúdo no idioma secundário
   
   * Casos
     

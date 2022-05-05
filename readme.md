@@ -58,13 +58,15 @@ The order of files can be changed depending on the circumstances, nothing will b
 
    * Courses
 
-      * Course name
+      * Course author (optional)
 
-         * :book: First language content here
+        * Course name
 
-         * Idiom (en, pt)
+           * :book: First language content here
 
-            * :book: Secondary language content here
+           * Idiom (en, pt)
+
+              * :book: Secondary language content here
 
    * Cases
 
