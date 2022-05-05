@@ -116,25 +116,21 @@ The order of files can be changed depending on the circumstances, nothing will b
 
 2. Learn about the subject;
 
-3. Be readable;
+3. Be easy to read and teach;
 
-4. Be consultable;
+4. Add small doubts only;
 
-5. Be didactic;
+5. Distant or in-deep content must be added in the documentation, not here;
 
-6. Add small doubts only;
+6. Have depth no more than the necessary and reasonable;
 
-7. Distant or in-deep content must be added in the documentation, not here;
-
-8. Have depth no more than the necessary and reasonable;
-
-9. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
+7. If you want to use explanatory images, tables, etc, do it yourself in markdown, mermaid, in last case, in a image editor.
 
    * Images used merely as reference can be used.
 
       * Prefer to add images via link, instead uploading in repository.
 
-10. Images used merely as reference can be used.
+8.  Images used merely as reference can be used.
 
    * It is encouraged the use of screenshots made by you, and upload in repository.
 

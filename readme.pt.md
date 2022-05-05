@@ -116,27 +116,23 @@ A ordem dos arquivos pode ser alterada dependendo das conscunstâncias, nada ser
 
 2. Aprender sobre o assunto;
 
-3. Ser legível;
+3. Ser fácil de ler e ensinar;
 
-4. Ser consultável;
+4. Adicione apenas pequenas dúvidas;
 
-5. Ser didático;
+5. Conteúdos distantes ou aprodundados devem ser adicionados na documentação, não aqui;
 
-6. Adicione apenas pequenas dúvidas;
+6. Como boa prática, evitar ao máximo conteúdo autoral.
 
-7. Conteúdos distantes ou aprodundados devem ser adicionados na documentação, não aqui;
+7. Se quiser usar imagens explicativas, tabelas, etc, faça você mesmo em markdown, mermaid, em último caso, num editor de imagem.
 
-8. Como boa prática, evitar ao máximo conteúdo autoral.
-
-9. Se quiser usar imagens explicativas, tabelas, etc, faça você mesmo em markdown, mermaid, em último caso, num editor de imagem.
-
-10. Imagens usadas meramente como referência podem ser usadas.
+8.  Imagens usadas meramente como referência podem ser usadas.
     
     * É encorajado usar capturas de tela feitas por você, e subir no repositório.
     
     * Caso contrário, prefira adicionar iamgens via link ao invés de subir um arquivo no repositório.
 
-11. Citar fontes de pesquisa.
+9.  Citar fontes de pesquisa.
 
 ### Idioma
 
