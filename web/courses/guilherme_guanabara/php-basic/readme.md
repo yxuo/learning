@@ -36,7 +36,7 @@
 
 ### Curso em vídeo:
 
-<a href="courses/web_complete-ana-damasceno/readme.md"><img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" style="width:250px; height:auto;"></a>
+<a href="https://www.cursoemvideo.com/curso/php-basico"><img src="https://www.cursoemvideo.com/wp-content/uploads/bb-plugin/cache/php-circle.jpg" style="width:250px; height:auto;"></a>
 
 ### YouTube:
 
