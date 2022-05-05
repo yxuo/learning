@@ -92,6 +92,14 @@ A ordem dos arquivos pode ser alterada dependendo das conscunstâncias, nada ser
     
     * :book: Documentação num só arquivo.
 
+## Convenções de nomenclatura
+
+* nome-sempre-minúscula
+
+* nome_curso-autor1-autor2
+
+* 1-nome-aula
+
 ## Regras
 
 * Apenas use o Git via terminal, sempre que possível.

@@ -92,6 +92,14 @@ The order of files can be changed depending on the circumstances, nothing will b
 
       * :book: Documentation in one file.
 
+## Naming conventions
+
+* name-always-lowercase
+
+* curse_name-author1-author2
+
+* 1-lesson-name (summarized)
+
 ## Rules
 
 * Use Git only via terminal, whenever as possible.
