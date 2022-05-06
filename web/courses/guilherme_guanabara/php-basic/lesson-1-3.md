@@ -90,3 +90,72 @@ Nowadays there are frameworks and tools to create sites with PHP, no code needed
 * Education - mundo (?)
 
 Zend is a company created by Zeev and Andi, creators of PHP3. It works on improvements of PHP.
+
+# 2. How PHP works
+
+Function of main web languages:
+
+* HTML for content
+* CSS for style
+* JS for interactivity
+* PHP for functionality
+
+
+The server send HTML to client.
+
+The client interpret HTML and communicate with server.
+
+## Client side
+
+* The client have most of the work;
+* Everything works on client;
+* The server only send the files.
+
+## Server side
+
+* The server uses PHP to interpret data and then send an HTML, or other files, to client;
+* Apache is used as interpreter of PHP.
+
+The interpreter is used to access database, among other things.
+
+* The server have most of the work
+
+## Technologies, server side, similar to PHP:
+
+* ASP (Microsoft .NET)
+* JSP
+* Ruby
+* etv
+
+## Create local server
+
+* [Download WAMP](https://www.wampserver.com/en/) (**W**indows **A**pache **M**ySql **P**HP);
+* Or [download XAMPP](https://www.apachefriends.org/pt_br/index.html) instead.
+  
+  Powershell:
+
+  ```powershell
+  winget install xampp
+  ```
+
+  > I recomend to run XAMPP as admin.
+
+For Linux:
+
+* LAMP server:
+
+  Debian distros:
+
+  ```bash
+  sudo apt install lamp-server
+  ```
+
+  > You can also find in app stores or look for tutorials out there.
+
+macOS
+
+* [Download MAMP server](https://www.google.com/search?client=firefox-b-d&q=mamp+server).
+
+## Course content
+
+* [See all the content here!](https://www.cursoemvideo.com/curso/php-basico/aulas/php/modulos/conteudo-para-o-curso-de-php/)
