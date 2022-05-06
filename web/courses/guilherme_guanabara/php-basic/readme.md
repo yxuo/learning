@@ -13,8 +13,8 @@
 ## My progress:
 
 1. :white_check_mark: [PHP history](lesson-1-3.md)
-2. :white_large_square: How PHP works / course content
-3. :white_large_square: How install PHP
+2. :white_check_mark: [How PHP works / course content](lesson-1-3.md)
+3. :green_square: [**How install PHP**](lesson-1-3.md)
 4. :white_large_square: PHP variables
 5. :white_large_square: Arithmetic operators
 6. :white_large_square: Assignment operators
