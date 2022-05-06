@@ -88,3 +88,5 @@ Nowadays there are frameworks and tools to create sites with PHP, no code needed
 * Social media - Elgg
 * Forums - PHP bb
 * Education - mundo (?)
+
+Zend is a company created by Zeev and Andi, creators of PHP3. It works on improvements of PHP.
