@@ -159,3 +159,64 @@ macOS
 ## Course content
 
 * [See all the content here!](https://www.cursoemvideo.com/curso/php-basico/aulas/php/modulos/conteudo-para-o-curso-de-php/)
+
+# 3. How install PHP
+
+Honestly, once you have been installed your XAMPP or similar servers, you just need click two buttons to check and install these modules:
+
+![Xampp running successfull](img/xampp-error-module.png)
+
+> Click on the :x: button to install each one.
+
+After that, run again and that's it!
+
+![Xampp running successfull](img/xampp-run.png)
+
+## PHP basic syntax
+
+It's like HTML, and you can mix HTML inside PHP, but not the opposite.  
+You can add php inside php as well.
+
+Note that HTML interpreters doesn't run PHP, but you can rename a `.html` file to `.php`.  
+That way the PHP preprocessor will interpret it as PHP.
+
+## The PHP supertag:
+
+```html
+<?php
+  // php code here
+?>
+
+<?php //php code here// ?>
+```
+
+## Simple PHP script:
+
+```php
+<?php
+  echo "hello world"
+
+// the end of the tag is optional
+?>
+```
+
+## PHP with HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>How to put PHP in HTML - Simple Example</title>
+  </head>
+
+  <body>
+      <h1><?php echo "Hello world, from server side!" ?></h1>
+  </body>
+</html>
+```
+
+* In this case, the PHP runs HTML with inline PHP.
+
+## Source
+
+* [Apache: Inline PHP not working on Linux - StackOverflow](https://stackoverflow.com/questions/17185827/apache-inline-php-not-working-on-linux)
