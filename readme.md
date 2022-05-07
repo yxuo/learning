@@ -6,19 +6,21 @@
 
 ## Goal:
 
-1. Not focus on improve quickly, but always constant;
-   
-   - Update the repository everyday;
-   
-   - Always post the content until the end of the day, even if it's not completed;
-   
-   - Over time the content will be updated.
+1. The main focus is the personal and professional development.
 
-   - Take your time! Don't run! Respect the time for each task.
-   
-2. Encourage study of any subject: programming, administration, idiom, drawing, etc. This repository is precisely for this!
+2. The repository content follow the FDS phylosophy: Focused, Clumsy, Simple.
 
-3. Encourage creation of:
+   > In portuguese: **F**ocado, **D**esajeitado, **S**imples.
+
+  * Focused - be functional first, beauty or organization is secondary.
+
+  * Clumsy - even if incomplete of ugly, that is the way.
+
+  * Simple - the minimum of bureaucracy and stupid rules. Be as efficient as possible.
+
+3. Encourage study of any subject, from programming  to drawing. This repository is precisely for this!
+
+4. Encourage creation of:
    
    * Code (files, libraries, projects);
    
@@ -32,7 +34,7 @@
    
    * Tutorials (code, article or both).
 
-4. Encourage the consumption, study and exercise of:
+5. Encourage the consumption, study and exercise of:
    
    * Git e GitHub, by habit.
    
@@ -108,7 +110,7 @@ The order of files can be changed depending on the circumstances, nothing will b
 
 * `TODΟs` must be written in uppercase.
 
-* Don't accumulate ready commits, for using in other days. Send them by the end of the day.
+* Update the repository everyday. Post commits until the end of the day, don't accumulate ready commits!
 
 ### Learning notes
 

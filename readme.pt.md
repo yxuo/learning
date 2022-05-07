@@ -6,19 +6,19 @@
 
 ## Objetivo:
 
-1. Não focar em melhorar rápido, mas sempre constante;
-   
-   * Atualizar o repositório todo dia;
-   
-   * Sempre postar o conteúdo até o fim do dia, mesmo que incompleto;
-   
-   * Com o tempo o conteúdo será atualizado.
+1. O foco principal é o desemvolvimento pessoal e profissional.
 
-   * Não tenha pressa! Não corra! Respeite o tempo de cada tarefa.
+2. O conteúdo deste repositório segue a filosofia FDS: Focado, Desajeitado e Simples;
 
-2. Incentivar o estudo de qualquer assunto: programação, administração, idioma, desenho, etc. Este repositório é justamente para isso!
+  * Focado - em ser funcional primeiro, depois focar em beleza ou organização.
+  
+  * Desajeitado - mesmo que incompleto ou feio, este é o caminho.
 
-3. Incentivar a criação de:
+  * Simples - o mínimo de burocracia ou regras idiotas. Ser o mais eficiente possível.
+
+3. Incentivar o estudo de qualquer assunto, de  a dessenho. Este repositório é justamente para isso!
+
+4. Incentivar a criação de:
    
    * Código (arquivos, bibliotecas, projetos);
    
@@ -32,7 +32,7 @@
    
    * Tutoriais (código, artigo  ou ambos).
 
-4. Incentivar o consumo, estudo e exercício de:
+5. Incentivar o consumo, estudo e exercício de:
 
    * Git e GitHub, por hábito.
    
@@ -108,7 +108,7 @@ A ordem dos arquivos pode ser alterada dependendo das conscunstâncias, nada ser
 
 * `TODΟ`s devem ser escritos em caixa alta.
 
-* Não acumule commits prontos, para usar em outros dias. Envie-os até o fim do dia.
+* Atualizar o repositório todo dia. Postar commits até o fim do dia, não acumule commits prontos!
 
 ### Notas de aprendizado
 
