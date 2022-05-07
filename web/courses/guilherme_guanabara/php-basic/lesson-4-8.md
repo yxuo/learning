@@ -79,3 +79,5 @@ To print litteral dollar sign `$` or raw text, use single quote `'$variable'`.
 * [How To Print Variable Name With Dollar Sign In PHP - CodeSpeedy](https://www.codespeedy.com/echo-dollar-sign-in-php/)
 
 * [PHP - concatenate or directly insert variables in string - StackOverflow](https://stackoverflow.com/questions/5605965/php-concatenate-or-directly-insert-variables-in-string)
+
+# 4. Arithmetic operators
