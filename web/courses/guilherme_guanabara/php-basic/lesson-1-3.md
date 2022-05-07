@@ -129,7 +129,10 @@ The interpreter is used to access database, among other things.
 
 ## Create local server
 
+### Windows:
+
 * [Download WAMP](https://www.wampserver.com/en/) (**W**indows **A**pache **M**ySql **P**HP);
+
 * Or [download XAMPP](https://www.apachefriends.org/pt_br/index.html) instead.
   
   Powershell:
@@ -140,7 +143,8 @@ The interpreter is used to access database, among other things.
 
   > I recomend to run XAMPP as admin.
 
-For Linux:
+* [Download EasyPHP](https://www.easyphp.org/)
+### Linux:
 
 * LAMP server:
 
@@ -152,15 +156,13 @@ For Linux:
 
   > You can also find in app stores or look for tutorials out there.
 
-macOS
+### macOS:
 
 * [Download MAMP server](https://www.google.com/search?client=firefox-b-d&q=mamp+server).
 
 ## Course content
 
 * [See all the content here!](https://www.cursoemvideo.com/curso/php-basico/aulas/php/modulos/conteudo-para-o-curso-de-php/)
-
-# 3. How install PHP
 
 Honestly, once you have been installed your XAMPP or similar servers, you just need click two buttons to check and install these modules:
 
@@ -190,6 +192,25 @@ That way the PHP preprocessor will interpret it as PHP.
 <?php //php code here// ?>
 ```
 
+### Correct usage:
+
+The php supertag always start with `<?php`, all together!
+
+Works:
+
+```html
+    <p><?php echo "no spacing"?></p>
+    <p><?php echo "Space on the right" ?></p>
+
+```
+
+Desn't work:
+
+```html
+    <p><? php echo "space on the left"?></p>
+```
+* In this case, the PHP runs HTML with inline PHP.
+
 ## Simple PHP script:
 
 ```php
@@ -215,8 +236,35 @@ That way the PHP preprocessor will interpret it as PHP.
 </html>
 ```
 
-* In this case, the PHP runs HTML with inline PHP.
+## Your browser receives only the HTML page
 
+Note that your browser only receives the already processed HTML, not the original with inline PHP.
+
+If you write:
+
+```html
+<h1>
+  <?php echo "Hello world" ?>
+</h1>
+```
+
+Your browser receives:
+
+```html
+<h1>Hello world</h1>
+```
+
+* In conclusion: to learn PHP you must know how HTML works.
 ## Source
 
 * [Apache: Inline PHP not working on Linux - StackOverflow](https://stackoverflow.com/questions/17185827/apache-inline-php-not-working-on-linux)
+
+# 3. How to install PHP
+
+> In XAMPP you just need to click the `x` buttons, and that's it:
+
+![Xampp running successfull](img/xampp-run.png)
+
+The PHP is installed in MySQL module.
+
+[See how to install in chapter 2](lesson-1-3.md#2-how-php-works):
