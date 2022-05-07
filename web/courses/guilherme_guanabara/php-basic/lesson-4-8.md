@@ -38,9 +38,38 @@ $boolFalse1 = (bool) false;
 ```
 
 ### Bool
+
 The typecast `(bool)` detects these values as `true` or `false`.
 
 Without typecast, the only way to automatically set to bool is using `true`, `True` or `false`, `False`.
 
 PHP automatically convert `True` to `true`, so it makes sense to write always `true`/`false` in lowercase.
 
+### int
+
+You can convert text to int but only if the first charecters are numbers, otherwise the result will be `0`.
+
+## print
+
+```php
+$txt1 = "hello";
+$txt2 = "world";
+$num1 = 123;
+$num1 = 456;
+
+echo $txt1 . $txt2 . $num1 . $num2 . "\n";
+echo "{$txt1} {$txt2} {$num1} {$num2}";
+```
+
+Always use dot `.` or braces `{}`.
+
+:x: Don't do this:
+
+```php
+echo $txt1, $txt2, $num1, $num2, "\n";
+echo "$txt1 $txt2 $num1 $num2";
+```
+
+Never use commas `,` or variable inside double quotes `"$variable"`.
+
+To print litteral dollar sign `$` or raw text, use single quote `'$variable'`.
