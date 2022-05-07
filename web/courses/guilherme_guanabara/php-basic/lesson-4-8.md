@@ -73,3 +73,9 @@ echo "$txt1 $txt2 $num1 $num2";
 Never use commas `,` or variable inside double quotes `"$variable"`.
 
 To print litteral dollar sign `$` or raw text, use single quote `'$variable'`.
+
+## Source
+
+* [How To Print Variable Name With Dollar Sign In PHP - CodeSpeedy](https://www.codespeedy.com/echo-dollar-sign-in-php/)
+
+* [PHP - concatenate or directly insert variables in string - StackOverflow](https://stackoverflow.com/questions/5605965/php-concatenate-or-directly-insert-variables-in-string)
