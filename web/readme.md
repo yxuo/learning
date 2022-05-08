@@ -20,8 +20,7 @@ A general approach about all web technologies.
 [![](https://img.shields.io/static/v1.svg?label=available&labelColor=gray&message=Azure&color=blue)](https://docs.microsoft.com/pt-br/learn/certifications/exams/az-900)
 ![](https://img.shields.io/static/v1.svg?label=idiom&labelColor=gray&message=Portuguese&color=blue)
 
-<a href="courses/azure_vtd_fundamentals-microsoft
-"><img src="https://trainingdayssa.blob.core.windows.net/images/images-images503_18_2022_01_54_05_PM.jpg?sp=r&st=2022-02-10T10:13:17Z&se=2023-02-10T18:13:17Z&spr=https&sv=2020-08-04&sr=c&sig=sI9FP7iyZ3GayyO2E%2Fb6E7VLshQLXTwhGOjjIGXN1w0%3D" style="width:300px;"></a>
+<a href="courses/azure_vtd_fundamentals-microsoft"><img src="courses/azure_vtd_fundamentals-microsoft/img/thumbnail-azure-fundamentals-ms.jpg" style="width:300px;"></a>
 
 ### Guanabara - PHP Basic
 
