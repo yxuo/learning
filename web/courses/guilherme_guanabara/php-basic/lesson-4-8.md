@@ -80,4 +80,236 @@ To print litteral dollar sign `$` or raw text, use single quote `'$variable'`.
 
 * [PHP - concatenate or directly insert variables in string - StackOverflow](https://stackoverflow.com/questions/5605965/php-concatenate-or-directly-insert-variables-in-string)
 
-# 4. Arithmetic operators
+# 5. Arithmetic operators
+
+* `localhost` is the same as `127.0.0.1`.
+
+```php
+$num1 = 2;
+$num2 = 3;
+$num3 = -144;
+
+echo $num1 + $num2 . "\n";      // 2+3 = 5      Add
+echo $num1 - $num2 . "\n";      // 2-3 = -1     Subtract
+echo $num1 * $num2 . "\n";      // 2*3 = 6      Multiply
+echo $num1 ** $num2 . "\n";     // 2^3 = 8      Power
+echo pow($num1, $num2) . "\n";  // 2^3 = 8      Power
+echo $num1 / $num2 . "\n";      // 2/3 = 0.67   Division
+echo $num1 % $num2 . "\n";      // 2/3 = 2      Module
+echo sqrt($num3) . "\n";        // -2 = 2       Square root
+echo abs($num3) . "\n";         // -2 = 2       Absolute
+```
+
+## format number
+
+```php
+//                (num, decimals, decimal_sep, thousand_sep)
+echo number_format(3258.754, 2, ",", "."). "\n";
+```
+
+## Read values from url:
+
+```php
+    <?php
+    $n1 = $_GET["a"];
+    $n2 = $_GET["b"];
+    echo "<h2>Recebido: a = $n1, b = $n2</h2>"
+     ?>
+```
+
+URL:
+
+```
+http://localhost/my-folder/?a=2&b=3
+```
+
+# 6. Attribution operators
+
+## Increment:
+
+```php
+$num = 3;
+
+$num += 1;  // 4
+$num ++;    // 4
+$num -= 1;  // 2
+$num --;    // 2
+$num *= 3;  // 9
+$num **= 3; // 27
+$num /= 3;  // 1
+$num .= 1;  // 31   (concatenate)
+```
+
+## Comment:
+
+```php
+//  C       comment
+#   Python  comment
+```
+
+## Pointer:
+
+```php
+$num = 12345;
+$ptr = &$num;
+```
+
+## Variable variables:
+
+```php
+$name = "Raphael";
+$$name = "Rivas";
+echo "{$name} {$$name}\n";
+```
+
+Another example:
+
+```php
+  $a = "a";
+  $b = "Bar";
+  $c = "Curl";
+  $d = "World";
+  $e = "Hello";
+
+  $e;       // Hello
+  $$e;      // World
+  $$$e;     // Curl
+  $$$$e;    // Bar
+  $$$$$e;   // a
+```
+
+## Array:
+
+```php
+$txt = "abc 123";
+$txtArr = array('abc','123','def');
+```
+
+## Class:
+
+```php
+class myClass{
+    var $arr = array('abc','123','def');
+    public $pub = "public variable";
+    private $priv = "private variable";
+}
+
+$myClass = new myClass();
+echo $myClass->pub . "\n";
+echo $myClass->arr[0];
+```
+
+## Exercise
+
+1. Apply 10% off
+
+    ```php
+    $price = 159.99
+
+    $price = 159.99;
+    echo "price = $price\n";
+    $price = $price - ($price * 10 / 100);
+    echo "new price = $price\n";
+    ```
+
+2. Show last year
+
+    ```php
+        $year = isset($_GET["aa"]) ? $_GET["aa"] : 2022;
+        echo "year = --$year";
+    ```
+
+3. Change variable value by reference
+
+    ```php
+    $var = isset($_GET["var"]) ? $_GET["var"] : 50;
+    $ptr = &$var;
+    echo "var = $var, ptr = $ptr\n";
+
+    $ptr = "hello";
+    echo "var = $var, ptr = $ptr\n";
+    ```
+## optional url parameter
+
+Works:
+
+```php
+$price = isset($_GET['price']) ? $_GET['price'] : 9.99;
+```
+
+```php
+$price = 9.99;
+if(isset($_GET['price'])) $price = $_GET['price'];
+```
+
+```php
+if(isset($_GET['price']))
+    $price = $_GET['price'];
+```
+
+```php
+if(isset($_GET['price']))
+{
+    $price = $_GET['price'];
+}
+```
+
+## Source
+
+* [Variable variables - PHP](https://www.php.net/manual/en/language.variables.variable.php)
+
+# 7. Relational operators
+
+## Ternary
+
+Just like in C:
+
+```php
+$num = 5;
+$num == 5 ? 50 : -10;   //$num = 50
+```
+
+## Conditionals
+
+They are ike C or Python, SQL.
+
+`AND`:
+```php
+if($a > 0 and $b > 0) ... ;
+if($a > 0 And $b > 0) ... ;
+if($a > 0 AND $b > 0) ... ;
+if($a > 0 && $b > 0) ... ;
+```
+
+`OR`:
+
+```php
+if($a > 0 or $b > 0) ... ;
+if($a > 0 Or $b > 0) ... ;
+if($a > 0 OR $b > 0) ... ;
+if($a > 0 || $b > 0) ... ;
+```
+
+## Exercises
+
+1. Let user choose between sum and multiply
+
+    ```php
+
+    echo "Choose [op]eration between [sum] or [mul]tiplication between [a] and [b].";
+    $sum = isset($_GET['sum']) ? $_GET['sum'] : 2;
+    $sub = isset($_GET)
+    ```
+
+2. Show if a person is between 18 and 60 years old by birth age;
+
+   ```php
+    $birth = isset($_GET['a']) ? $_GET['a'] : 2000;
+    $age = abs($birth - date("Y"));
+    
+    if (in_array($age, range(18,60)))
+        echo "The vote is mandatory";
+    else
+        echo "The vote is optional";
+   ```
+
