@@ -14,11 +14,11 @@
 
 1. :white_check_mark: [PHP history](lesson-1-3.md)
 2. :white_check_mark: [How PHP works / course content](lesson-1-3.md)
-3. :green_square: [**How to install PHP**](lesson-1-3.md)
-4. :white_large_square: PHP variables
-5. :white_large_square: Arithmetic operators
-6. :white_large_square: Assignment operators
-7. :white_large_square: Relational operators
+3. :white_check_mark: [How to install PHP](lesson-1-3.md)
+4. :white_check_mark: [PHP variables](lesson-4-8.md)
+5. :white_check_mark: [Arithmetic operators](lesson-4-8.md)
+6. :white_check_mark: [Assignment operators](lesson-4-8.md)
+7. :white_check_mark: [Relational operators](lesson-4-8.md)
 8. :white_large_square: HTML5 + PHP integration
 9.  :white_large_square: Conditional `If`
 10. :white_large_square: Conditional `Switch`
