@@ -10,7 +10,7 @@ A general approach about all web technologies.
 
 [![](https://img.shields.io/static/v1.svg?label=studying&labelColor=gray&message=22%&color=rosybrown)](courses/rbtech/readme.md)
 [![](https://img.shields.io/static/v1.svg?label=available&labelColor=gray&message=Azure&color=blue)](https://info.microsoft.com/ww-thankyou-introduction-to-infrastructure-as-a-service-iaas-on-azure-new.html)
-![](https://img.shields.io/static/v1.svg?label=idiom&labelColor=gray&message=Portuguese&color=blue)
+![](https://img.shields.io/static/v1.svg?label=idiom&labelColor=gray&message=English&color=blue)
 
 <a href="courses/azure_iaas_introduction-microsoft/readme.md"><img src="https://play.vidyard.com/Y81dCsiGj4cVuJZecobAP5.jpg" style="width:300px;"></a>
 
