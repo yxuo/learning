@@ -19,7 +19,7 @@ REQUISITOS:
         
     * 💽 Para ver o banco de dados, clique em Admin na linha MySQL!
 
-    * 🌎 O seu site local normalmente é localhost
+    * 🌎 O seu site local normalmente é [localhost]
 
     * 📁 Para ver a pasta onde o site fica há 2 maneiras:
 
