@@ -1,4 +1,39 @@
-print("ini")
+'''
+REQUISITOS:
+
+* XAMPP - para usar localhost, PHP, APache e MySQL
+
+    * 🖥️ Terminal: winget install xampp
+
+    * ⬇️ Baixar: https://www.apachefriends.org/pt_br/index.html
+
+    Pós instalação:
+
+    1. Após instalar, inicie o XAMPP
+
+    2. Na janela principal, clique em Start em Apache e MySQL
+    
+        * Caso a coluna Service mostre um ❌ em Apache ou MySQL, clique neste botão ❌ para instalar o módulo.
+        
+        * Caso Apache e MySQL estejam mostrando um ✔️, então tudo está funcionando!
+        
+    * 💽 Para ver o banco de dados, clique em Admin na linha MySQL!
+
+    * 🌎 O seu site local normalmente é localhost
+
+    * 📁 Para ver a pasta onde o site fica há 2 maneiras:
+
+        1. Na janela do XAMP, clique no botão [📁 Explorer]
+
+        2. Pesquise no Windows por [htdocs], você verá uma sugestão chamada [XAMPP htdocs folder].
+
+
+* Python nativo no PC
+
+    * 🖥️ Terminal: winget install "python 3.10* 
+
+    * ⬇️ Baixar: https://www.python.org/downloads/
+'''
 
 import mysql.connector
 
