@@ -533,3 +533,41 @@ class lista_7_1:
                 pessoas2[k] = v
         print("Maiores de idade:",pessoas)
         print("Menores de idade:",pessoas2)
+
+#######################################
+
+class lista_7_2:
+    '''AV1'''
+    def q1():
+        print("a) = 25")
+        print("b) = Verdadeiro")
+
+    def q2():
+        ano = int(input("insira ano"))
+        if (ano%40==0 or ano%400) and ano%100!=0:
+            print("ano comum")
+        elif True:
+            print("ano bissexto")
+
+    def q3():
+        # TODO: esperar gabarito oficial
+        return
+
+    def q4():
+        total = float(input("insira total pago "))
+        tipo = int(input("insira tipo comprador: comum(1), func(2), vip(3) "))
+        comp = ""
+        if tipo == 1:
+            comp = "comum"
+        elif tipo == 2:
+            total -= total*10/100
+            comp = "funcionario"
+        elif tipo == 3:
+            total -= total*5/100
+            comp = "vip"
+        else:
+            comp = "INVALIDO"
+        
+        print("total",total)
+        print("compardor",comp)
+lista_7_2.q4()
