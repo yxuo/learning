@@ -2,7 +2,7 @@
 
 1. Organize os números 2,3,4,5,10,12 para obter a saída 18 em uma única operação
 
-2. Escreva um programa que imprima 2 números de sua escolha e que depois imprima a soma, a subtração, multiplicação, divisão, divisão inteira, o resto dadivisão do maior pelo menor e coloque na mensagem a palavra resto ao invés de símbolo %.
+2. Escreva um programa que imprima 2 números de sua escolha e que depois imprima a soma, a subtração, multiplicação, divisão, divisão inteira, o resto da divisão do maior pelo menor e coloque na mensagem a palavra resto ao invés de símbolo %.
 
 3. Faça um programa que peça as 4 notas bimestrais e mostre a média do aluno.
 
