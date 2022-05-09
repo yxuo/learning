@@ -176,7 +176,7 @@ print(fatorial(5, show=False)
 # Lista 7.1 - revisão
 
 1. Faça um programa que pergunte o nome do aluno, a quantidade de dias na semana e o tipo de curso (B para básico, I para intermediário e A para avançado). Mostre o nome do aluno e o valor a ser pago. O valor total é calculado com base nas informações abaixo:
- 
+
    * Caso a opção escolhida for Básico, deverá fazer a seguinte conta:  
    ○  Valor Total = (Quantidade de dias na semana *7)*15
 
@@ -191,3 +191,47 @@ print(fatorial(5, show=False)
 3. Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares.
 
 4. Crie um programa que cadastre informações de várias pessoas (nome, idade e cpf) e depois coloque em um dicionário. Depois remova todas as pessoas menores de 18 anos do dicionário e coloque em outro dicionário.
+
+# Lista 7.2 - AV1
+
+1. Considere o código em python:
+
+   a)
+   
+   ```python
+   def pot(b,p):
+   	y=b**p
+   def quadrado(x):
+   	a = pot(x,2)
+   	return a
+   
+   n = 5
+   resultado = quadrado(n)
+   print(resultado)
+   ```
+   O que esse programa imprime?
+   
+* a) 25
+   
+* b) 5
+   
+* c) 125
+   
+* d) 32
+   
+b) Verdadeiro ou falso: Uma função pode ser chamada várias vezes colocando-se uma chamada para a função no corpo de um laço.
+   
+* a) Verdadeiro
+   
+* b) Falso
+2. Faça uma função que leia um ano qualquer e mostre se ele é bissexto.
+   
+3. Faça um programa que leia nome e peso de várias pessoas, guardando tudo numa lista. No final mostre:
+   
+    a) Quantas pessoas foram cadastradas
+    
+    b) Uma listagem com as pessoas mais pesadas
+    
+    c) Uma listagem com as pessoas mais leves
+
+4. Uma loja fornece 10% de desconto para funcionários e 5% de desconto para clientes vips. Faça um programa usando **switch** que calcule o valor total a ser pago por uma pessoa. O programa deverá ler o valor total da compra efetuada e um código que identifique se o comprador é um cliente comum(1), funcionário (2) ou vip (3).
