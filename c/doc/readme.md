@@ -28,7 +28,7 @@ Combination of handling modes:
 * The modes `r`, `w`, `a` are in text mode by default
 * These file modes creates a new file only if it doesn't exist.
 
-Source:
+## Source:
 
  * [How do you allow spaces to be entered using scanf? - StackOverflow](https://stackoverflow.com/questions/1247989/how-do-you-allow-spaces-to-be-entered-using-scanf)
 
