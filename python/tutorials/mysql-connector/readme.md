@@ -28,10 +28,14 @@ Um servidor local é útil para testar sites sem precisar usar hospedagem e paga
 ```mermaid
 flowchart
 subgraph Sphp["Servidor PHP 🌎"]
+    php_ui["📲 interface<br>(web)"]
     html["📙 HTML"] --> php_est["🏗️ estrutura"]
     css["📘 CSS"] --> php_visual["🖼️ visual"]
     js["📒 JS"] --> php_itera["👆 iteratividade"]
-    php["📕 PHP"] --> php_bd["💽 banco de dados"]
+    php_est --> php_ui
+    php_visual --> php_ui
+    php_itera --> php_ui
+    php["📕 PHP"] ---> php_bd["💽 banco de dados"]
 end
 subgraph Spy["Aplicativo Python 🐍"]
     %%br[ ]
@@ -41,9 +45,7 @@ subgraph Spy["Aplicativo Python 🐍"]
         mysql_conn["🧩 mysql-connect"]
     %%end
     py --> tk
-        tk --> py_est["🏗️ estrutura"]
-        tk --> py_visual["🖼️ visual"]
-        tk --> py_itera["👆 iteratividade"]
+        tk --> py_ui["📲 interface<br>(nativo)"]
     py --> mysql_conn["🧩 mysql-connect"] --> py_bd["💽 banco de dados"]
 end
 
