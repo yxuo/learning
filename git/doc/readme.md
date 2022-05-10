@@ -118,7 +118,13 @@ git diff --staged
 ### Commit:
 
 ```git
-git commit -m "title" -m "second line"
+git commit readme.md -m "second line"
+```
+
+### Stage and commit:
+
+```git
+git commit readme.md -m "commit message"
 ```
 
 ## See status, and files to stage:
