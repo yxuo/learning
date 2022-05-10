@@ -164,7 +164,7 @@ The interpreter is used to access database, among other things.
 
 * [See all the content here!](https://www.cursoemvideo.com/curso/php-basico/aulas/php/modulos/conteudo-para-o-curso-de-php/)
 
-Honestly, once you have been installed your XAMPP or similar servers, you just need click two buttons to check and install these modules:
+Once you have been installed your XAMPP or similar servers, you just need click two buttons to check and install these modules:
 
 ![Xampp running successfull](img/xampp-error-module.png)
 
