@@ -27,7 +27,7 @@ Um servidor local é útil para testar sites sem precisar usar hospedagem e paga
 
 ```mermaid
 flowchart
-subgraph Sphp["Servidor PHP 🌎"]
+subgraph Sphp["Site PHP 🌎"]
     php_ui["📲 interface<br>(web)"]
     html["📙 HTML"] --> php_est["🏗️ estrutura"]
     css["📘 CSS"] --> php_visual["🖼️ visual"]
