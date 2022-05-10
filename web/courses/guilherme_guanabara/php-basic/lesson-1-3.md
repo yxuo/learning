@@ -166,13 +166,13 @@ The interpreter is used to access database, among other things.
 
 Once you have been installed your XAMPP or similar servers, you just need click two buttons to check and install these modules:
 
-![Xampp running successfull](img/xampp-error-module.png)
+![Xampp running successfull](../../../../img/xampp-error-module.png)
 
 > Click on the :x: button to install each one.
 
 After that, run again and that's it!
 
-![Xampp running successfull](img/xampp-run.png)
+![Xampp running successfull](../../../../img/xampp-run.png)
 
 ## PHP basic syntax
 
