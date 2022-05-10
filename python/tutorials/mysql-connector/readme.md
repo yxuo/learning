@@ -10,7 +10,7 @@ Você usará um servidor:
 flowchart TD
 subgraph Sservidor["servidor"]
 
-    arq["<u>arquivos</u></b!><br>📄index.html<br>📄db.php ⠀⠀<br>📁img ⠀⠀⠀⠀<br>📁common⠀"]
+    arq["<u>arquivos</u><br>📄index.html<br>📄db.php ⠀⠀<br>📁img ⠀⠀⠀⠀<br>📁common⠀"]
 
     db[("banco de dados")]
 end
