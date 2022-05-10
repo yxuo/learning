@@ -12,7 +12,7 @@ subgraph Sservidor["servidor"]
 
     arq["<u>arquivos</u><br>📄index.html<br>📄db.php ⠀⠀<br>📁common⠀<br>📁img ⠀⠀⠀⠀"]
 
-    db[("banco de dados")]
+    db[("<p></p><br><p>banco de dados</p><br>")]
 end
 ```
 
