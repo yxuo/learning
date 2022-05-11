@@ -94,7 +94,7 @@ Azure is basically a center of database, anything so different from other datace
     </tr>
     <tr>
         <td style="text-align:center; vertical-align:top">
-            <section>Preemium</section>
+            <section>Premium</section>
             <section>Standard</section>
             <section>Ultra</section>
         </td>
