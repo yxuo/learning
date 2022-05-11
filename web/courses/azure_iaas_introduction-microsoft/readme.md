@@ -1,7 +1,3 @@
-<!--
-TODO: continue from 13:00
--->
-
 # Azure IaaS introduction - Webinar
 
 Infrastructure as as Service
@@ -94,7 +90,7 @@ Azure is basically a center of database, anything so different from other datace
     </tr>
     <tr>
         <td style="text-align:center; vertical-align:top">
-            <section>Preemium</section>
+            <section>Premium</section>
             <section>Standard</section>
             <section>Ultra</section>
         </td>
@@ -103,7 +99,7 @@ Azure is basically a center of database, anything so different from other datace
             <section>Azure NetApp Files</section>
         </td>
         <td style="text-align:center; vertical-align:top">
-            <section>Azure Blobs*</section>
+            <section>Azure Blobs</section>
         </td>
     </tr>
     <tr style="text-align:center; vertical-align:top;">
@@ -119,22 +115,87 @@ Azure is basically a center of database, anything so different from other datace
     </tr>
 </table>
 
-* Blob - **B**inary **l**arge **ob**ject.
-
-  * Non structured storage file.
-
-  * A file optimized to storage large amounts of non structured data.
-  
 * Lift and shift - Rehosting. Make an exact copy of an web app, movint to another server storage.
 
 * Workload (server) - amount of processing that a server will have to deal.
 
-#### :file_folder: File Storage:
+#### :file_folder: File Storage - Azure:
 
-* You can use Azure Files or NetApp Files
+* You can use Azure Files or Azure NetApp Files;
+
+* Azure Brings traditional UNC path storage and shares to your machines in Azure.
+
+* UNC path storage - Universal Naming Convention. A shared folder, on a PC, server.
+
+* You can use a common path between multiple VMs by mouting and sharing paths between VMs.
+
+#### :package: Object storage - Azure Blobs
+
+* Blob - Binary large object.
+
+  * Non structured storage file.
+
+  * A file optimized to storage large amounts of non structured data.
+
+* Blob storage - Your web API stores and retrieves the data inside the blob.
+
+  * You use a blob as a centralized storage location.
+
+  * In Azure (at least) you can access blobs via HTTP requests too.
+
+#### Other storages by Azure
+
+* Azure import/export
+
+* Azure Data Box - simplify and accelerate migrating large amounts of data, in Azure.
+
+### Disk storage plans:
+
+<table>
+    <tr>
+        <td></td>
+        <th>💾 Standard HDD</th>
+        <th>💿 Standard SSD</th>
+        <th>📀 Premium SSD</th>
+        <th>💽 Ultra Disk</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Low-cost</td>
+        <td>Average performance</td>
+        <td>High performance</td>
+        <td>Sub-ms latency</td>
+    </tr>
+    <tr>
+        <td><strong>Size</strong></td>
+        <td>32 TiB</td>
+        <td>32 TiB</td>
+        <td>32 TiB</td>
+        <td>64 TiB</td>
+    </tr>
+    <tr>
+        <td><strong>I/O /s</strong></td>
+        <td>2,000</td>
+        <td>6,000</td>
+        <td>20,000</td>
+        <td>160,000</td>
+    </tr>
+    <tr>
+        <td><strong>BandWidth</strong></td>
+        <td>50 MB/s</td>
+        <td>750 MB/s</td>
+        <td>900 MB/s</td>
+        <td>2,000 MB/s</td>
+    </tr>
+</table>
+
+### Azure Files - Lift and Shift
+
+<!-- TODO: 15:00 diagram azure files-->
 
 ## Source:
 
 * [Lift and Shift - IBM](https://www.ibm.com/cloud/learn/lift-and-shift)
 * [Introduction to Azure Storage - Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)
 * [Server Workload - Suse](https://www.suse.com/suse-defines/definition/server-workload/)
+* [Storage blobs introduction - Microsft](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)

@@ -313,3 +313,87 @@ if($a > 0 || $b > 0) ... ;
         echo "The vote is optional";
    ```
 
+# 8 HTML5 + PHP integration
+
+## GET
+
+send form via URL - fast, extremely usnecure
+
+HTML:
+
+```html
+<form method="get" action="data.php">
+    <input type="text" name="v">
+    ...
+</form>
+```
+
+PHP:
+```php
+$value = $_GET["v"]
+```
+
+URL:
+
+```
+localhost/tst?v=10
+```
+
+
+## POST
+
+send form via packages - a bit slower and more secure
+
+## html5 form:
+
+```html
+<form method="get" action="data.php">
+    ...
+</form>
+```
+
+## HTML5 review
+
+Void elements (solo tags):
+
+```html
+<br>
+<img src="image.png">
+```
+
+### In HTML5 slash is optional in void elements
+
+HTML 4:
+
+```html
+<br/>
+<img src="image.png"/>
+```
+
+HTML5:
+
+```html
+<br>
+<img src="image.png">
+```
+
+## CSS tips
+
+```css
+/*
+tag {}
+#id{}
+.class{}
+tag.class{}
+*/
+```
+
+## Exercise
+
+*HTML, CSS + PHP*
+
+1. Read a value and show the square root
+
+2. Read name, birth and sex. Show the current age.
+
+3. Use a form to change CSS size, text and color.
