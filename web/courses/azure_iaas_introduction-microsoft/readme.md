@@ -198,3 +198,4 @@ Azure is basically a center of database, anything so different from other datace
 * [Lift and Shift - IBM](https://www.ibm.com/cloud/learn/lift-and-shift)
 * [Introduction to Azure Storage - Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)
 * [Server Workload - Suse](https://www.suse.com/suse-defines/definition/server-workload/)
+* [Storage blobs introduction - Microsft](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
