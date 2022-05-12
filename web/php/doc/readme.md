@@ -44,13 +44,13 @@ $age = %_GET["age"];
 You can use single quote `'`:
 
 ```php
-date("y");
+date('y');
 ```
 
 Or double quote `"`:
 
 ```php
-date('y');
+date("y");
 ```
 
 ### Date formats
