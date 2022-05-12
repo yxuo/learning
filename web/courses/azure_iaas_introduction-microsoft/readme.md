@@ -336,7 +336,7 @@ Most number of SAP HANA certifications:
 Rich AI & analytics for SAP data:
 
 * Azure data connectors for AI & ML;
-  > Artifitial Intelligence & Machine Learning
+  > Artificial Intelligence & Machine Learning
 * Power BI connectors, for self-service visualization.
 
 <!-- TODO: [27:00] Azure infra / migrate and deploy / scale and performance -->
