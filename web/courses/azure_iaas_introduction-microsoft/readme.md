@@ -326,6 +326,8 @@ Largest scale SAP HANA machines:
 * 24TB Bare metal machines;
 * 12TB VMs.
 
+<!-- TODO: What is HANA and SAP? -->
+
 Most number of SAP HANA certifications:
 
 * 20 certified configs;
@@ -334,7 +336,7 @@ Most number of SAP HANA certifications:
 Rich AI & analytics for SAP data:
 
 * Azure data connectors for AI & ML;
-  > (Artifitial Intelligence & Machine Learning)
+  > Artifitial Intelligence & Machine Learning
 * Power BI connectors, for self-service visualization.
 
 <!-- TODO: [27:00] Azure infra / migrate and deploy / scale and performance -->
