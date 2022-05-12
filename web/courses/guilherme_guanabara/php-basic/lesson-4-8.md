@@ -306,7 +306,7 @@ if($a > 0 || $b > 0) ... ;
     $sub = isset($_GET)
     ```
 
-2. Show if a person is between 18 and 60 years old by birth age;
+2. Show if a person is between 18 and 60 years old by birth age
 
    ```php
     $birth = isset($_GET['a']) ? $_GET['a'] : 2000;
