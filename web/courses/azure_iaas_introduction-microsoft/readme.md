@@ -82,27 +82,27 @@ Azure is basically a center of database, anything so different from other datace
 
 ## Storage
 
-<table>
+<table align=center>
     <tr>
         <th>💽 Disk Storage</th>
         <th>📁 File Storage</th>
         <th>📦 Object storage</th>
     </tr>
-    <tr>
-        <td style="text-align:center; vertical-align:top">
+    <tr align=center valign=top>
+        <td>
             <section>Premium</section>
             <section>Standard</section>
             <section>Ultra</section>
         </td>
-        <td style="text-align:center; vertical-align:top">
+        <td>
             <section>Azure Files</section>
             <section>Azure NetApp Files</section>
         </td>
-        <td style="text-align:center; vertical-align:top">
+        <td>
             <section>Azure Blobs</section>
         </td>
     </tr>
-    <tr style="text-align:center; vertical-align:top;">
+    <tr align=center valign=top>
         <td>
             <section>Reliable, persistent, high performing for VMs</section>
         </td>
