@@ -163,6 +163,40 @@ Your branch is ahead of 'origin/master' by 5 commits.
         python/trainings/logic/treino-1.py
 ```
 
+## Branch:
+
+### Commit branch
+
+To send as independent branches:
+
+```git
+git commit master
+```
+
+```git
+git commit feature
+```
+
+### Merge
+
+To unite two branches into one of them:
+
+```git
+git checkout master
+git merge feature
+```
+
+### Rebase
+
+* To recreate a branch based in another branch/commit;
+
+* To recreate, based on the last version of your project.
+
+```git
+git checkout feature
+git rebase master
+```
+
 ## Fast tips
 
 ### Main Git commands:
