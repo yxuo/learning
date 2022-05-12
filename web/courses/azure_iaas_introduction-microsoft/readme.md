@@ -117,7 +117,7 @@ Azure is basically a center of database, anything so different from other datace
 
 * Lift and shift - Rehosting. Make an exact copy of an web app, movint to another server storage.
 
-* Workload (server) - amount of processing that a server will have to deal.
+* Workload - (server) amount of processing that a server will have to deal.
 
 #### :file_folder: File Storage - Azure:
 
