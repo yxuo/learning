@@ -290,7 +290,7 @@ if($a > 0 OR $b > 0) ... ;
 if($a > 0 || $b > 0) ... ;
 ```
 
-## Exercises
+## Exercise
 
 1. Let user choose between sum and multiply
 
