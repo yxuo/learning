@@ -201,6 +201,8 @@ echo $myClass->arr[0];
 
 ## Exercise
 
+*Using attribution and reading via GET*
+
 1. Apply 10% off
 
     ```php
@@ -291,6 +293,9 @@ if($a > 0 || $b > 0) ... ;
 ```
 
 ## Exercise
+
+*Using relational operators*
+
 
 1. Let user choose between sum and multiply
 
