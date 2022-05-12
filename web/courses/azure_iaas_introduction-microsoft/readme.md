@@ -326,7 +326,8 @@ Largest scale SAP HANA machines:
 * 24TB Bare metal machines;
 * 12TB VMs.
 
-<!-- TODO: What is HANA and SAP? -->
+> SAP HANA - 💽 A relational DBMS, oriented by columns, and marketed by SAP SE.  
+> SAP HANA can be seen as a private alternative of PHPMyAdmin (I think).
 
 Most number of SAP HANA certifications:
 
