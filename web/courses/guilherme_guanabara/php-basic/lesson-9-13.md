@@ -1,4 +1,4 @@
-# 9 Conditional if
+# 9. Conditional if
 
 ## Ternary
 
