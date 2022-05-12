@@ -219,7 +219,7 @@ echo $myClass->arr[0];
         echo "year = --$year";
     ```
 
-3. Change variable value by reference
+3. Change variable value by reference (pointer)
 
     ```php
     $var = isset($_GET["var"]) ? $_GET["var"] : 50;
