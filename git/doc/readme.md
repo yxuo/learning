@@ -163,7 +163,7 @@ Your branch is ahead of 'origin/master' by 5 commits.
         python/trainings/logic/treino-1.py
 ```
 
-## Branch:
+## Branch
 
 ### Commit branch
 
