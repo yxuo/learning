@@ -1,11 +1,22 @@
 <?php
 
-echo date('D') . "\n";
-echo date('H') . "\n";
-echo date('i') . "\n";
-echo date('I') . "\n";
-echo date('s') . "\n";
-echo date('S') . "\n";
+$number = 1;
+
+switch($number){
+    case 1:
+        echo "A";
+    case 2:
+        echo "B";
+    default:
+        echo "default";
+}
+
+// echo date('D') . "\n";
+// echo date('H') . "\n";
+// echo date('i') . "\n";
+// echo date('I') . "\n";
+// echo date('s') . "\n";
+// echo date('S') . "\n";
 
 /*
     multi line
