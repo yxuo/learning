@@ -282,16 +282,10 @@ What Azure is:
 Azure infrastructure services can help you in:
 
 * Migrate and deploy workloads:
-
-    > The most common reasons to choose Azure:
-    >
-    > * Choice and flexibility
-    >
-    > * Scale and perfornance
-    >
-    > * Reliable infrstructure - services covering disasters
-    >
-    > * Cost saving infrastructure
+    * Choice and flexibility
+    * Scale and perfornance
+    * Reliable infrstructure - services covering disasters
+    * Cost saving infrastructure
 
 * Enable connectivity and remote work
 * Deliver innovation wnywhere hybrid capabilities
@@ -326,7 +320,8 @@ Largest scale SAP HANA machines:
 * 24TB Bare metal machines;
 * 12TB VMs.
 
-> SAP HANA - 💽 A relational DBMS, oriented by columns, and marketed by SAP SE.  
+> SAP HANA - 💽 A relational DBMS, oriented by columns, and marketed by SAP SE.
+> 
 > SAP HANA can be seen as a private alternative of PHPMyAdmin (I think).
 
 Most number of SAP HANA certifications:
@@ -339,6 +334,16 @@ Rich AI & analytics for SAP data:
 * Azure data connectors for AI & ML;
   > Artificial Intelligence & Machine Learning
 * Power BI connectors, for self-service visualization.
+
+### Scalable performance for your apps
+
+* Most comprehensive shared block storage
+  * up to 160K IOPs - Fastest shared disk in the public cloud
+  * Up to xxx
+* Best performing cloud network
+* Massively scalable compute capacity
+
+<!-- TODO: finnish 'table' of scalable performance -->
 
 <!-- TODO: [27:00] Azure infra / migrate and deploy / scale and performance -->
 
