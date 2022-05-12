@@ -15,13 +15,13 @@ Infrastructure as as Service
 
 # Notes
 
-##  Microsoft Cloud services:
+##  Microsoft Cloud services
 
 * Microsoft 365 - OneDrive, Teams, Outlook. Team collaboration and basic cloud storage.
 * Dynamic 365 - Sales, marketing, finance. A portfolio and ecosystem for business guys.
 * Azure - infrastructure cloud for create your web apps etc.
 
-## Main focuses of newbies migrating:
+## Main focuses of newbies migrating
 
 * :gear: Remote work models;
 * :chart_with_upwards_trend: Cost efficiency &resource constraints;
@@ -31,7 +31,7 @@ Infrastructure as as Service
 
 Azure is basically a center of database, anything so different from other datacenters.
 
-## Azure core services: 
+## Azure core services
 
 * :computer: Virtual network - Optional private network (intranet), on premise (local) datacenters, NSG, user defines routes, IP addresses;
 * :balance_scale: Load balancer - deliver high availability and performance yo your webapps;
@@ -119,7 +119,7 @@ Azure is basically a center of database, anything so different from other datace
 
 * Workload - (server) amount of processing that a server will have to deal.
 
-### :file_folder: File Storage - Azure:
+### :file_folder: File Storage - Azure
 
 * You can use Azure Files or Azure NetApp Files;
 
@@ -260,7 +260,7 @@ What Azure is:
 * You can even create super computer, NetApp storage appliances.
 * From bigdata to tiny servers.
 
-## Azure Compute - Creating web server:
+## Azure Compute - Creating web server
 
 1. [portal.azure.com](https://portal.azure.com)
 2. Menu `☰` > Create a resource `+`
@@ -307,7 +307,7 @@ More about **choice and flexibility**:
   * Azure have partnership with many Linux server companies.
 ## Choice and flexibility
 
-### Azure dedicated Host:
+### Azure dedicated Host
 
 *Your own host using Azure*
 
