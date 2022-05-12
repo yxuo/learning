@@ -263,7 +263,7 @@ What Azure is:
 ## Azure Compute - Creating web server
 
 1. [portal.azure.com](https://portal.azure.com)
-2. Menu `☰` > Create a resource `+`
+2. `☰` Menu > `+` Create a resource
 3. Basics:
    * Resource goup, VM name etc
    * Region (use the same)
