@@ -335,7 +335,9 @@ Rich AI & analytics for SAP data:
   > Artificial Intelligence & Machine Learning
 * Power BI connectors, for self-service visualization.
 
-### Scalable performance for your apps
+## Scale and performance
+
+*Scalability and performance for your apps*
 
 * Most comprehensive shared block storage
   * Up to **160K IOPs** - Fastest shared disk in the public cloud;
@@ -350,7 +352,28 @@ Rich AI & analytics for SAP data:
   * Up to 24TB RAM (SAP HANA certified);
   * 700+ VM size options.
 
-<!-- TODO: [27:00] Azure infra / migrate and deploy / scale and performance -->
+### VM Scale Sets
+
+* :desktop_computer: Create and manage up to 1,000 load-balanced Windows or Linux VMs per Availability Zone in minutes;
+* :earth_asia: Built-in higher availability and application resiliency;  
+  Deploy Vms in Availabiility Zones to increase uptime.
+* :dart: One simple plataform to deal with large sets of VMs.
+* :card_file_box: Build large scale services for ciompute, big data and container workloads.  
+    * The scale of VMs can increase or decrease depending of the demand or schedule.
+    * Scale sets allow you to manage and update lots of your VMs in a centralized way.  
+    This allows you to create large scale services such as big data.
+    * Use the same  OS image and configuration to manage hundreds of VMs, without extra configs.
+    * If one VM have problem, your costumer will use another available VM.
+
+> * Load-balancing - efficiently distributing incoming network traffic across a goup of backend servers:
+> * Load balancer - Acts as the traffic cop, managing which route or server should or should not be used in that moment.  
+> You have software and hardware load balancer.
+
+## Reliable infrastructure
+
+*Building a reliable infrastructure is a **shared responsability** between you and Azure*
+
+<!-- TODO: [30:00] Azure infra / migrate and deploy / scale and performance -->
 
 ## Source:
 
