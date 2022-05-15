@@ -354,6 +354,7 @@ Rich AI & analytics for SAP data:
 
 ## Source:
 
+* [What is load balancing? - Nginx](https://www.nginx.com/resources/glossary/load-balancing/)
 * [Lift and Shift - IBM](https://www.ibm.com/cloud/learn/lift-and-shift)
 * [Introduction to Azure Storage - Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)
 * [Server Workload - Suse](https://www.suse.com/suse-defines/definition/server-workload/)
