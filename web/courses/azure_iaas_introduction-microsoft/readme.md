@@ -338,12 +338,17 @@ Rich AI & analytics for SAP data:
 ### Scalable performance for your apps
 
 * Most comprehensive shared block storage
-  * up to 160K IOPs - Fastest shared disk in the public cloud
-  * Up to xxx
-* Best performing cloud network
-* Massively scalable compute capacity
-
-<!-- TODO: finnish 'table' of scalable performance -->
+  * Up to **160K IOPs** - Fastest shared disk in the public cloud;
+  * Up to **30x higher performance** with bursting;
+  * **<1ms** of consistent latency.
+* Best performing cloud network:
+  * **100Gbps** of hybrid cloud connectivity;
+  * 99.05% Azure inter-region pairs
+    * Azure region pair - It's a pair of server backbone inside a geographic region (except Brazil, as always).
+* Massively scalable compute capacity:
+  * Up to 960 CPU threads;
+  * Up to 24TB RAM (SAP HANA certified);
+  * 700+ VM size options.
 
 <!-- TODO: [27:00] Azure infra / migrate and deploy / scale and performance -->
 
