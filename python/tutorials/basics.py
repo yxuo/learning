@@ -40,6 +40,7 @@ print(1-1) # 0      (subtração)
 print(2*3) # 6      (multiplicação)
 
 print(2**3) # 8     (potência)
+print(pow(2,3))
 
 print(2/3) # 0.6_   (divisão)
 
