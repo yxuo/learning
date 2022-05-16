@@ -130,3 +130,26 @@ lista.extend(lista2)        # lista = [1,2,3,4,5,6,7,8]
 print(lista.index(2))
 valor_item_removido = lista.pop()
 lista.remove()
+
+# aleatório
+
+import random
+
+print(random.random()) # 0.0-1.0
+
+print(random.randrange(0,10)) # 0-10
+
+print(random.uniform(0,10)) # 0.0-10.0
+
+# índice
+
+n = ['a','b','c','d','e','f']
+#     0,  1,  2,  3,  4,  5
+#    -6, -5,- 4,- 3, -2, -1
+
+print(n[1]) # b
+
+print(n[-1]) # f
+
+print(n[1:3]) # b,c     (igual o range())
+
