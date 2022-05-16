@@ -128,5 +128,5 @@ lista.extend(lista2)        # lista = [1,2,3,4,5,6,7,8]
 # remover
 
 print(lista.index(2))
-lista.pop()
+valor_item_removido = lista.pop()
 lista.remove()
