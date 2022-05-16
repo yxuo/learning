@@ -15,7 +15,7 @@
 1. Faça um programa que sorteie um numero de 0 a 9999 e mostre na tela cada um dos dígitos separadamente.
    exemplo: unidade: 4 dezena: 3 centena: 8 milhar
 
-2. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:o produto do dobro do primeiro com metade do segundo .a soma do triplo do primeiro com o terceiro.o terceiro elevado ao cubo
+2. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre: o produto do dobro do primeiro com metade do segundo; a soma do triplo do primeiro com o terceiro; o terceiro elevado ao cubo
 
 3. Faça um Programa que peça um número e então mostre a mensagem . O numero digitado foi (numero)
 
