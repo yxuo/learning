@@ -4,9 +4,8 @@ Fontes:
 * https://stackoverflow.com/questions/5844672/delete-an-element-from-a-dictionary
 '''
 
-### aula 1
 
-## comentários
+# comentários
 
 # comentário de 1 linha
 
