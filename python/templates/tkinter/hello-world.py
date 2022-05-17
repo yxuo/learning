@@ -5,6 +5,8 @@ import tkinter as tk
 window1 = tk.Tk()
 window1.title("Window 1")
 window1.geometry("400x300")
+window1.iconbitmap("../../../img/tomato.ico")
+# window1.resizable(True,True)
 
 # Config widgets
 
