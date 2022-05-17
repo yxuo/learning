@@ -69,7 +69,7 @@ print(retorno)
 
 cursor.execute("USE aula8;")
 
-# criar BD
+# criar tabela
 
 cursor.execute(" \
 CREATE TABLE IF NOT EXISTS aluno( \
