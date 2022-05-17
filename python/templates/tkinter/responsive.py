@@ -6,6 +6,7 @@ window1 = tk.Tk()
 window1.geometry("300x250")
 window1.minsize(300,250)
 window1.title("Window window1")
+window1.iconbitmap("tomato.ico")
 
 # Make window grid responsible:
 # set minimum size for all rows and columns
