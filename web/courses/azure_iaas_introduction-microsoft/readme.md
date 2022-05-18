@@ -373,6 +373,41 @@ Rich AI & analytics for SAP data:
 
 *Building a reliable infrastructure is a **shared responsability** between you and Azure*
 
+* Microsoft provides **guidance** to design, operate and monitor the foundation, ensuring availability.
+* Azure provides a foundation of a large global network, datacenter infrastructure and data protection.
+  * Necessary for any app to achieve resiliency.
+* The services on top of this reliable foundation are what gives these apps availability, disaster recovery and backup capabilities.
+
+### Infrastructure against damanges:
+
+Customer need:
+
+* **Premium Storage** - Improved Availability
+* **Availability Sets, Zones** - Build and run high-available apps with near-zero RPO/RTO*
+* **Azure Site Recovery / Region Pairs** - Inplement disaster recovery plans with data residencu and minimal RPO/RTO.
+
+Infrastructure (apps, data):
+
+* Isolated VM failure - **Single VM**, SLA* 99.99%
+* Hardware failure - **Datacenter**, SLA 99,95%
+* Entire datacenter failure - **Region**, SLA 99.99%
+* Entire region failure - **Cluster regions**, Industry-leading RPO/RTO
+
+Data (stateful*)
+
+* Backup - Against accidental loss, data corruption, ransonware and rogue admin.
+
+> * RTO - Recovery Time Objective. Maximum recovery time to be ready.
+> * RPO - Recovery Point Objective. The minimum resources required in case of data loss.
+> * Stateful - Services that can be used multiple times, the changes are saved. Services such as email, online banking.
+> * Stateless - Services done always from zero, any interruption will reset the proccess.
+> * SLA - Service-Level Agreement - Expectations between the service provider and costumer. End-user problems, metrics and effectiviness of the proccess.
+
+* Resiliency is not about prevent all problems, but being able to bounce back when one of this occours.
+* The infrastructre is ready against any kind of disaster.
+
+## Cost effectiveness
+
 <!-- TODO: [30:00] Azure infra / migrate and deploy / scale and performance -->
 
 ## Source:
@@ -382,3 +417,4 @@ Rich AI & analytics for SAP data:
 * [Introduction to Azure Storage - Microsoft](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)
 * [Server Workload - Suse](https://www.suse.com/suse-defines/definition/server-workload/)
 * [Storage blobs introduction - Microsft](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
+* [What is SLA - CIO](https://www.cio.com/article/274740/outsourcing-sla-definitions-and-solutions.html)
