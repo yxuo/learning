@@ -1,6 +1,6 @@
 # Python
 
-### Install
+## Install
 
 Terminal:
 
