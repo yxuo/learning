@@ -23,7 +23,24 @@ CREATE TABLE tab(
     txt VARCHAR(40)
 );
 -- add line
+INSERT INTO tab(txt) VALUES('abcde');
+-- add line if not exists
+INSERT INTO tab(txt) VALUES('abcde')
+WHERE NOT EXISTS (SELECT id FROM tab WHERE id = 1);
+-- add line if in
+INSERT INTO tab(txt) VALUES('abcde')
+WHERE NOT IN (SELECT id FROM tab WHERE id = 1);
+-- add multiple lines
+INSERT ALL
+INTO tab(txt) VALUES('line 1')
+INTO tab(txt) VALUES('line 2')
+-- SELECT at last line is mandatory, ignore it.
+SELECT 1 FROM DUAL;
 
+-- remove line
+DELETE FROM tab WHERE id=1;
+-- remove if match
+DELETE FROM tab WHERE id in ('text content');
 
 -- show databases
 CREATE TABLE IF NOT EXISTS tab(
