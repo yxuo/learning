@@ -19,12 +19,12 @@
 5. :white_check_mark: [Arithmetic operators](lesson-4-8.md)
 6. :white_check_mark: [Assignment operators](lesson-4-8.md)
 7. :white_check_mark: [Relational operators](lesson-4-8.md)
-8. :white_large_square: HTML5 + PHP integration
-9.  :white_large_square: Conditional `If`
-10. :white_large_square: Conditional `Switch`
-11. :white_large_square: Repetition `While`
-12. :white_large_square: Repetition `Do While`
-13. :white_large_square: Repetition `For`
+8. :white_check_mark: [HTML5 + PHP integration](lesson-4-8.md)
+9.  :white_check_mark: [Conditional `If`](lesson-9-13.md)
+10. :white_check_mark: [Conditional `Switch`](lesson-9-13.md)
+11. :white_check_mark: [Repetition `While`](lesson-9-13.md)
+12. :white_check_mark: [Repetition `Do While`](lesson-9-13.md)
+13. :white_check_mark: [Repetition `For`](lesson-9-13.md)
 14. :white_large_square: PHP routines - part 1
 15. :white_large_square: PHP routines - part 2
 16. :white_large_square: String functions - part 1
