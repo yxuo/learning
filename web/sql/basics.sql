@@ -24,9 +24,8 @@ CREATE TABLE tab(
 );
 -- add line
 INSERT INTO tab(txt) VALUES('abcde');
--- add line if not exists
-INSERT INTO tab(txt) VALUES('abcde')
-WHERE NOT EXISTS (SELECT id FROM tab WHERE id = 1);
+-- add line if not duplicated
+INSERT IGNORE INTO tab(txt) VALUES('abcde')
 -- add line if in
 INSERT INTO tab(txt) VALUES('abcde')
 WHERE NOT IN (SELECT id FROM tab WHERE id = 1);
