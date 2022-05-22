@@ -63,7 +63,7 @@ val = [
     ["Paulo","32","paulo@gmail.com"]
     ]
 conexao.commit()
-print(cursor.rowcount, "registro(s) restantes") # 2 registros inseridos
+print(cursor.rowcount, "registro(s) removidos") # 2 registros removidos
 print(cursor.fetchall())
 table_show("pessoa",True)
 
