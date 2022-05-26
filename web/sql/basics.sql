@@ -6,7 +6,7 @@
 -- login mysql
 mysql -u root -p 1234
 
--- database
+-- DATABASE --
 SHOW DATABASES;
 -- add
 CREATE DATABASE database1;
@@ -15,7 +15,7 @@ USE database1;
 -- remove
 DROP DATABASE database1;
 
--- table
+-- TABLE --
 SHOW TABLES;
 -- new table
 CREATE TABLE tab(
