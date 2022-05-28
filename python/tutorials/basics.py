@@ -15,7 +15,12 @@ várias
 linhas
 '''
 
-# ler comentário
+"""
+Aspas simples
+ou duplas
+"""
+
+# imprimir comentário
 
 def ler_comentario():
     '''
@@ -109,6 +114,26 @@ dicionario ["chave2"] = "valor2"
 valor = dicionario.pop("chave1")
 del dicionario["chave2"]
 
+# encontrar chave
+
+if "chave1" in dicionario:
+    print("chave1 existe")
+
+# iterar chave
+
+for k in dicionario:
+    print(k)
+
+# iterar chave e valor
+
+for tuple_kv in dicionario.items():
+    print("key",   tuple_kv[0],
+          "value", tuple_kv[1])
+
+for k, v in dicionario.items():
+    print(k, v)
+
+
 ## lista
 
 # criar
@@ -129,7 +154,7 @@ lista.extend(lista2)        # lista = [1,2,3,4,5,6,7,8]
 
 print(lista.index(2))
 valor_item_removido = lista.pop()
-lista.remove()
+lista.remove(7)
 
 # aleatório
 
