@@ -38,7 +38,6 @@ void print_lista_valor(int pos, Lista *lista)
 void lista_add_antes(Lista **lista, int valor)
 {
     Lista *novo = lista_novo(valor);
-    *novo
 }
 
 int main()
