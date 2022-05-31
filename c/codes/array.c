@@ -25,11 +25,13 @@ void array_ptr()
     }
 }
 
-void print_array_basic(int *arr, int size)
+// ARRAY BASIC
+
+void print_array_basic(int *arr, int size, char *end)
 {
     for (int i = 0; i < size; i++)
         printf(" %i ", arr[i]);
-    printf("\n");
+    if(end)printf("%s", end);
 }
 
 void array_basic_insert(int *arr, int arr_size, int *size, int value, int pos)
@@ -65,14 +67,14 @@ void array_basic()
     int arr[10] = {1, 2, 3};
     int pos = 0;
     int size = 3;
-    print_array_basic(arr, sizeof(arr) / sizeof(int));
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "\n");
 
     // insert first
     for (int i = sizeof(arr) / sizeof(int) - 1; i > 0; i--)
         arr[i] = arr[i - 1];
     arr[pos] = 4;
     size++;
-    print_array_basic(arr, sizeof(arr) / sizeof(int));
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+4\n");
 
     // insert position
     pos = 1;
@@ -80,22 +82,41 @@ void array_basic()
         arr[i] = arr[i - 1];
     arr[pos] = 5;
     size++;
-    print_array_basic(arr, sizeof(arr) / sizeof(int));
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+5\n");
 
-    pos = size;
     // insert last
+    pos = size;
     if (size == sizeof(arr) / sizeof(int))
         for (int i = 0; i < sizeof(arr) / sizeof(int) - 1; i++)
             arr[i] = arr[i + 1];
     else
         size++;
     arr[pos] = 6;
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+6\n");
 
     // remove first
-    // for (int i = sizeof(arr)/sizeof(int); i - 1 > 0; i--)
-    //     arr[i] = arr[i - 1];
-    // arr[0] = 10;
-    print_array_basic(arr, sizeof(arr) / sizeof(int));
+    pos = 0;
+    for (int i = pos; i < size - 1; i++)
+        arr[i] = arr[i + 1];
+    arr[size-1] = 0;    // optional
+    size --;
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-4\n");
+
+    // remove position
+    pos = 1;
+    for (int i = pos; i < size - 1; i++)
+        arr[i] = arr[i + 1];
+    arr[size-1] = 0;
+    size --;
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-1\n");
+
+    // remove last
+    pos = size-1;
+    for (int i = pos; i < size - 1; i++)
+        arr[i] = arr[i + 1];
+    arr[size-1] = 0;
+    size --;
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-6\n");
 }
 
 int main()
