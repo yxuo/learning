@@ -31,7 +31,8 @@ void print_array_basic(int *arr, int size, char *end)
 {
     for (int i = 0; i < size; i++)
         printf(" %i ", arr[i]);
-    if(end)printf("%s", end);
+    if (end)
+        printf("%s", end);
 }
 
 void array_basic_insert(int *arr, int arr_size, int *size, int value, int pos)
