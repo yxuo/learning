@@ -61,6 +61,18 @@ void array_basic_insert(int *arr, int arr_size, int *size, int pos, int value)
     arr[pos] = value;
 }
 
+void array_basic_remove(int *arr, int arr_size, int *size, int pos)
+{
+    if (pos >= 0)
+        for (int i = pos; i < *size - 1; i++)
+            arr[i] = arr[i + 1];
+    else
+        pos = *size - 1;
+    if (*size)
+        *size -= 1;
+    arr[pos] = 0;
+}
+
 void array_basic_clear(int *arr, int arr_size, int *size)
 {
     memset(arr, 0, arr_size);
