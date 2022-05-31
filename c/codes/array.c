@@ -147,28 +147,30 @@ void array_basic()
     pos = 0;
     for (int i = pos; i < size - 1; i++)
         arr[i] = arr[i + 1];
-    arr[size-1] = 0;    // optional
-    size --;
+    arr[size - 1] = 0; // optional
+    size--;
     print_array_basic(arr, sizeof(arr) / sizeof(int), "-4\n");
 
     // remove position
     pos = 1;
     for (int i = pos; i < size - 1; i++)
         arr[i] = arr[i + 1];
-    arr[size-1] = 0;
-    size --;
+    arr[size - 1] = 0;
+    size--;
     print_array_basic(arr, sizeof(arr) / sizeof(int), "-1\n");
 
     // remove last
-    pos = size-1;
+    pos = size - 1;
     for (int i = pos; i < size - 1; i++)
         arr[i] = arr[i + 1];
-    arr[size-1] = 0;
-    size --;
+    arr[size - 1] = 0;
+    size--;
     print_array_basic(arr, sizeof(arr) / sizeof(int), "-6\n");
 }
 
 int main()
 {
     array_basic();
+    printf("\n");
+    array_basic_fn();
 }
