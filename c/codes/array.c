@@ -79,6 +79,38 @@ void array_basic_clear(int *arr, int arr_size, int *size)
     *size = 0;
 }
 
+void array_basic_fn()
+{
+    int arr[10] = {1, 2, 3};
+    int pos = 0;
+    int size = 3;
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "\n");
+
+    // insert first
+    array_basic_insert(arr, sizeof(arr) / sizeof(int), &size, 0, 4);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+4\n");
+
+    // insert position
+    array_basic_insert(arr, sizeof(arr) / sizeof(int), &size, 1, 5);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+5\n");
+
+    // insert last
+    array_basic_insert(arr, sizeof(arr) / sizeof(int), &size, -1, 6);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "+6\n");
+
+    // remove first
+    array_basic_remove(arr, sizeof(arr) / sizeof(int), &size, 0);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-4\n");
+
+    // remove position
+    array_basic_remove(arr, sizeof(arr) / sizeof(int), &size, 1);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-1\n");
+
+    // remove last
+    array_basic_remove(arr, sizeof(arr) / sizeof(int), &size, -1);
+    print_array_basic(arr, sizeof(arr) / sizeof(int), "-6\n");
+}
+
 void array_basic()
 {
     int arr[10] = {1, 2, 3};
