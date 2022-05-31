@@ -35,24 +35,28 @@ void print_array_basic(int *arr, int size, char *end)
         printf("%s", end);
 }
 
-void array_basic_insert(int *arr, int arr_size, int *size, int value, int pos)
+void array_basic_insert(int *arr, int arr_size, int *size, int pos, int value)
 {
+    // printf("SIZE %i",*size);
     // pos -1 = add last
     if (pos < 0)
     {
-        pos = *size - 1;
+        pos = *size;
         if (*size == arr_size)
+        {
             for (int i = 0; i < arr_size - 1; i++)
                 arr[i] = arr[i + 1];
-        else
-            *size += 1;
+            pos = *size - 1;
+        }
+        arr[pos] = value;
+        *size += 1;
     }
     else
     {
         for (int i = arr_size - 1; i > pos; i--)
             arr[i] = arr[i - 1];
-        arr[pos] = 5;
-        size++;
+        arr[pos] = value;
+        *size += 1;
     }
     arr[pos] = value;
 }
