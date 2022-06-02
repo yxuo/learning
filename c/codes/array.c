@@ -70,7 +70,7 @@ void array_basic_remove(int *arr, int arr_size, int *size, int pos)
         pos = *size - 1;
     if (*size)
         *size -= 1;
-    arr[pos] = 0;
+    arr[*size] = 0;
 }
 
 void array_basic_clear(int *arr, int arr_size, int *size)
