@@ -21,23 +21,15 @@ int *array_ptr_ini(int size)
     return arr;
 }
 
-void array_ptr_add(int **arr, int *size, int pos, int value)
+void array_ptr_add(int *arr, int *size, int pos, int value)
 {
     if (pos < 0)
         pos = *size - 1;
-    size++;
-    // printf("A ");
-    *arr = (int *)realloc(arr, sizeof(int) * *size);
-    int *arr1 = *arr;
-    // printf("B ");
-    // printf("%i\n",*arr);
+    *size += 1;
+    arr = (int *)realloc(arr, sizeof(int) * *size);
     for (int i = *size - 1; i > pos; i--)
-    {
-        printf("%i",(*arr)[i]);
-        // (*arr)[i] = (*arr)[i - 1];
-        printf(",");
-    }
-    // (*arr)[pos] = value;
+        arr[i] = arr[i - 1];
+    arr[pos] = value;
 }
 
 void array_ptr_remove(int **arr, int *size, int pos)
@@ -53,26 +45,23 @@ void array_ptr_fn()
 {
     int size = 3;
     int *arr = array_ptr_ini(size);
+
     // memset
     for (int i = 0; i < size; i++)
-        arr[i] = i;
-    // int **arr1 = &arr;
-    // int *arr2 = *arr1;
-    // for (int i = 0; i < size; i++)
-    //     (*arr1)[i] = 0;
-    // print_array_ptr(arr, size, "  ");
+        arr[i] = i+1;
+    print_array_ptr(arr, size, "  ");
 
     // add first
-    array_ptr_add(&arr, &size, 0, 4);
+    array_ptr_add(arr, &size, 0, 4);
     print_array_ptr(arr, size, "4+ ");
 
     // add pos
-    // array_ptr_add(&arr, &size, 1, 5);
-    // print_array_ptr(arr, size, "5+ ");
+    array_ptr_add(arr, &size, 1, 5);
+    print_array_ptr(arr, size, "5+ ");
 
-    // // add final
-    // array_ptr_add(&arr, &size, -1, 6);
-    // print_array_ptr(arr, size, "6+ ");
+    // add final
+    array_ptr_add(arr, &size, -1, 6);
+    print_array_ptr(arr, size, "6+ ");
 }
 
 void array_ptr()
