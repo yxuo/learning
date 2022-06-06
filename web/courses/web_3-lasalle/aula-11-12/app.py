@@ -24,12 +24,15 @@ table_aluno = "aluno"
 # fn
 
 
-def db_tst():
+def db_app_update():
     # insert default login if not exists
-    cursor.execute("INSERT IGNORE INTO tst (nome, email) VALUES ('a','b')")
-    connection.commit()
+    cursor.execute("SELECT * FROM %s"%table_aluno)
     ret = cursor.fetchall()
-    messagebox.showinfo("Login", "New login created: user: %s, pass: %s")
+    print(str(ret))
+    for row in ret:
+        app_list.insert(len(ret)+1,str(row))
+    #     for col in row:
+    # messagebox.showinfo("Query result", ret)
 
 
 def db_app_add(aluno_nome, aluno_email):
@@ -85,7 +88,7 @@ print(cursor.fetchall())
 ret = cursor.fetchall()
 print(len(ret), bool(ret))
 
-# tkinter
+#ANCHOR tkinter
 
 # window login
 
@@ -94,7 +97,7 @@ win_app.eval('tk::PlaceWindow . center')
 
 win_app.geometry("300x250")
 win_app.minsize(300, 250)
-win_app.title("Interface com banco de dados")
+win_app.title("Teste de banco de dados")
 # win_app.iconbitmap("tomato.ico")
 win_app.bind("<Escape>", lambda e: win_app.quit())
 
@@ -107,24 +110,35 @@ win_app.grid_columnconfigure(4, weight=1)
 win_app.grid_rowconfigure(0, weight=0)
 win_app.grid_rowconfigure(1, weight=0)
 win_app.grid_rowconfigure(2, weight=0)
+win_app.grid_rowconfigure(3, weight=1)
 
 app_label_login = tk.Label(win_app,text="Nome",)
 app_label_login.grid(padx=10,pady=5,row=0,column=0,)
 
 app_txt_login = tk.Entry(win_app,)
-app_txt_login.grid(padx=10,pady=5,row=0,column=1,    sticky="ew",columnspan=3,)
+app_txt_login.grid(padx=10,pady=5,row=0,column=1,    sticky="ew",columnspan=5,)
 
 app_label_pass = tk.Label(win_app,text="email",)
 app_label_pass.grid(padx=10,pady=5,row=1,column=0,)
 
 app_txt_pass = tk.Entry(win_app,)
-app_txt_pass.grid(padx=10,pady=5,row=1,column=1,sticky="ew",columnspan=3,)
+app_txt_pass.grid(padx=10,pady=5,row=1,column=1,sticky="ew",columnspan=5,)
 
-app_login = tk.Button(win_app,text="Login",command=db_app_check,)
-app_login.grid(padx=10,pady=5,row=2,column=0,)
-app_new = tk.Button(win_app,text="New account",
-    command=lambda: db_app_add(app_txt_login.get(), app_txt_pass.get())
-)
-app_new.grid(padx=10, pady=5, row=2, column=1,)
+app_btn_login = tk.Button(win_app,text="Check",command=db_app_check,)
+app_btn_login.grid(padx=10,pady=5,row=2,column=0,)
+
+app_btn_new = tk.Button(win_app,text="Add",command=lambda: db_app_add(app_txt_login.get(), app_txt_pass.get()))
+app_btn_new.grid(padx=10, pady=5, row=2, column=1,)
+
+app_btn_new = tk.Button(win_app,text="remove",command=lambda: db_app_add(app_txt_login.get(), app_txt_pass.get()))
+app_btn_new.grid(padx=10, pady=5, row=2, column=2,)
+
+# app_btn_tst = tk.Button(win_app,text="Test",command=db_tst)
+# app_btn_tst.grid(padx=10, pady=5, row=2, column=1,)
+
+app_list = tk.Listbox(win_app)
+app_list.grid(row=3, column=0,sticky="ew", columnspan=5,padx=10, pady=10)
+
+db_app_update()
 
 win_app.mainloop()
