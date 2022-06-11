@@ -47,5 +47,10 @@ CREATE TABLE IF NOT EXISTS tab(
     data VARCHAR(40)
 );
 
+-- change values
+UPDATE table
+SET col1 = val1, col2 = val2
+WHERE true
+
 -- 
 
