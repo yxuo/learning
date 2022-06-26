@@ -2,9 +2,44 @@
 #include <stdlib.h> //alloc free
 #include <string.h> //memset, memcpy
 
-void array_dynamic()
+typedef struct ArrDynDouble{
+    int val;
+    struct ArrDynDouble *ante;
+    struct ArrDynDouble *prox;
+} ArrDynDouble;
+
+ArrDynDouble *array_dynamic_double_new(int val)
 {
-    // code
+    ArrDynDouble *new = (ArrDynDouble*) malloc(sizeof(ArrDynDouble));
+    new->ante = 0;
+    new->prox = 0;
+    new->val = val;
+    return new;
+}
+
+void array_dynamic_double_add(ArrDynDouble **node, int val, int pos)
+{
+    if (!*node)
+        return;
+    if (pos)
+        array_dynamic_double_add(&(*node)->prox, val, pos-1);
+
+    ArrDynDouble *new = array_dynamic_double_new(val);
+    new->ante = *node;
+}
+
+void array_dynamic_double_del_pos(ArrDynDouble **node, int pos)
+{
+    if (!*node)
+        return;
+    if (pos)
+        array_dynamic_double_del_pos(&(*node)->prox, pos-1);
+
+    ArrDynDouble *ante = (*node)->ante;
+    ArrDynDouble *prox = (*node)->prox;
+    free(*node);
+    ante->prox = prox;
+    prox->ante = ante;
 }
 
 // ARRAY BASIC
