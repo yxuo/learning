@@ -66,6 +66,13 @@ int lista_len(No *no)
     return lista_len(no->Prox) + 1;
 }
 
+int lista_len(No *no)
+{
+    int comp = 0;
+    for(No *no1 = no; no1; comp++, no1 = no1->Prox);
+    return comp;
+}
+
 void print_lista(No *no)
 {
     // troca while por recursividade
@@ -203,6 +210,12 @@ int lista_remover_indice(No **no, int indice)
     return 0;
 }
 
+int somar1(int num)
+{
+    // 
+    if(num < 10)
+        somar1(num+1);
+}
 
 int main()
 {
