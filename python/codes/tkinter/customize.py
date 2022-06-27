@@ -6,7 +6,7 @@ window1 = tk.Tk()
 window1.geometry("300x250")
 window1.minsize(300,250)
 window1.title("Window window1")
-window1.iconbitmap("../../../img/tomato.ico")
+# window1.iconbitmap("../../../img/tomato.ico")
 window1["bg"] = "green"
 
 # Make window grid responsible:
@@ -30,6 +30,8 @@ label = tk.Label(
     window1,
     text="Responsivess!",
 )
+label['font'] = tk.font.Font(size=30)
+# label['font'] = font.Font(size=30)
 label.grid(
     padx=10,
     pady=10,
