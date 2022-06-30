@@ -39,9 +39,6 @@ subgraph Vector["items ⠀⠀⠀⠀⠀⠀⠀"]
   top["⠀ top ⠀"] --- list["⠀ ... ⠀"] --- bottom
 end
 ```
-
-<!-- TODO: graph -->
-<!-- TODO: list -->
 ### Queue
 
 FIFO - first in, first out
@@ -55,6 +52,31 @@ subgraph Vector["items ⠀⠀⠀⠀⠀⠀⠀"]
   top["⠀ top ⠀"] --- list["⠀ ... ⠀"] --- bottom
 end
 ```
+
+<!-- TODO: graph -->
+<!-- TODO: list -->
+### Tree
+
+* Node: each element of the tree.
+* Root: the initial node, on the start of the tree.
+* Degree: the number of children that a node have.
+* Distance: the number of edges of the shortest path between two nodes. You can count nodes starting by zero.
+* Level/Depth: the distance between a node and the root.
+  * For example, given a tree `A-B-C`, where A is the root, the distance between A and C is 
+* Height: the biggest level in the tree.
+* Width: the number of nodes in a level.
+* Size: the total number of nodes in the tree.
+* Leaf: a node without children.
+
+#### Tree structure
+* Search binary tree:
+  * It have up to two children
+  * Ideally, the nodes on the left have lower values than a given node. The nodes on the right have higher values.
+* Balanced tree:
+  * All sub trees on each level have its height with at most one unit of difference.
+  * 
+* List:
+  * A list can be considered a tree where all nodes have at most one children.
 
 <!-- TODO: Sorting algorithms -->
 
