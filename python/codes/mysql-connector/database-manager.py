@@ -44,7 +44,8 @@ def buscar():
     retorno_sql = cursor.fetchall()
 
     """
-    o retorno sql é uma lista, onde cada linha é um resultado encontrado
+    O retorno sql é uma lista, onde cada linha é um resultado encontrado
+    Cada resultado é uma tupla, onde cada item é uma coluna da tabela
 
     EXEMPLO DE RESULTADO:
 
