@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS tab(
 -- change values
 UPDATE tab
 SET col1 = val1, col2 = val2
-WHERE true
+WHERE id = 0
 
 -- 
 
