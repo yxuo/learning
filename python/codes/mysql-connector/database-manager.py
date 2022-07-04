@@ -34,13 +34,16 @@ cursor.execute("""
 
 # funções
 def buscar():
-    id = en_id.get()
+    # pega o valor da caixa de texto
+    variavel = en_id.get()
+
     # se a entrada id estivar vazia, aviso e encerra
-    if not id:
+    if variavel == None:
         mb.showerror("Erro","Preencha o ID")
         return
-    
-    cursor.execute("SELECT * FROM usuario WHERE id = '%s'"%id)
+
+    # comparar o id digitado com a tabela
+    cursor.execute(f"SELECT * FROM usuario WHERE id = '{variavel}'")
     retorno_sql = cursor.fetchall()
 
     """
